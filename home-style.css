@@ -1,0 +1,20 @@
+/*Home Page*/
+.home-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.bg-image{
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.res-name{
+    position: relative;
+}

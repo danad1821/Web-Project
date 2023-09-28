@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0.5%;
+}
+/*Navigation Bar*/
+.nav-bar{
+    display: flex;
+    font-size: 1.6em;
+    background-color: black;
+    position: relative;
+}
+.nav-options{
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+.nav-options:hover{
+    background-color: blue;
+}
+.logo:hover{
+    background-color: black;
+}
+
+
+
+/*Locations Page*/
+
+/*Menu Page*/
+
+/*Contact Us Page */
+
+/*Review Page*/
+
+/*Footer*/
+.footer{
+    background-color: gray;
+    padding: 5%;
+}
