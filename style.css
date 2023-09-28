@@ -11,6 +11,7 @@ h1{
     font-size: 1.6em;
     background-color: black;
     position: relative;
+    justify-content: center;
 }
 .nav-options{
     padding: 1%;
@@ -20,19 +21,13 @@ h1{
 .nav-options:hover{
     background-color: blue;
 }
+.logo{
+   position: absolute;
+   left: 0;
+}
 .logo:hover{
     background-color: black;
 }
-
-
-
-/*Locations Page*/
-
-/*Menu Page*/
-
-/*Contact Us Page */
-
-/*Review Page*/
 
 /*Footer*/
 .footer{
