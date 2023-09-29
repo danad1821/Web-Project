@@ -1,7 +1,6 @@
 /*Menu Page*/
 .menu-body{
     min-height: 100vh;
-    width: 100vw;
 }
 .menu-title{
     display: flex;
