@@ -33,6 +33,7 @@
     width: 10vw;
     text-align: center;
     position: relative;
+    color: white;
 }
 .menu-section-links{
     text-decoration: none;
@@ -45,23 +46,34 @@
 .menu-section-nav:hover{
     background-color: blue;
 }
+.main-section-nav{
+    position: relative;
+    display: inline-block;
+}
 .main-items-list{
     list-style: none;
     padding: 10%;
-    width: 10vw;
     text-align: left;
     background-color: blue;
     font-size: 1.4rem;
     position: absolute;
     left: 0;
     display: none;
+    min-width: 160px;
+    box-shadow: 2px 8px 0px 2px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .main-items-options{
     margin: 1.4%;
+    display: block;
+    width: fit-content;
 }
 .main-items-links{
     text-decoration: none;
     color: white;
+}
+.main-section-nav:hover .main-items-list{
+    display: block;
 }
 /*Menu*/
 .menu-sections{
@@ -99,4 +111,12 @@
 .img-menu-item{
     width: 230px;
     height: 200px;
+}
+/*Checkout*/
+.checkout-btn{
+    background-color: black;
+    color: white;
+    padding: 1% 1.5%;
+    font-size: 1.1rem;
+    margin: 1%;
 }
