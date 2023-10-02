@@ -1,20 +1,73 @@
 /*Home Page*/
 .home-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.home-wel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 1000px;
+  overflow: hidden;
+  position: relative;
 }
 .bg-image{
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
-.res-name{
-    position: relative;
+.res-name, .res-quote{
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px darkseagreen;
+}
+.home-text{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+.home-sign-in{
+  display: flex;
+  flex-direction: column;
+  /* margin: 2%; */
+  background-color: black;
+  color: white;
+  padding: 2%;
+  /* border-radius: 12px; */
+  width: 500px;
+  height: 700px;
+}
+.sign-in-title{
+  text-align: center;
+}
+.sign-in-lbl{
+  margin: 1%;
+  font-size: 1.3rem;
+  margin-top: 10%;
+}
+.sign-in-input{
+  margin: 2% 0;
+  font-size: 1.2rem;
+}
+.hori-line{
+  border-bottom: 3px dashed white;
+}
+.sign-in-btn{
+  align-self: center;
+  width: 25%;
+  font-size: 1.3rem;
+  background-color: white;
+  border: none;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 12px;
+}
+.sign-up-text{
+  align-self: center;
 }
