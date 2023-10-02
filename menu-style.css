@@ -140,9 +140,15 @@
     cursor: pointer;
 }
 /*Checkout*/
-.total-title{
+.checkout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     border-top: 3px dashed black;
-    padding: 2%;
+}
+.total-title, .total-price{
+    padding: 2% 1%;
+    align-self: center;
 }
 .checkout-btn{
     background-color: black;
