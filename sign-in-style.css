@@ -1,0 +1,70 @@
+.nav-bar-sign{
+    display: flex;
+    align-items: center;
+}
+.nav-bar-sign a{
+    text-decoration: none;
+}
+.go-back-text, .go-back-btn{
+    margin: 0.5%;
+}
+.go-back-btn{
+    fill: black;
+    font-size: 1.5rem;
+}
+.go-back-text{
+    font-size: 1.2rem;
+}
+/*Body*/
+.sign-in-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.home-sign-in {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+.sign-in-title {
+    text-align: center;
+}
+.sign-in-lbl {
+    margin: 1%;
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+.sign-in-input {
+    margin: 2% 0;
+    font-size: 1.2rem;
+}
+
+.hori-line {
+    border-bottom: 3px dashed white;
+    width: 100%;
+}
+
+.sign-in-btn {
+    align-self: center;
+    width: 25%;
+    font-size: 1.3rem;
+    background-color: gray;
+    border: none;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 12px;
+}
+
+.sign-up-text {
+    align-self: center;
+}
+
+.sign-up-link {
+    color: blue;
+}
