@@ -2,14 +2,17 @@
 .home-body{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100vh;
+  flex-wrap: wrap;
+  color: white;
 }
 .home-wel{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 1000px;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -31,43 +34,13 @@
   position: relative;
   flex-direction: column;
   text-align: center;
+  height: 40%;
 }
-.home-sign-in{
-  display: flex;
-  flex-direction: column;
-  /* margin: 2%; */
-  background-color: black;
-  color: white;
-  padding: 2%;
-  /* border-radius: 12px; */
-  width: 500px;
-  height: 700px;
-}
-.sign-in-title{
-  text-align: center;
-}
-.sign-in-lbl{
-  margin: 1%;
-  font-size: 1.3rem;
-  margin-top: 10%;
-}
-.sign-in-input{
-  margin: 2% 0;
-  font-size: 1.2rem;
-}
-.hori-line{
-  border-bottom: 3px dashed white;
-}
-.sign-in-btn{
+.signing-options{
+  position: absolute;
+  bottom: 0;
   align-self: center;
-  width: 25%;
-  font-size: 1.3rem;
-  background-color: white;
-  border: none;
-  margin: 5%;
-  padding: 2%;
-  border-radius: 12px;
 }
-.sign-up-text{
-  align-self: center;
+.sign-links{
+  color: blue;
 }
