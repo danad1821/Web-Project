@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Malaz</title>
+</head>
+<body>
+    <div></div>
+    <div class="checkout-content">
+        <div class="checkout-section general-info">
+            <h2 class="section-title">Order Information</h2>
+            <h3 class="total-title">Total:</h3>
+            <p class="total-price">$ 0.00</p>
+            <input type="radio" name="orderType" id="radio1" value="1">Takeaway
+            <input type="radio" name="orderType" id="radio2" value="2">Delivery
+        </div>
+        <div class="main-content">
+            <div class="checkout-section">
+                <h2 class="section-title">Location</h2>
+                <div class="location-takeaway">
+                    <div class="location-element">
+                        <label for="">Full Name:</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="location-element">
+                        <label for="">Pickup Location:</label>
+                        <select name="" id="">
+                            <option value="" disabled selected>Select a Pickup Location</option>
+                            <option value="">Location X</option>
+                            <option value="">Location Y</option>
+                            <option value="">Location Z</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="location-delivery">
+                    <div class="location-element">
+                        <label for="">Full Name:</label>
+                        <input type="text" name="" id="" class="required">
+                    </div>
+                    <div class="location-element">
+                        <label for="">Phone Number:</label>
+                        <input type="text" name="" id="" class="required">
+                    </div>
+                    <div class="address">
+                        <div class="location-element">
+                            <label for="">Address:</label>
+                            <input type="text" name="" id="" class="required" placeholder="Street address">
+                            <input type="text" name="" id="" class="required" placeholder="Apt, suite, unit, building, floor, etc">
+                        </div>
+                        <div class="location-element">
+                            <label for="">City:</label>
+                            <select name="" id="">
+                                <option value="" disabled selected>Select a City</option>
+                                <option value="">City X</option>
+                                <option value="">City Y</option>
+                                <option value="">City Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-section">
+                <h2 class="section-title">Payment</h2>
+                <div class="payment-info">
+                    <div class="payment-element">
+                        <label for="" class="payment-lbl">Payment Method:</label>
+                        <select name="" id="">
+                            <option value="" disabled selected>Select a Payment Method</option>
+                            <option value="">Master Card</option>
+                            <option value="">Visa Card</option>
+                            <option value="">American Express Card</option>
+                        </select>
+                    </div>
+                    <div class="payment-name">
+                        <div class="payment-element">
+                            <label for="" class="payment-lbl">First Name:</label>
+                            <input type="text" name="" id="" placeholder="John" class="required">
+                        </div>
+                        <div class="payment-element">
+                            <label for="" class="payment-lbl">Last Name:</label>
+                            <input type="text" name="" id="" placeholder="Doe" class="required">
+                        </div>
+                    </div>
+                    <div class="payment-element">
+                        <label for="" class="payment-lbl">Card Number:</label>
+                        <input type="text" name="" id="" placeholder="0000 0000 0000 0000" class="required">
+                    </div>
+                    <div class="final-payment-elements">
+                        <div class="payment-element">
+                            <label for="" class="payment-lbl">Expiration Date:</label>
+                            <input type="text" name="" id="" placeholder="mm/yy" class="required">
+                        </div>
+                        <div class="payment-element">
+                            <label for="" class="payment-lbl">CVV</label>
+                            <input type="text" name="" id="" placeholder="***" class="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="finalizeBtn">Place Order</button>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

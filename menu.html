@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Satisfy&display=swap" rel="stylesheet">
     <title>Malaz</title>
 </head>
-<body>
+<body onload="accountHover()">
     <!-- Navigation Bar -->
     <nav class="nav-bar" id="nav-bar">
         <a href="index.html" class="nav-options logo"><img src="" alt="Logo"></a>
@@ -28,7 +28,7 @@
             </ul>
             <ul class="account-info account-section">
                 <li>
-                    <h4 id="username">Username</h4>
+                    <h4 id="username-text">Username</h4>
                 </li>
                 <li><button id="sign-out-btn">Sign Out</button></li>
             </ul>
@@ -93,7 +93,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>French Fries</h4>
+                            <h4 class="menu-item-name">French Fries</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -106,7 +106,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Curly Fries</h4>
+                            <h4 class="menu-item-name">Curly Fries</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -119,7 +119,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Mozzarella Sticks</h4>
+                            <h4 class="menu-item-name">Mozzarella Sticks</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -132,7 +132,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Halloumi Sticks</h4>
+                            <h4 class="menu-item-name">Halloumi Sticks</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -145,7 +145,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Onion Rings</h4>
+                            <h4 class="menu-item-name">Onion Rings</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -158,7 +158,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Nachos and Cheese</h4>
+                            <h4 class="menu-item-name">Nachos and Cheese</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -171,7 +171,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Spring Rolls</h4>
+                            <h4 class="menu-item-name">Spring Rolls</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -184,7 +184,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Garlic Bread</h4>
+                            <h4 class="menu-item-name">Garlic Bread</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -206,7 +206,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>French Fries</h4>
+                                <h4 class="menu-item-name">French Fries</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -219,7 +219,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Curly Fries</h4>
+                                <h4 class="menu-item-name">Curly Fries</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -236,7 +236,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Mozzarella Sticks</h4>
+                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -249,7 +249,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Halloumi Sticks</h4>
+                                <h4 class="menu-item-name">Halloumi Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -266,7 +266,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Mozzarella Sticks</h4>
+                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -279,7 +279,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Halloumi Sticks</h4>
+                                <h4 class="menu-item-name">Halloumi Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -296,7 +296,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Mozzarella Sticks</h4>
+                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -309,7 +309,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Halloumi Sticks</h4>
+                                <h4 class="menu-item-name">Halloumi Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -326,7 +326,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Mozzarella Sticks</h4>
+                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -339,7 +339,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Halloumi Sticks</h4>
+                                <h4 class="menu-item-name">Halloumi Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -359,7 +359,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Cheesecake</h4>
+                            <h4 class="menu-item-name">Cheesecake</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -372,7 +372,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Curly Fries</h4>
+                            <h4 class="menu-item-name">Curly Fries</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -385,7 +385,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Mozzarella Sticks</h4>
+                            <h4 class="menu-item-name">Mozzarella Sticks</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -398,7 +398,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Halloumi Sticks</h4>
+                            <h4 class="menu-item-name">Halloumi Sticks</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -411,7 +411,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Onion Rings</h4>
+                            <h4 class="menu-item-name">Onion Rings</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -424,7 +424,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Nachos and Cheese</h4>
+                            <h4 class="menu-item-name">Nachos and Cheese</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -437,7 +437,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Spring Rolls</h4>
+                            <h4 class="menu-item-name">Spring Rolls</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -450,7 +450,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Garlic Bread</h4>
+                            <h4 class="menu-item-name">Garlic Bread</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -469,7 +469,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Cheesecake</h4>
+                            <h4 class="menu-item-name">Cheesecake</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -482,7 +482,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Curly Fries</h4>
+                            <h4 class="menu-item-name">Curly Fries</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -495,7 +495,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Mozzarella Sticks</h4>
+                            <h4 class="menu-item-name">Mozzarella Sticks</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -508,7 +508,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Halloumi Sticks</h4>
+                            <h4 class="menu-item-name">Halloumi Sticks</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -521,7 +521,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Onion Rings</h4>
+                            <h4 class="menu-item-name">Onion Rings</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -534,7 +534,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Nachos and Cheese</h4>
+                            <h4 class="menu-item-name">Nachos and Cheese</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -547,7 +547,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Spring Rolls</h4>
+                            <h4 class="menu-item-name">Spring Rolls</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -560,7 +560,7 @@
                             <img class="img-menu-item"
                                 src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                 alt="">
-                            <h4>Garlic Bread</h4>
+                            <h4 class="menu-item-name">Garlic Bread</h4>
                             <p class="menu-item-description"><b>Description:</b> </p>
                             <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -582,7 +582,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>French Fries</h4>
+                                <h4 class="menu-item-name">French Fries</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -595,7 +595,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Curly Fries</h4>
+                                <h4 class="menu-item-name">Curly Fries</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -612,7 +612,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Mozzarella Sticks</h4>
+                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">
@@ -625,7 +625,7 @@
                                 <img class="img-menu-item"
                                     src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
                                     alt="">
-                                <h4>Halloumi Sticks</h4>
+                                <h4 class="menu-item-name">Halloumi Sticks</h4>
                                 <p class="menu-item-description"><b>Description:</b> </p>
                                 <p class="menu-item-price"><b>Price:</b></p>
                             <div class="menu-item-details">

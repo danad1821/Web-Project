@@ -1,6 +1,6 @@
 /*About Us Page*/
 .about-body{
-    height: 100vh;
+    height: 100%;
 }
 .about-info{
     text-align: center;
@@ -21,6 +21,9 @@
     text-align: left;
     align-self: center;
     font-size: 1.2rem;
+}
+.quality-assurance{
+    height: 25vh;
 }
 .quality-certification{
     display: flex;

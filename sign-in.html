@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
     <title>Malaz</title>
 </head>
-<body>
+<body onload="signInLoad()">
     <!-- Navigation Bar -->
     <nav class="nav-bar-sign">
         <a href="index.html">
@@ -27,11 +27,11 @@
                 Sign In:
             </h1>
             <label class="sign-in-lbl" for="username">Username:</label>
-            <input class="sign-in-input" type="text" placeholder="Username">
+            <input class="sign-in-input" type="text" id="sign-in-user" placeholder="Username">
             <label class="sign-in-lbl" for="password">Password:</label>
-            <input class="sign-in-input sign-in-pass" type="password" name="" placeholder="Password">
+            <input class="sign-in-input sign-in-pass" type="password" name="" placeholder="Password" id="sign-in-pass">
             <hr class="hori-line">
-            <button class="sign-in-btn">Sign In</button>
+            <button class="sign-in-btn" id="sign-in-btn">Sign In</button>
             <p class="sign-up-text">Don't have an account? <a href="" class="sign-up-link">Sign Up</a></p>
         </div>
     </main>
@@ -54,5 +54,8 @@
         </div>
         <p class="copyright">&copy; 2023 Malaz Copyright</p>
     </footer>
+    <script src="sign-in.js">
+
+    </script>
 </body>
 </html>

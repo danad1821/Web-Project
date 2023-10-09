@@ -1,27 +1,38 @@
-function SignIn(username){
-    document.getElementsByClassName("signed-out").style.display="none";
-    let info=document.getElementsByClassName("account-info");
-    info.style.display="inherit";
-    document.getElementById("username").textContent=username;
+let user = ["dana", "pass"]
+function displayAccountInfo() {
+    let account = document.getElementsByClassName("account");
+    account.className = "open-account";
+    account[0].style.display = "flex"
+    account[0].style.flexDirection = "column"
 }
-function displayAccountInfo(){
-    let account=document.getElementsByClassName("account");
-    account[0].style.display="flex"
-    account[0].style.flexDirection="column"
-    account.className="open-account";
+function closeAccountInfo() {
+    let account = document.getElementsByClassName("account");
+    account.className = "close-account";
+    account[0].style.display = "none"
 }
-function closeAccountInfo(){
-    let account=document.getElementsByClassName("account");
-    account[0].style.display="none"
-    account.className="close-account";
+function accountHover() {
+    console.log(window.sessionStorage.getItem("SignedIn"))
+    let accountBtn = document.getElementById("account-icon")
+    accountBtn.addEventListener("mouseover", displayAccountInfo)
+    let account = document.getElementById("account")
+    account.addEventListener("mouseover", displayAccountInfo)
+    account.addEventListener("mouseleave", closeAccountInfo)
+    document.getElementById("nav-bar").addEventListener("mouseleave", closeAccountInfo);
+    if (window.sessionStorage.getItem("SignedIn") == "true") {
+        console.log("signing in")
+        document.getElementsByClassName("signed-out")[0].style.display = "none";
+        document.getElementsByClassName("account-info")[0].style.display = "inherit";
+        document.getElementById("username-text").innerText = user[0];
+    }
 }
 
-let user=["DabdoubD", "RamadanD", "HamdJ"]
-let pass=["pass1", "pass2", "pass3"]
+let btnSignOut=document.getElementById("sign-out-btn")
+btnSignOut.addEventListener("click", function(){
+    window.sessionStorage.setItem("SignedIn", "false")
+    document.getElementsByClassName("signed-out")[0].style.display = "block";
+        document.getElementsByClassName("account-info")[0].style.display = "none";
+})
 
-let accountBtn=document.getElementById("account-icon")
-accountBtn.addEventListener("mouseover", displayAccountInfo)
-let account=document.getElementById("account")
-account.addEventListener("mouseover", displayAccountInfo)
-account.addEventListener("mouseleave", closeAccountInfo)
-document.getElementById("nav-bar").addEventListener("mouseleave", closeAccountInfo)
+
+
+
