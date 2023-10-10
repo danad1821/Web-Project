@@ -39,7 +39,7 @@ h1{
     padding: 0.5%;
     margin: 0.5%;
     text-decoration: none;
-    color: white;
+    color: #C8EFE5;
 }
 .nav-options:hover{
     color: #fad370;
@@ -48,8 +48,12 @@ h1{
    position: absolute;
    left: 0;
 }
-.logo:hover{
-    background-color: #777E4B;
+.logo-img{
+    height: 120px;
+    width: 230px;
+    margin-top: 1.5%;
+    padding: 1%;
+    padding-right: 1.5%;
 }
 .account-icon{
     background-color: white;
@@ -99,7 +103,7 @@ h1{
     display: none;
 }
 .signed-out{
-    width: 100%;
+    width: 90%;
 }
 .signed-out li{
     padding-right: 2%;
@@ -108,14 +112,27 @@ h1{
 /*Footer*/
 .footer{
     background-color: #104d40;
-    padding: 5%;
+    padding: 2%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     bottom: 0%;
-
+    color: white;
+}
+.footer-p1{
+    width: 30vw;
+}
+.footer-logo{
+    width: 100px;
+    align-self: flex-start;
+}
+.contact-footer{
+    margin: 1%;
+}
+.footer-p2, .footer-p1{
+    display: flex;
+    flex-direction: column;
 }
 .icons-list{
     width: 100%;
@@ -124,8 +141,8 @@ h1{
 }
 .icons-list a{
     text-decoration: none;
-    padding: 2%;
-    margin: 3% 0;
+    padding: 1%;
+    margin: 2% 2.5%;
 }
 .social-media-icons{
     font-size: 1.4rem;

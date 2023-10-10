@@ -39,8 +39,8 @@
     color: white;
     width: max-content;
 }
-.menu-section-nav:hover{
-    background-color: #BAC9A3;
+.menu-section-nav, .menu-section-links:hover{
+    color: #fad370;
 }
 .main-section-nav, .bev-section-nav{
     position: relative;
@@ -50,13 +50,12 @@
     list-style: none;
     padding: 10%;
     text-align: left;
-    background-color: #BAC9A3;
+    background-color: #CE5B68;
     font-size: 1.4rem;
     position: absolute;
     left: 0;
     display: none;
     min-width: 160px;
-    box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.2);
     z-index: 1;
     margin-top: 1%;
 }
@@ -154,4 +153,16 @@
     padding: 1% 1.5%;
     font-size: 1.1rem;
     margin: 1%;
+}
+/*Up and Down Buttons*/
+.up-down{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.up-down-btns{
+    background-color: #CE5B68;
+}
+.up-down-btns:hover{
+    background-color: #fad370;
 }
