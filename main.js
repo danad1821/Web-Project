@@ -4,6 +4,7 @@ function displayAccountInfo() {
     account.className = "open-account";
     account[0].style.display = "flex"
     account[0].style.flexDirection = "column"
+    document.getElementById("nav-bar").style.width="100%"
 }
 function closeAccountInfo() {
     let account = document.getElementsByClassName("account");

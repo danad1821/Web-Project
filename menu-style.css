@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 35vh;
     background-image: url("https://png.pngtree.com/thumb_back/fh260/20170803/pngtree-Food-Menu-Fare-Meal-background-photo-869492.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,11 +86,11 @@
     justify-content: center;
 }
 .section-title{
-    margin: 2%;
-    font-size: 1.6rem;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    margin-top: 2%;
+    margin: 1%;
+    font-size: 2em;
     text-align: center;
+    font-weight: 700;
     width: 100%;
 }
 .menu-subsection{
