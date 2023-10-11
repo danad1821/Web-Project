@@ -15,10 +15,10 @@ function accountHover() {
     console.log(window.sessionStorage.getItem("SignedIn"))
     let accountBtn = document.getElementById("account-icon")
     accountBtn.addEventListener("mouseover", displayAccountInfo)
+    accountBtn.addEventListener("mouseleave", closeAccountInfo)
     let account = document.getElementById("account")
     account.addEventListener("mouseover", displayAccountInfo)
     account.addEventListener("mouseleave", closeAccountInfo)
-    document.getElementById("nav-bar").addEventListener("mouseleave", closeAccountInfo);
     if (window.sessionStorage.getItem("SignedIn") == "true") {
         console.log("signing in")
         document.getElementsByClassName("signed-out")[0].style.display = "none";
