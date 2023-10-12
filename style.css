@@ -164,20 +164,26 @@ button{
     color: #F8EFE5;
 }
 .footer-p1{
-    width: 30vw;
+    display: flex;
+    width: 35vw;
 }
 .footer-logo{
-    width: 100px;
+    width: 60px;
     align-self: flex-start;
 }
 .contact-footer{
     margin: 1%;
 }
-.footer-p2, .footer-p1{
+.footer-div-p1{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-self: flex-end;
+    margin-left: 1%;
 }
 .footer-p2{
+    display: flex;
+    flex-direction: column;
     align-self: flex-end;
 }
 .icons-list{

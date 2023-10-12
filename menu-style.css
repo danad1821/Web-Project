@@ -99,6 +99,7 @@
     justify-content: center;
     flex-direction: row;
     margin: 5%;
+    flex-wrap: wrap;
 }
 .menu-items{
     display: flex;
