@@ -6,11 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 45vh;
     background-image: url("https://png.pngtree.com/thumb_back/fh260/20170803/pngtree-Food-Menu-Fare-Meal-background-photo-869492.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: #F8EFE5;
 }
 .menu-main{
     position: relative;
@@ -32,11 +32,11 @@
     padding: 1%;
     width: 130px;
     text-align: center;
-    color: white;
+    color: #F8EFE5;
 }
 .menu-section-links{
     text-decoration: none;
-    color: white;
+    color: #F8EFE5;
     width: max-content;
 }
 .menu-section-nav, .menu-section-links:hover{
@@ -66,7 +66,7 @@
 }
 .main-items-links, .bev-items-links{
     text-decoration: none;
-    color: white;
+    color: #F8EFE5;
 }
 .main-section-nav:hover .main-items-list{
     display: block;
@@ -154,7 +154,7 @@
 }
 .checkout-btn{
     background-color: black;
-    color: white;
+    color: #F8EFE5;
     padding: 1% 1.5%;
     font-size: 1.1rem;
     margin: 1%;

@@ -20,9 +20,10 @@ function accountHover() {
     account.addEventListener("mouseover", displayAccountInfo)
     account.addEventListener("mouseleave", closeAccountInfo)
     if (window.sessionStorage.getItem("SignedIn") == "true") {
-        console.log("signing in")
         document.getElementsByClassName("signed-out")[0].style.display = "none";
-        document.getElementsByClassName("account-info")[0].style.display = "inherit";
+        let cur=document.getElementsByClassName("account-info")[0]
+        cur.style.display = "flex";
+        cur.style.flexDirection = "column";
         document.getElementById("username-text").innerText = user[0];
     }
 }
@@ -31,7 +32,7 @@ let btnSignOut=document.getElementById("sign-out-btn")
 btnSignOut.addEventListener("click", function(){
     window.sessionStorage.setItem("SignedIn", "false")
     document.getElementsByClassName("signed-out")[0].style.display = "block";
-        document.getElementsByClassName("account-info")[0].style.display = "none";
+    document.getElementsByClassName("account-info")[0].style.display = "none";
 })
 
 
