@@ -30,7 +30,7 @@ button{
 /*Navigation Bar*/
 .nav-bar{
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background-color: #104d40;
     position: relative;
     justify-content: center;
@@ -68,6 +68,8 @@ button{
     right: 0;
     padding: 0.5% 0.7%;
     margin: 0.5%;
+    width: 15px;
+    height: 20px;
 }
 .account-icons{
     fill: black;
@@ -128,7 +130,7 @@ button{
     padding-right: 2%;
     margin: 1.5% 0;
 }
-.signed-out a, #sign-out-btn:hover{
+.signed-out a:hover{
     color: #CE5B68;
 }
 #username-text{
@@ -136,6 +138,9 @@ button{
 }
 #cart-icon{
     cursor: pointer;
+}
+#sign-out-btn:hover{
+    color: #CE5B68;
 }
 #cart-icon:hover{
     fill: #CE5B68;

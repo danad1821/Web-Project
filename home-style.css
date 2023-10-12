@@ -27,11 +27,10 @@
 .main-logo{
   position: relative;
   width: 75vw;
-  
 }
 .signing-options{
   position: absolute;
-  bottom: 2%;
+  bottom: 10%;
   margin: 1%;
   width: 100%;
   text-align: center;
@@ -44,6 +43,7 @@
   margin: 1% 0.5%;
   width: 25%;
   font-weight: 500;
+  background-color: #F8EFE5;
 }
 .sign-links:hover{
   /* background-color: #C8EFE5; */
