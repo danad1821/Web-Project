@@ -1,0 +1,24 @@
+/* Contact Us Page: */
+
+/* Contact Us container styling */
+.contact-us-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+/* contact information styling */
+.contact-info{
+    width: 30vw;
+}
+#ul-info{
+    list-style-type: none;
+}
+
+/* Contact form styling */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
