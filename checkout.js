@@ -1,3 +1,13 @@
+// import { menuItem, items } from "./menu";
+// window.addEventListener("load", function(){
+//     let listMenu=getElementById("menu-items-list");
+//     items.forEach(elem=>{
+//         let newItem=document.createElement("li");
+//         newItem=elem;
+//         listMenu.appendChild(newItem);
+//     })
+// })
+
 function showPaymentMethod() {
     let method = document.getElementsByClassName("payment-info");
     method[0].style.display = "flex";
