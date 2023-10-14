@@ -19,52 +19,72 @@
 .sign-in-body {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    height: 80.75vh;
     flex-wrap: wrap;
 }
 .home-sign-in {
     display: flex;
     flex-direction: column;
+    margin-left: 12%;
     padding: 2%;
-    width: 300px;
-    background-color: black;
+    width: 27vw;
+    height: 65vh;
+    background-color: #104d40;
     color: white;
     border-radius: 12px;
 }
 .sign-in-title {
+    margin-bottom: 5%;
     text-align: center;
+    font-size: 3rem;
 }
 .sign-in-lbl {
     margin: 1%;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 10%;
 }
 .sign-in-input {
-    margin: 2% 0;
+    margin: 1.5%;
     font-size: 1.2rem;
+    height: 3.5vh;
+    width: 26vw;
+    outline: none;
 }
-
-.hori-line {
-    border-bottom: 3px dashed white;
-    width: 100%;
+div i{
+    margin-left: -7%; 
+    cursor: pointer; 
+    color: black;
 }
 
 .sign-in-btn {
     align-self: center;
-    width: 25%;
+    margin: 1.3%;
+    width: 7vw;
     font-size: 1.3rem;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     border: none;
-    margin: 5%;
+    margin-top: 12%;
+    margin-bottom: 8%;
     padding: 2%;
     border-radius: 12px;
 }
-
+.sign-in-btn:hover{
+    background-color: #CE5B68;
+    color: white;
+}
 .sign-up-text {
     align-self: center;
 }
-
 .sign-up-link {
-    color: blue;
+    color: #CE5B68;
+}
+.home-sign-in-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw; 
+}
+.login-in-img{
+    width: 50vw;
+    height: 80vh;
+    padding: 2%;
 }
