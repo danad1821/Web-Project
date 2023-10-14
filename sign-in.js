@@ -13,3 +13,15 @@ function signInLoad() {
         }
     })
 }
+// Toggle password visibility code
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#sign-in-pass');
+
+togglePassword.addEventListener("click", function() {
+    // toggle the icon
+    this.classList.toggle('fa-eye-slash');
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+});
