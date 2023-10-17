@@ -51,4 +51,33 @@ upDown[1].addEventListener("click", goDown)
 //         }
 //     })
 // });
-
+var menu = JSON.parse(menu);
+let menuList=document.getElementsByClassName("menu")[0];
+menu.forEach(element => {
+    let sectionElement=document.createElement("div");
+    sectionElement.className="menu-sections";
+    let sectionTitle=document.createElement("h2");
+    sectionTitle.className="section-title";
+    sectionTitle.textContent=element.name;
+    sectionElement.appendChild(sectionTitle);
+    let content=document.createElement("div");
+    content.className="menu-items";
+    element.items.forEach(item=>{
+        let innerContent=document.createElement("div");
+        innerContent.className="menu-item";
+        let image=document.createElement("img");
+        image.className="img-menu-item";
+        image.src=item.img;
+        innerContent.appendChild(image);
+        let title=document.createElement("h4");
+        title.textContent=item.name;
+        title.className="menu-item-name";
+        innerContent.append(title);
+        let description=document.createElement("p");
+        description.textContent="Description: "+item.description;
+        description.className="menu-item-description"
+        let price=document.createElement("p")
+    })
+    
+    
+});

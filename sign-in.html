@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,35 +14,44 @@
     <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-std" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
+
 <body onload="signInLoad()">
     <!-- Navigation Bar -->
-    <nav class="nav-bar-sign">
-        <a href="index.html">
-            <svg class="go-back-btn" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+    <nav class="nav-bar-sign" href="javascript:history.back()">
+        <a href="javascript:history.back()" class="go-back-text">
+            <svg class="go-back-btn" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
         </a>
-        <p class="go-back-text">
-             Back to Home
-        </p>
+        <a href="javascript:history.back()" class="go-back-text">Go Back</a>
+
     </nav>
     <!-- Body -->
-        <main class="sign-in-body">
+    <main class="sign-in-body">
         <div class="home-sign-in">
             <h1 class="sign-in-title">
                 Log In:
             </h1>
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
             <label class="sign-in-lbl" for="username">Username:</label>
-            <input class="sign-in-input" type="text" id="sign-in-user" placeholder="Username">
+            <input class="sign-in-input" type="text" id="sign-in-user" placeholder="Username" required>
             <label class="sign-in-lbl" for="password">Password:</label>
             <div class="sign-in-pass">
-                <input class="sign-in-input sign-in-pass" type="password" name="" placeholder="Password" id="sign-in-pass">
+                <input class="sign-in-input sign-in-pass" type="password" name="" placeholder="Password"
+                    id="sign-in-pass" required>
                 <i class="far fa-eye" id="togglePassword"></i>
             </div>
             <button class="sign-in-btn" id="sign-in-btn">Log In</button>
             <p class="sign-up-text">Don't have an account? <a href="" class="sign-up-link">Sign Up</a></p>
         </div>
         <div class="home-sign-in-img">
-            <img src="Malaz Design/Mobile login Customizable Cartoon Illustrations _ Bro Style.jpeg" alt="" class="login-in-img">
+            <img src="Malaz Design/Mobile login Customizable Cartoon Illustrations _ Bro Style.jpeg" alt=""
+                class="login-in-img">
         </div>
+        
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -55,13 +65,15 @@
         <div class="footer-p2">
             <div class="icons-list">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <path
                             d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
                     </svg>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <style>
                             svg {
                                 fill: #ffffff;
@@ -72,7 +84,8 @@
                     </svg>
                 </a>
                 <a href="https://twitter.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512">
                         <style>
                             svg {
                                 fill: #ffffff
@@ -83,7 +96,8 @@
                     </svg>
                 </a>
                 <a href="https://www.tiktok.com/en/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <style>
                             svg {
                                 fill: #ffffff
@@ -101,4 +115,5 @@
 
     </script>
 </body>
+
 </html>

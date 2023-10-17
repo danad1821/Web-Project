@@ -35,6 +35,5 @@ btnSignOut.addEventListener("click", function(){
     document.getElementsByClassName("account-info")[0].style.display = "none";
 })
 
-
-
+const swup = new Swup();
 

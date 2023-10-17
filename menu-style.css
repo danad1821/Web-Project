@@ -92,7 +92,7 @@
     width: 100%;
 }
 .subsection-title{
-    margin-left: 50px;
+    margin-left: 150px;
     scroll-margin-top: 100px;
 }
 .menu-subsection{
@@ -107,6 +107,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .menu-item{
     margin: 30px;
@@ -131,6 +132,9 @@
 .menu-item-name{
     text-align: center;
     margin: 0.2%;
+}
+.menu-item-description{
+    height: 100px;
 }
 .quantity-title, .add-btn{
     font-size: 1.1rem;

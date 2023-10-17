@@ -1,0 +1,519 @@
+{
+    "menu": [
+        {
+            "name": "Starters",
+            "items": [
+                {
+                    "name": "French Fries",
+                    "img":"https://static.vecteezy.com/system/resources/previews/025/062/054/original/french-fries-on-white-bowl-isolated-on-transparent-background-fried-fast-food-snack-isolated-food-photography-junk-food-fried-potatoes-free-png.png",
+                    "description": "Golden fries with a side of ketchup.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Curly Fries",
+                    "img":"https://lovefoodnotcooking.com/wp-content/uploads/2021/03/air-fryer-curly-fries_l-735x490.jpg",
+                    "description": "Golden curly fries with a side of ketchup.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Mozzarella Sticks",
+                    "img":"https://media.istockphoto.com/id/623524610/photo/basket-of-mozzarella-cheese-sticks.jpg?s=612x612&w=0&k=20&c=khr8MWnI8vR2paQvgztAhWzNB4swnsK2YHtebJ-5Aik=",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Halloumi Sticks",
+                    "img":"https://assets.bonappetit.com/photos/61f301e86a4ddd46fb87dec2/16:9/w_1861,h_1047,c_limit/20220126%20ITS%20Halloumi%20LEDE.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Onion Rings",
+                    "img":"https://t4.ftcdn.net/jpg/06/37/44/03/360_F_637440368_j7RPSxQ85UpThG9TkYdWIoIfHDzYeLH4.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Nachos",
+                    "img":"https://roostersroost.com/wp-content/uploads/2021/01/istockphoto-463751133-612x612-1.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Spring Rolls",
+                    "img":"https://buffetstjean.com/wp-content/uploads/AdobeStock_170840167.jpeg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Garlic Bread",
+                    "img":"https://www.allrecipes.com/thmb/ymrjQ3GFq_Fc7Fu2yfvIj108tcM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21080-great-garlic-bread-DDMFS-4x3-e1c7b5c79fde4d629a9b7bce6c0702ed.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Hummus",
+                    "img":"https://www.seriouseats.com/thmb/Y1y-PfXuk1swDWo3_CGtAmQ3c64=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/israeli-style-extra-smooth-hummus-recipe-hero-03_1-c5024cd79b3c4867899e96833dd2c251.JPG",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Warak Enab",
+                    "img":"https://bistrobadia.de/wp-content/uploads/2022/05/gefuellte-weinblaetter-warak-enab-500x375.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Kebbe",
+                    "img":"https://zaatarandzaytoun.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-08-at-11.21.11.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Crispy Shrimp",
+                    "img":"https://www.thespruceeats.com/thmb/5xkGMB8ZXz3KGF_y4Uxf7ZfQAvQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ebi-fry-fried-shrimp-2031450-hero-01-46c436a89c164a9ab5980f888097fcd2.jpg",
+                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "price": 10.00
+                },
+                {
+                    "name": "Crispy Chicken",
+                    "img":"https://www.licious.in/blog/wp-content/uploads/2019/05/Drumsticks-liquidation-plan-05.jpg",
+                    "description": "Loaded nachos with your choice of toppings.",
+                    "price": 12.00
+                }
+            ]
+        },
+        {
+            "name": "Main Dishes",
+            "items": [
+                {
+                    "name": "Platters",
+                    "sub-items": [
+                        {
+                            "name": "Grilled Shrimps Platter",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Grilled Chicken Platter",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Grilled Beef Steak Platter",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Grilled Shish Tawouk Platter",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Grilled Shish Beef Platter",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Mixed Grill Platter",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Sandwiches",
+                    "sub-items": [
+                        {
+                            "name": "Grilled Chicken Sandwich",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "American Sub",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Philly Cheese Steak Sandwich",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Fries Sandwich",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Tawouk Sandwich",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Spicy Chicken Sandwich",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Falafel Sandwich",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Chicken Shawarma",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Beef Shawarma",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Turkish Chicken Doner",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Turkish Beef Doner",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Burgers",
+                    "sub-items": [
+                        {
+                            "name": "Grilled Chicken Burger",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Mozzarella Chicken Burger",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Grilled Beef Burger",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Swiss Cheese Burger",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Pasta",
+                    "sub-items": [
+                        {
+                            "name": "Spaghetti Bolognaise",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Lasagne",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Pasta Carbonara",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Fettucine Alfredo",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Spinach Ravioli",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Pizza",
+                    "sub-items": [
+                        {
+                            "name": "Margarita Pizza",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Veggie Pizza",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Cheese Pizza",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Peperoni Pizza",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "BBQ Chicken Pizza",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Meat Pizza",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Salads",
+                    "sub-items": [
+                        {
+                            "name": "Caesar Salad",
+                            "img":"",
+                            "description": "A salad containing grilled chicken slices, lettuce, parmsean cheese, and crotons mixed in with our signiture Caesar sauce.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Kale Chicken Salad",
+                            "img":"",
+                            "description": "A salad containing grilled chicken slices, kale,.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Greek Salad",
+                            "img":"",
+                            "description": " salad containing cherry tomatoes, lettuce, olives, red onions, and feta cheese mixed with a vinegrette.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Crab Salas",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Fatoush",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Taboule",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kids Meal",
+            "items": [
+                {
+                    "name": "Mini Chicken Burger Meal",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Mini Beef Burger Meal",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Macaroni and Cheese",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Classic Hot Dog",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Dino Nuggets Meal",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Grilled Cheese Sandwich",
+                    "img":"",
+                    "description": "A slice of chocolate cake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Mini Margarita Pizza Meal",
+                    "img":"",
+                    "description": "A scoop of ice cream with your choice of topping.",
+                    "price": 4.00
+                }
+            ]
+        },
+        {
+            "name": "Desserts",
+            "items": [
+                {
+                    "name": "Cheesecake",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Cheesecake",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Cheesecake",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Cheesecake",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Cheesecake",
+                    "img":"",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Chocolate Cake",
+                    "img":"",
+                    "description": "A slice of chocolate cake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "name": "Ice Cream",
+                    "img":"",
+                    "description": "A scoop of ice cream with your choice of topping.",
+                    "price": 4.00
+                }
+            ]
+        },
+        {
+            "name": "Beverages",
+            "items": [
+                {
+                    "name": "Hot Beverages",
+                    "sub-items": [
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                },
+                {
+                    "name": "Cold Beverages",
+                    "sub-items": [
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "name": "Steak",
+                            "img":"",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

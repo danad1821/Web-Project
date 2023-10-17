@@ -17,7 +17,8 @@
 <body onload="accountHover()">
     <!-- Navigation Bar -->
     <nav class="nav-bar" id="nav-bar">
-        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo" class="logo-img"></a>
+        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
+                class="logo-img"></a>
         <a href="index.html" class="nav-options">Home</a>
         <a href="about.html" class="nav-options">About Us</a>
         <a href="locations.html" class="nav-options">Locations</a>
@@ -38,7 +39,11 @@
                 <li>
                     <div class="account-info_div">
                         <h4 id="username-text">Username</h4>
-                        <svg class="account-icons" id="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                        <svg class="account-icons" id="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                        </svg>
                     </div>
                 </li>
                 <li><button id="sign-out-btn">Sign Out</button></li>
@@ -46,7 +51,7 @@
         </div>
     </nav>
     <!-- Body -->
-    <main class="menu-body">
+    <main class="menu-body transition-fade">
         <div class="menu-title">
             <h1>Menu</h1>
         </div>
@@ -59,6 +64,9 @@
                 <div class="menu-section-nav main-section-nav">
                     <a href="#main-dishes" class="menu-section-links">Main Dishes</a>
                     <ul class="main-items-list">
+                        <li class="main-items-options"><a href="#Platters" class="main-items-links">
+                            Platters
+                        </a></li>
                         <li class="main-items-options"><a href="#sandwiches" class="main-items-links">
                                 Sandwiches
                             </a></li>
@@ -96,649 +104,6 @@
             </nav>
             <!-- Actual Menu -->
             <div class="menu">
-                <!-- Starters -->
-                <div class="menu-sections" id="starters">
-                    <h2 class="section-title">Starters:</h2>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">French Fries</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Curly Fries</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Halloumi Sticks</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Onion Rings</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Nachos and Cheese</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Spring Rolls</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Garlic Bread</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Main Dishes -->
-                <div class="menu-sections" id="main-dishes">
-                    <h2 class="section-title">Main dishes:</h2>
-                    <div class="menu-items-with-categories">
-                        <!-- Sandwiches -->
-                        <h3 class="subsection-title" id="sandwiches">Sandwiches:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">French Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Curly Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Burgers -->
-                        <h3 class="subsection-title" id="burgers">Burgers:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Halloumi Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pasta -->
-                        <h3 class="subsection-title" id="pasta">Pasta:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Halloumi Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pizza -->
-                        <h3 class="subsection-title" id="pizza">Pizza:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Halloumi Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Salads -->
-                        <h3 class="subsection-title" id="salads">Salads:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://as2.ftcdn.net/v2/jpg/00/84/97/17/1000_F_84971743_9E8u4gTuqrxWDt3vyvCs1o1IW5Pze1Hd.jpg"
-                                    alt="">
-                                <h4 class="menu-item-name">Caesar Salad</h4>
-                                <p class="menu-item-description"><b>Description:</b> A salad containing grilled chicken slices, lettuce, parmsean cheese, and crotons mixed in with our signiture Caesar sauce.</p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://lifemadesweeter.com/wp-content/uploads/Low-Carb-Keto-Kale-Salad-with-Caesar-Dressing.jpg"
-                                    alt="">
-                                <h4 class="menu-item-name">Kale Chicken Salad</h4>
-                                <p class="menu-item-description"><b>Description:</b> A salad containing grilled chicken slices, kale, </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://justinospizzeria.com/wp-content/uploads/2020/03/Greek-Salad-scaled.jpeg"
-                                    alt="">
-                                <h4 class="menu-item-name">Greek Salad</h4>
-                                <p class="menu-item-description"><b>Description:</b> A salad containing cherry tomatoes, lettuce, olives, red onions, and feta cheese mixed with a .</p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://sureketo.com/images/1x1/crab-salad.jpg"
-                                    alt="">
-                                <h4 class="menu-item-name">Crab Salad</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://www.cookingnook.com/wp-content/uploads/2019/07/fatoush-salad-700.jpg"
-                                    alt="">
-                                <h4 class="menu-item-name">Fatoush</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://media.istockphoto.com/id/613785440/photo/tabbouleh-salad-with-couscous.jpg?s=612x612&w=0&k=20&c=qKc2cnyvGCuMGIZWVahXDOz-9XAi_eUrHQFWMKBHKN4="
-                                    alt="">
-                                <h4 class="menu-item-name">Taboule</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Kids Meals -->
-                <div class="menu-sections" id="kids-meals">
-                    <h2 class="section-title">Kids Meals:</h2>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Cheesecake</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Curly Fries</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Halloumi Sticks</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Onion Rings</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Nachos and Cheese</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Spring Rolls</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Garlic Bread</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Desserts -->
-                <div class="menu-sections" id="desserts">
-                    <h2 class="section-title">Desserts:</h2>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Cheesecake</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Curly Fries</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Halloumi Sticks</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Onion Rings</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Nachos and Cheese</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Spring Rolls</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img class="img-menu-item"
-                                src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                alt="">
-                            <h4 class="menu-item-name">Garlic Bread</h4>
-                            <p class="menu-item-description"><b>Description:</b> </p>
-                            <p class="menu-item-price"><b>Price:</b></p>
-                            <div class="menu-item-details">
-                                <label for="quantity" class="quantity-title">Quantity:</label>
-                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Beverages -->
-                <div class="menu-sections" id="beverages">
-                    <h2 class="section-title">Beverages:</h2>
-                    <div class="menu-items-with-categories">
-                        <!-- Hot -->
-                        <h3 class="subsection-title" id="hot">Hot Beverages:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">French Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">French Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">French Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">French Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Curly Fries</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Cold -->
-                        <h3 class="subsection-title" id="cold">Cold Beverages:</h3>
-                        <div class="menu-subsection">
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Mozzarella Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img class="img-menu-item"
-                                    src="https://images.unsplash.com/photo-1612441804231-77a36b284856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                                    alt="">
-                                <h4 class="menu-item-name">Halloumi Sticks</h4>
-                                <p class="menu-item-description"><b>Description:</b> </p>
-                                <p class="menu-item-price"><b>Price:</b></p>
-                                <div class="menu-item-details">
-                                    <label for="quantity" class="quantity-title">Quantity:</label>
-                                    <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
-                                    <button class="add-btn">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- Up and Down Buttons -->
@@ -782,13 +147,15 @@
         <div class="footer-p2">
             <div class="icons-list">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <path
                             d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
                     </svg>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <style>
                             svg {
                                 fill: #ffffff;
@@ -799,7 +166,8 @@
                     </svg>
                 </a>
                 <a href="https://twitter.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512">
                         <style>
                             svg {
                                 fill: #ffffff
@@ -810,7 +178,8 @@
                     </svg>
                 </a>
                 <a href="https://www.tiktok.com/en/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <style>
                             svg {
                                 fill: #ffffff
@@ -824,7 +193,9 @@
             <p class="copyright">&copy; 2023 Malaz Copyright</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/swup@4"></script>
     <script src="main.js"></script>
+    <script src="menu.json"></script>
     <script src="menu.js"></script>
 </body>
 
