@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
         upDown[0].style.display = "none";
         upDown[1].style.display = "block";
     }
-    else if (sHeight > bottom - 1300) {
+    else if (sHeight > bottom - 1200) {
         upDown[0].style.display = "block"
         upDown[1].style.display = "none"
     }

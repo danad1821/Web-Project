@@ -7,62 +7,62 @@
                 {
                     "itemName": "French Fries",
                     "img":"https://static.vecteezy.com/system/resources/previews/025/062/054/original/french-fries-on-white-bowl-isolated-on-transparent-background-fried-fast-food-snack-isolated-food-photography-junk-food-fried-potatoes-free-png.png",
-                    "description": "Golden fries with a side of ketchup.",
-                    "price": 10.00
+                    "description": "A bucket of golden fries with a side of ketchup.",
+                    "price": 3.00
                 },
                 {
                     "itemName": "Curly Fries",
                     "img":"https://lovefoodnotcooking.com/wp-content/uploads/2021/03/air-fryer-curly-fries_l-735x490.jpg",
-                    "description": "Golden curly fries with a side of ketchup.",
-                    "price": 10.00
+                    "description": "A bucket of curly fries with a side of ketchup.",
+                    "price": 4.00
                 },
                 {
                     "itemName": "Mozzarella Sticks",
                     "img":"https://media.istockphoto.com/id/623524610/photo/basket-of-mozzarella-cheese-sticks.jpg?s=612x612&w=0&k=20&c=khr8MWnI8vR2paQvgztAhWzNB4swnsK2YHtebJ-5Aik=",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "6 pcs. served with Thousand Island Sauce.",
+                    "price": 6.00
                 },
                 {
                     "itemName": "Halloumi Sticks",
                     "img":"https://assets.bonappetit.com/photos/61f301e86a4ddd46fb87dec2/16:9/w_1861,h_1047,c_limit/20220126%20ITS%20Halloumi%20LEDE.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "6 pcs. served with salsa.",
+                    "price": 6.00
                 },
                 {
                     "itemName": "Onion Rings",
                     "img":"https://t4.ftcdn.net/jpg/06/37/44/03/360_F_637440368_j7RPSxQ85UpThG9TkYdWIoIfHDzYeLH4.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "8 pcs. served with BBQ Sauce.",
+                    "price": 5.50
                 },
                 {
                     "itemName": "Nachos",
                     "img":"https://roostersroost.com/wp-content/uploads/2021/01/istockphoto-463751133-612x612-1.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "Nachos served with Salsa & Sour Cream.",
+                    "price": 7.00
                 },
                 {
                     "itemName": "Spring Rolls",
                     "img":"https://buffetstjean.com/wp-content/uploads/AdobeStock_170840167.jpeg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "4pcs served with soy sauce.",
+                    "price": 5.60
                 },
                 {
                     "itemName": "Garlic Bread",
                     "img":"https://www.allrecipes.com/thmb/ymrjQ3GFq_Fc7Fu2yfvIj108tcM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21080-great-garlic-bread-DDMFS-4x3-e1c7b5c79fde4d629a9b7bce6c0702ed.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "4 pcs of baked bread topped with cheese and garlic served with salsa.",
+                    "price": 5.50
                 },
                 {
                     "itemName": "Hummus",
                     "img":"https://www.seriouseats.com/thmb/Y1y-PfXuk1swDWo3_CGtAmQ3c64=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/israeli-style-extra-smooth-hummus-recipe-hero-03_1-c5024cd79b3c4867899e96833dd2c251.JPG",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "A chickpea dip served with olive oil and arabic bread.",
+                    "price": 4.00
                 },
                 {
                     "itemName": "Warak Enab",
                     "img":"https://bistrobadia.de/wp-content/uploads/2022/05/gefuellte-weinblaetter-warak-enab-500x375.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
-                    "price": 10.00
+                    "description": "6 pcs of grape Leaves stuffed with rice and meat.",
+                    "price": 6.00
                 },
                 {
                     "itemName": "Kebbe",
@@ -413,46 +413,46 @@
             "id":"desserts",
             "items": [
                 {
-                    "itemName": "Cheesecake",
-                    "img":"",
+                    "itemName": "Blueberry Cheesecake",
+                    "img":"https://www.cookwithnabeela.com/wp-content/uploads/2023/06/BlueberryCheesecake.webp",
                     "description": "A slice of cheesecake with your choice of topping.",
                     "price": 6.00
                 },
                 {
-                    "itemName": "Cheesecake",
-                    "img":"",
+                    "itemName": "Strawberry Cheesecake",
+                    "img":"https://sugarspunrun.com/wp-content/uploads/2023/06/Strawberry-cheesecake-recipe-6-of-8.jpg",
                     "description": "A slice of cheesecake with your choice of topping.",
                     "price": 6.00
                 },
                 {
-                    "itemName": "Cheesecake",
-                    "img":"",
+                    "itemName": "Chocolate cake",
+                    "img":"https://tastesbetterfromscratch.com/wp-content/uploads/2023/04/Hershey-Chocolate-Cake-8-2-500x500.jpg",
                     "description": "A slice of cheesecake with your choice of topping.",
                     "price": 6.00
                 },
                 {
-                    "itemName": "Cheesecake",
-                    "img":"",
-                    "description": "A slice of cheesecake with your choice of topping.",
-                    "price": 6.00
-                },
-                {
-                    "itemName": "Cheesecake",
-                    "img":"",
-                    "description": "A slice of cheesecake with your choice of topping.",
-                    "price": 6.00
-                },
-                {
-                    "itemName": "Chocolate Cake",
-                    "img":"",
-                    "description": "A slice of chocolate cake with your choice of topping.",
-                    "price": 6.00
-                },
-                {
-                    "itemName": "Ice Cream",
-                    "img":"",
+                    "itemName": "Carrot Cake",
+                    "img":"https://www.mybakingaddiction.com/wp-content/uploads/2009/09/serving-slice-of-carrot-cake-hero.jpg",
                     "description": "A scoop of ice cream with your choice of topping.",
                     "price": 4.00
+                },
+                {
+                    "itemName": "Brownie",
+                    "img":"https://chocolatecoveredkatie.com/wp-content/uploads/2022/11/Vegan-Brownies.jpg",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "itemName": "Banana Split",
+                    "img":"https://www.thespruceeats.com/thmb/3QatTcsVjKeDVCD-rIeUa4fSRAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/perfect-banana-split-recipe-305712-hero-01-ef0482a539394da0b5ba64ade0c73b98.jpg",
+                    "description": "A slice of cheesecake with your choice of topping.",
+                    "price": 6.00
+                },
+                {
+                    "itemName": "Cinnamon Roll",
+                    "img":"https://ohsweetbasil.com/wp-content/uploads/sticky-apple-cinnamon-rolls-with-brown-butter-frosting-14-scaled.jpg",
+                    "description": "A slice of chocolate cake with your choice of topping.",
+                    "price": 6.00
                 }
             ]
         },
@@ -465,8 +465,38 @@
                     "id":"hot",
                     "subItems": [
                         {
-                            "itemName": "Steak",
-                            "img":"",
+                            "itemName": "Green Tea",
+                            "img":"https://www.sharmispassions.com/wp-content/uploads/2011/04/GREENTEA5-500x500.jpg",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Chamomile Tea",
+                            "img":"https://cdn.shopify.com/s/files/1/1980/1825/files/uptown-tea-shop-chamomile-tea-cup-93193226-2500.jpg?v=1627569674",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Jasmine Tea",
+                            "img":"https://moksa.co.in/cdn/shop/products/Jasmine_Pearls_Green_Tea.webp?v=1681728098",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Expresso",
+                            "img":"data:image/jpeg;base64,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",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Cappuccino",
+                            "img":"https://lh3.googleusercontent.com/E5lJKAWWmnFzEJox55scgDigxoXE8BZJX_QxPnlS6WBKgdjjqxdJyk1zehjloN8tkxl9o6QPShulcWcQTRlVTDjACen8csBnNrU=w4858-h3644-c-rj-v1-e365",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Latte",
+                            "img":"https://coffeeaffection.com/wp-content/uploads/2020/01/how-to-make-a-latte-at-home.jpg",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         }
@@ -477,50 +507,56 @@
                     "id":"cold",
                     "subItems": [
                         {
-                            "itemName": "Steak",
+                            "itemName": "Iced Tea Peach",
+                            "img":"https://twentyfoursevenapi.weevi.com/content/uploads/ekomproducts/819~6281006710009.jpg",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Iced Tea Lemon",
+                            "img":"https://marqetapi.weevi.com/content/uploads/ekomproducts/271~32449.jpg",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Lemonade",
+                            "img":"https://www.simplyrecipes.com/thmb/4LFrc9hSMoKErr2WI7tThcnvWwA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Perfect-Lemonade-LEAD-08-B-441ceb568f854bb485dbed79e082bb4a.jpg",
+                            "description": "A grilled steak with your choice of sides.",
+                            "price": 25.00
+                        },
+                        {
+                            "itemName": "Minted Lemonade",
                             "img":"",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         },
                         {
-                            "itemName": "Steak",
-                            "img":"",
+                            "itemName": "Orange Juice",
+                            "img":"https://static.toiimg.com/thumb/msid-68562297,width-1280,resizemode-4/68562297.jpg",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         },
                         {
-                            "itemName": "Steak",
-                            "img":"",
+                            "itemName": "Pepsi",
+                            "img":"https://cdnprod.mafretailproxy.com/sys-master-root/h52/hce/27150215217182/13191_main.jpg_480Wx480H",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         },
                         {
-                            "itemName": "Steak",
-                            "img":"",
+                            "itemName": "7up",
+                            "img":"https://waffershop.com/image/cache/catalog/all-product/market/soft-drink/sevennn-550x550.jpeg.webp",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         },
                         {
-                            "itemName": "Steak",
-                            "img":"",
+                            "itemName": "Miranda",
+                            "img":"https://static1.e-baqala.com/14781-large_default/pepsi-miranda-orange-330ml.jpg",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         },
                         {
-                            "itemName": "Steak",
-                            "img":"",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
-                        },
-                        {
-                            "itemName": "Steak",
-                            "img":"",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
-                        },
-                        {
-                            "itemName": "Steak",
-                            "img":"",
+                            "itemName": "Coca Cola",
+                            "img":"https://cdnprod.mafretailproxy.com/sys-master-root/hb2/h73/49404207169566/1700Wx1700H_413026_main.jpg",
                             "description": "A grilled steak with your choice of sides.",
                             "price": 25.00
                         }

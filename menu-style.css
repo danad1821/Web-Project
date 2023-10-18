@@ -29,7 +29,7 @@
 }
 .menu-section-nav{
     margin: 0 1%;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 1%;
     width: 130px;
     text-align: center;
@@ -52,7 +52,7 @@
     padding: 10%;
     text-align: left;
     background-color: #CE5B68;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position: absolute;
     left: 0;
     display: none;
@@ -80,11 +80,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .section-title{
-    padding-top: 50px;
-    margin-top: -50px;
+    padding-top: 65px;
+    margin-top: -65px;
     margin: 1%;
     font-size: 2em;
     text-align: center;
@@ -92,25 +92,27 @@
     width: 100%;
 }
 .subsection-title{
-    margin-left: 150px;
-    scroll-margin-top: 100px;
+    /* margin-left: 150px; */
+    scroll-margin-top: 87px;
 }
 .menu-subsection{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
-    margin: 3%;
+    /* margin: 3%; */
     flex-wrap: wrap;
-    max-width: 100vw;
+    width: 85vw;
 }
 .menu-items{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 85vw;
 }
 .menu-item{
-    margin: 30px;
+    margin: 30px 0;
+    margin-right: 45px;
     background-color: #BAC9A3;
     width: 230px;
     height: 380px;
