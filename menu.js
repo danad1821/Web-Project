@@ -1,15 +1,21 @@
-// class menuItem{
-//     constructor(fname, price, quantity){
-//         this.fname=fname;
-//         this.price=price
-//         this.quantity=quantity
-//     }
-//     printItem() {
-//         return this.fname + " x"+this.quantity+" Price:"+this.price
-//     }
-// }
-// let items=[];
-// export {menuItem, items};
+class menuItem {
+    constructor(fname, price) {
+        this.fname = fname;
+        this.price = price;
+    }
+    findPrice(quantity){
+        return this.price*quantity;
+    }
+}
+class oItem{
+    constructor(fname, quantity, price){
+        this.fname = fname;
+        this.price = price;
+        this.quantity=quantity;
+    }
+}
+let menuitems = [];
+let orderedItems=[];
 let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
 let upBtn = document.getElementById("up-btn");
@@ -48,7 +54,7 @@ fetch('menu.json')
             sectionElement.classList.add("menu-sections");
             let sectionTitle = document.createElement("h2");
             sectionTitle.classList.add("section-title");
-            sectionTitle.id=item.id;
+            sectionTitle.id = item.id;
             sectionTitle.textContent = item.sectionName;
             sectionElement.appendChild(sectionTitle);
             let content = document.createElement("div");
@@ -69,23 +75,25 @@ fetch('menu.json')
                         <button class="add-btn">+</button>
                     </div>
                 `
+                    let newDish = new menuItem(item.itemName, item.price)
+                    menuitems.push(newDish);
                     content.appendChild(innerContent);
                 }
-                else{
-                    let category=document.createElement("div");
+                else {
+                    let category = document.createElement("div");
                     category.classList.add("menu-items-with-categories");
-                    let subtitle=document.createElement("h3");
+                    let subtitle = document.createElement("h3");
                     subtitle.classList.add("subsection-title");
-                    subtitle.id=item.id;
-                    subtitle.textContent=item.subName
+                    subtitle.id = item.id;
+                    subtitle.textContent = item.subName
                     category.appendChild(subtitle)
-                    let subsection=document.createElement("div");
+                    let subsection = document.createElement("div");
                     subsection.classList.add("menu-subsection");
-                    item.subItems.forEach(subItem=>{
+                    item.subItems.forEach(subItem => {
                         let innerContent = document.createElement("div");
                         innerContent.classList.add("menu-item");
                         innerContent.innerHTML =
-                        `
+                            `
                         <img class="img-menu-item"src="${subItem.img}"">
                         <h4 class="menu-item-name">${subItem.itemName}</h4>
                         <p class="menu-item-description"><b>Description:</b> ${subItem.description}</p>
@@ -96,6 +104,8 @@ fetch('menu.json')
                             <button class="add-btn">+</button>
                         </div>
                         `
+                        let newDish = new menuItem(subItem.itemName, subItem.price)
+                        menuitems.push(newDish);
                         subsection.appendChild(innerContent)
                     })
                     category.appendChild(subsection)
@@ -105,6 +115,22 @@ fetch('menu.json')
             sectionElement.appendChild(content)
             menulist.appendChild(sectionElement);
         });
+        // for (let i = 0; i < menuitems.length; i++) {
+        //     console.log(menuitems[i])
+        // }
         bottom = document.documentElement.scrollHeight;
+        for(let i=0; i<addItems.length; i++){
+            addItems[i].addEventListener("click", function(){
+                let qt=document.getElementsByClassName("menu-item-quantity")[i].value;
+                if(qt>0){
+                    let orderedItem= new oItem(menuitems[i].fname, qt,menuitems[i].findPrice(qt));
+                    orderedItems.push(orderedItem);
+                    qt=null;
+                }
+            })
+        }
     })
     .catch(error => console.log('Error:', error));
+export {oItem, orderedItems}
+    
+    

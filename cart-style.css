@@ -1,0 +1,26 @@
+.nav-bar-cart {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5%;
+}
+
+.nav-bar-cart a {
+    text-decoration: none;
+    color: #104d40;
+    font-weight: 900;
+}
+
+.go-back-text,
+.go-back-btn {
+    padding: 0.5%;
+    margin: 0.5% 0;
+}
+
+.go-back-btn {
+    fill: black;
+    font-size: 1.5rem;
+}
+
+.go-back-text {
+    font-size: 1.2rem;
+}
