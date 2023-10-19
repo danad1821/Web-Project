@@ -62,7 +62,7 @@ button{
     height: 120px;
     width: 230px;
     margin-top: 1.5%;
-    padding: 1%;
+    padding: 2%;
     padding-right: 1.5%;
 }
 .account-icon{
@@ -86,7 +86,7 @@ button{
     top: 82%;
     right: 1.5%;
     background-color: #F8EFE5;
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 600;
     width: 120px;
     height: 75px;
@@ -122,10 +122,15 @@ button{
 .account-info_div{
     display: flex;
     justify-content: space-between;
-    width: 7vw;
+    width: 110px;
     align-items: center;
     border-bottom: 1px solid black;
     padding-bottom: 8px;
+}
+.account-info_div>a{
+    border: none;
+    background: none;
+    text-decoration: none;
 }
 .signed-out{
     width: 90%;
