@@ -18,6 +18,7 @@
 /*Navigation of Menu*/
 .menu-nav{
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: #CE5B68;
     width: 100%;
@@ -74,6 +75,20 @@
 }
 .bev-section-nav:hover .beverages-items-list{
     display: block;
+}
+#cart-icon-menu{
+    cursor: pointer;
+    /* margin: 1%; */
+    font-size: 1.8em;
+    /* position: absolute;
+    right: 0;
+    top: 0%;
+    margin-right: 0; */
+    margin-left: 300%;
+    margin-right: 0;
+}
+#cart-icon-menu:hover{
+    fill: #FAD370;
 }
 /*Menu*/
 .menu-sections{

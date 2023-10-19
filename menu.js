@@ -1,21 +1,15 @@
-class menuItem {
-    constructor(fname, price) {
+class oItem {
+    constructor(fname, quantity, price) {
         this.fname = fname;
         this.price = price;
+        this.quantity = quantity;
     }
-    findPrice(quantity){
-        return this.price*quantity;
-    }
-}
-class oItem{
-    constructor(fname, quantity, price){
-        this.fname = fname;
-        this.price = price;
-        this.quantity=quantity;
+    findPrice(quantity) {
+        return this.price * quantity;
     }
 }
 let menuitems = [];
-let orderedItems=[];
+let orderedItems = [];
 let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
 let upBtn = document.getElementById("up-btn");
@@ -75,8 +69,9 @@ fetch('menu.json')
                         <button class="add-btn">+</button>
                     </div>
                 `
-                    let newDish = new menuItem(item.itemName, item.price)
+                    let newDish = new oItem(item.itemName, 0, item.price)
                     menuitems.push(newDish);
+                    window.sessionStorage.setItem('menu', JSON.stringify(menuitems))
                     content.appendChild(innerContent);
                 }
                 else {
@@ -104,8 +99,9 @@ fetch('menu.json')
                             <button class="add-btn">+</button>
                         </div>
                         `
-                        let newDish = new menuItem(subItem.itemName, subItem.price)
+                        let newDish = new oItem(subItem.itemName, 0, subItem.price)
                         menuitems.push(newDish);
+                        window.sessionStorage.setItem('menu', JSON.stringify(menuitems))
                         subsection.appendChild(innerContent)
                     })
                     category.appendChild(subsection)
@@ -119,18 +115,21 @@ fetch('menu.json')
         //     console.log(menuitems[i])
         // }
         bottom = document.documentElement.scrollHeight;
-        for(let i=0; i<addItems.length; i++){
-            addItems[i].addEventListener("click", function(){
-                let qt=document.getElementsByClassName("menu-item-quantity")[i].value;
-                if(qt>0){
-                    let orderedItem= new oItem(menuitems[i].fname, qt,menuitems[i].findPrice(qt));
+        
+        for (let i = 0; i < addItems.length; i++) {
+            addItems[i].addEventListener("click", function () {
+                let qt = document.getElementsByClassName("menu-item-quantity")[i].value;
+                if (qt > 0) {
+                    let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt));
                     orderedItems.push(orderedItem);
-                    qt=null;
+                    qt = null;
+                    window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
                 }
             })
         }
+        
     })
     .catch(error => console.log('Error:', error));
-export {oItem, orderedItems}
+
     
     
