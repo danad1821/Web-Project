@@ -7,6 +7,11 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 h1{
     margin: 0.5%;
     font-family: 'Tw Cen MT Std', sans-serif;
@@ -172,6 +177,7 @@ button{
     position: relative;
     bottom: 0%;
     color: #F8EFE5;
+    margin-top: auto;
 }
 .footer-p1{
     display: flex;
@@ -210,6 +216,9 @@ button{
     font-size: 2rem;
 }
 @media screen and (max-width: 760px){
+    main{
+        min-height: 78vh;
+    }
     .nav-bar{
         font-size: 1.3em;
     }
