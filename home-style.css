@@ -34,19 +34,30 @@
   width: 100%;
   text-align: center;
 }
+.signing-options button{
+  background-color: #F8EFE5;
+  border: 3px solid #104d40;
+  width: 100px;
+  padding: 0.5%;
+  font-size: 1.2rem;
+  margin: 0.5%;
+}
 .sign-links{
   text-decoration: none;
   color: #104d40;
-  padding: 0.5% 1%;
-  border: 3px solid #104d40;
+  padding: 1%;
   margin: 1% 0.5%;
-  width: 25%;
   font-weight: 500;
-  background-color: #F8EFE5;
 }
-.sign-links:hover{
+.signing-options button:hover .sign-links{
   /* background-color: #C8EFE5; */
   color: #F8EFE5;
+  transition: all 0.5s ease;
+}
+.signing-options button:hover{
+  /* background-color: #C8EFE5; */
   border: 3px solid #CE5B68;
   background-color: #CE5B68;
+  color: #F8EFE5;
+  transition: all 0.5s ease;
 }

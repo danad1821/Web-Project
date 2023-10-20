@@ -12,7 +12,6 @@ function closeAccountInfo() {
     account[0].style.display = "none"
 }
 function accountHover() {
-    console.log(window.sessionStorage.getItem("SignedIn"))
     let accountBtn = document.getElementById("account-icon")
     accountBtn.addEventListener("mouseover", displayAccountInfo)
     accountBtn.addEventListener("mouseleave", closeAccountInfo)
@@ -27,13 +26,40 @@ function accountHover() {
         document.getElementById("username-text").innerText = user[0];
     }
 }
-
+let pressedDrop=false;
+let dropDown=document.getElementsByClassName("drop-nav-bar");
+dropDown[0].addEventListener("click", ()=>{
+    if(pressedDrop==false){
+        let navItems=document.getElementsByClassName("nav-items");
+        navItems[0].style.display="block";
+        if (window.sessionStorage.getItem("SignedIn") == "true") {
+            document.getElementsByClassName("signed-out")[1].style.display = "none";
+            let cur=document.getElementsByClassName("account-info")[1]
+            cur.style.display = "flex";
+            cur.style.flexDirection = "column";
+            document.getElementById("username-text2").innerText = user[0];
+        }
+        pressedDrop=true;
+    }
+    else{
+        let navItems=document.getElementsByClassName("nav-items");
+        navItems[0].style.display="none";
+        pressedDrop=false;
+    }
+})
 let btnSignOut=document.getElementById("sign-out-btn")
 btnSignOut.addEventListener("click", function(){
     window.sessionStorage.setItem("SignedIn", "false")
     document.getElementsByClassName("signed-out")[0].style.display = "block";
     document.getElementsByClassName("account-info")[0].style.display = "none";
+    location.reload()
 })
-
+let btnSignOut2=document.getElementById("sign-out-btn2")
+btnSignOut2.addEventListener("click", function(){
+    window.sessionStorage.setItem("SignedIn", "false")
+    document.getElementsByClassName("signed-out")[1].style.display = "block";
+    document.getElementsByClassName("account-info")[1].style.display = "none";
+    location.reload()
+})
 const swup = new Swup();
 
