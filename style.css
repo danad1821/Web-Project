@@ -358,9 +358,16 @@ button {
         margin-left: 5px;
         margin-bottom: 3px;
         font-size: 1.2rem;
+        padding: 5px 0;
     }
     .nav-options-nav2:hover{
         color: #CE5B68;
+    }
+    .account-section{
+        border-top: 1px solid black;
+    }
+    .account-info_div{
+        width: 135px;
     }
 }
 

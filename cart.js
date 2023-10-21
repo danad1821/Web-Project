@@ -27,6 +27,7 @@ for(let j=0; j<qtNum.length; j++){
             var removeitem=confirm("Are you sure you want to remove this item?")
             if(removeitem){
                 qtNum[j].parentElement.parentElement.remove();
+                j=0
             }
             else{
                 qtNum[j].value=1;
@@ -46,6 +47,8 @@ for(let j=0; j<qtNum.length; j++){
 let removeBtn=document.getElementsByClassName("remove-btn");
 for(let i=0; i<removeBtn.length; i++){
     removeBtn[i].addEventListener("click", ()=>{
+        ordered=ordered.splice(i-1, 1);
         removeBtn[i].parentElement.parentElement.remove();
+        
     })
 }

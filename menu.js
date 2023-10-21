@@ -8,7 +8,9 @@ class oItem {
         return this.price * quantity;
     }
 }
+let total=0;
 let menuitems = [];
+let totalAmount = document.getElementsByClassName("total-price")[0];
 let orderedItems = [];
 let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
@@ -115,21 +117,41 @@ fetch('menu.json')
         //     console.log(menuitems[i])
         // }
         bottom = document.documentElement.scrollHeight;
-        
+
         for (let i = 0; i < addItems.length; i++) {
             addItems[i].addEventListener("click", function () {
+                let fName = document.getElementsByClassName("menu-item-name")[i].textContent;
                 let qt = document.getElementsByClassName("menu-item-quantity")[i].value;
+                let inOrder = false;
                 if (qt > 0) {
-                    let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt));
-                    orderedItems.push(orderedItem);
-                    qt = null;
+                    total += menuitems[i].findPrice(qt);
+                    totalAmount.textContent = "$" + total.toString();
+                    for (let j = 0; j < orderedItems.length; j++) {
+                        console.log("inLoop")
+                        if (orderedItems[j].fname == fName) {
+                            console.log("in")
+                            inOrder = true;
+                            let newQt = parseInt(qt) + parseInt(orderedItems[j].quantity);
+                            orderedItems[j].quantity = newQt;
+                            orderedItems[j].price = menuitems[i].findPrice(newQt);
+                            break
+                        }
+                    }
+                    if (inOrder == false) {
+                        let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt));
+                        orderedItems.push(orderedItem);
+                    }
+                    console.log(orderedItems)
+                    qt = 0;
                     window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
                 }
             })
         }
-        
+
+
+
     })
     .catch(error => console.log('Error:', error));
 
-    
-    
+
+
