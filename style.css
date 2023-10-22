@@ -105,6 +105,7 @@ button {
     color: #F8EFE5;
 }
 
+
 .nav-options:hover {
     color: #fad370;
 }
@@ -298,7 +299,15 @@ button {
 .social-media-icons {
     font-size: 2rem;
 }
-
+@media screen and (max-width:1200px){
+    .nav-options:nth-child(2){
+        margin-left: 8%;
+    }
+    .logo-img{
+        height: 110px;
+        width: 210px;
+    }
+}
 @media screen and (max-width: 760px) {
     .nav-bar {
         font-size: 1.3em;

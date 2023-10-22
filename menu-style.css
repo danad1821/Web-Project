@@ -78,14 +78,11 @@
 }
 #cart-icon-menu{
     cursor: pointer;
-    /* margin: 1%; */
     font-size: 1.8em;
     position: absolute;
     right: 5px;
     top: 25%;
     margin-right: 0;
-    /* margin-left: 300%;
-    margin-right: 0; */
 }
 #cart-icon-menu:hover{
     fill: #FAD370;

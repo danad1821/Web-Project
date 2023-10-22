@@ -8,7 +8,7 @@ class oItem {
         return this.price * quantity;
     }
 }
-let total=0;
+let total = 0;
 let menuitems = [];
 let totalAmount = document.getElementsByClassName("total-price")[0];
 let orderedItems = [];
@@ -28,7 +28,7 @@ window.addEventListener("scroll", function () {
         upDown[0].style.display = "none";
         upDown[1].style.display = "block";
     }
-    else if (sHeight > bottom - 1200) {
+    else if (sHeight > bottom - bottom * 0.13) {
         upDown[0].style.display = "block"
         upDown[1].style.display = "none"
     }
@@ -125,7 +125,7 @@ fetch('menu.json')
                 let inOrder = false;
                 if (qt > 0) {
                     total += menuitems[i].findPrice(qt);
-                    totalAmount.textContent = "$" + total.toString();
+                    totalAmount.textContent = "$" + total.toFixed(2);
                     for (let j = 0; j < orderedItems.length; j++) {
                         console.log("inLoop")
                         if (orderedItems[j].fname == fName) {
@@ -144,14 +144,12 @@ fetch('menu.json')
                     console.log(orderedItems)
                     qt = 0;
                     window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
+                    
                 }
             })
         }
 
-
-
     })
     .catch(error => console.log('Error:', error));
-
 
 
