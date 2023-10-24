@@ -65,11 +65,11 @@ fetch('menu.json')
                     <h4 class="menu-item-name">${item.itemName}</h4>
                     <p class="menu-item-description"><b>Description:</b> ${item.description}</p>
                     <p class="menu-item-price"><b>Price:</b> $${item.price}</p>
-                    <div class="menu-item-details">
+                    <form class="menu-item-details">
                         <label for="quantity" class="quantity-title">Quantity:</label>
                         <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
                         <button class="add-btn">+</button>
-                    </div>
+                    </form>
                 `
                     let newDish = new oItem(item.itemName, 0, item.price)
                     menuitems.push(newDish);
@@ -95,11 +95,11 @@ fetch('menu.json')
                         <h4 class="menu-item-name">${subItem.itemName}</h4>
                         <p class="menu-item-description"><b>Description:</b> ${subItem.description}</p>
                         <p class="menu-item-price"><b>Price:</b> $${subItem.price}</p>
-                        <div class="menu-item-details">
+                        <form class="menu-item-details">
                             <label for="quantity" class="quantity-title">Quantity:</label>
                             <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
                             <button class="add-btn">+</button>
-                        </div>
+                        </form>
                         `
                         let newDish = new oItem(subItem.itemName, 0, subItem.price)
                         menuitems.push(newDish);
@@ -120,6 +120,7 @@ fetch('menu.json')
 
         for (let i = 0; i < addItems.length; i++) {
             addItems[i].addEventListener("click", function () {
+                event.preventDefault();
                 let fName = document.getElementsByClassName("menu-item-name")[i].textContent;
                 let qt = document.getElementsByClassName("menu-item-quantity")[i].value;
                 let inOrder = false;
@@ -142,10 +143,12 @@ fetch('menu.json')
                         orderedItems.push(orderedItem);
                     }
                     console.log(orderedItems)
-                    qt = 0;
-                    window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
                     
+                    window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
+                    window.sessionStorage.setItem('totalPrice', JSON.stringify(total))
+                    addItems[i].parentElement.reset()
                 }
+                
             })
         }
 

@@ -70,11 +70,16 @@
     text-decoration: none;
     color: #F8EFE5;
 }
+.main-items-links:hover, .bev-items-links:hover{
+    color: #FAD370;
+}
 .main-section-nav:hover .main-items-list{
     display: block;
+    transition: all 5s ease;
 }
 .bev-section-nav:hover .beverages-items-list{
     display: block;
+    transition: all 5s ease;
 }
 #cart-icon-menu{
     cursor: pointer;
@@ -174,7 +179,7 @@
 .checkout{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     border-top: 3px dashed black;
 }
 .total-title, .total-price{
@@ -182,11 +187,13 @@
     align-self: center;
 }
 .checkout-btn{
-    background-color: black;
-    color: #F8EFE5;
     padding: 1% 1.5%;
     font-size: 1.1rem;
     margin: 1%;
+}
+#cart-icon-checkout, #checkout-icon{
+    fill: black;
+    font-size: 2em;
 }
 /*Up and Down Buttons*/
 .up-down{
