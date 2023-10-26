@@ -220,6 +220,13 @@
     background-color: #fad370;
 }
 /*Pop-up Msg*/ 
+.pop-up-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.705);
+    display: none;
+    position: fixed;
+}
 .pop-up{
     width: 20vw;
     height: 25vh;
@@ -227,8 +234,6 @@
     top: 40%;
     left: 40%; 
     background-color: #F8EFE5;
-    display: flex;
-    flex-direction: column;
     box-shadow: 5px 4px 3px gray;
     z-index: 5;
     display: none;

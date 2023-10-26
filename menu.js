@@ -16,7 +16,8 @@ let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
 let upBtn = document.getElementById("up-btn");
 let addItems = document.getElementsByClassName("add-btn");
-let popUpMsg=document.getElementsByClassName("pop-up")[0];
+let popContainer = document.getElementsByClassName("pop-up-container")[0];
+let popUpMsg = document.getElementsByClassName("pop-up")[0];
 function goUp() {
     window.scrollTo(0, 0);
 }
@@ -38,9 +39,10 @@ window.addEventListener("scroll", function () {
         upDown[1].style.display = "block"
     }
 })
-let closePopUp=document.getElementById("close-btn");
-closePopUp.addEventListener("click", ()=>{
-    popUpMsg.style.display="none";
+let closePopUp = document.getElementById("close-btn");
+closePopUp.addEventListener("click", () => {
+    popContainer.style.display = "none";
+    popUpMsg.style.display = "none";
 })
 upDown[0].addEventListener("click", goUp)
 upDown[1].addEventListener("click", goDown)
@@ -123,7 +125,8 @@ fetch('menu.json')
         bottom = document.documentElement.scrollHeight;
         for (let i = 0; i < addItems.length; i++) {
 
-            addItems[i].addEventListener("click", function () {4
+            addItems[i].addEventListener("click", function () {
+                4
                 event.preventDefault();
                 if (window.sessionStorage.getItem("SignedIn") == "true") {
                     let fName = document.getElementsByClassName("menu-item-name")[i].textContent;
@@ -154,13 +157,17 @@ fetch('menu.json')
                         addItems[i].parentElement.reset()
                     }
                 }
-                else{
-                    popUpMsg.style.display="flex";
-                    popUpMsg.style.flexDirection="column";
+                else {
+                    popContainer.style.display = "flex";
+                    popContainer.style.alignItems = "center";
+                    popContainer.style.justifyContent = "center";
+                    popUpMsg.style.display = "flex";
+                    popUpMsg.style.flexDirection = "column";
                 }
             })
-        }})
+        }
+    })
 
-    .catch (error => console.log('Error:', error));
+    .catch(error => console.log('Error:', error));
 
 
