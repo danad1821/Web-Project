@@ -1,41 +1,8 @@
-.nav-bar-sign {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0.5%;
-}
-
-.nav-bar-sign a {
-    text-decoration: none;
-    color: #104d40;
-    font-weight: 900;
-}
-
-.go-back-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.go-back-text,
-.go-back-btn {
-    padding: 0.5%;
-    margin: 0.5% 0;
-}
-
-.go-back-btn {
-    fill: black;
-    font-size: 1.5rem;
-}
-
-.go-back-text {
-    font-size: 1.2rem;
-}
-
 /*Body*/
 .sign-in-body {
     display: flex;
     align-items: center;
-    height: 75.25vh;
+    height: 75vh;
     flex-wrap: wrap;
 }
 

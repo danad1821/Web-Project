@@ -135,6 +135,7 @@
     height: 380px;
     padding: 15px;
     position: relative;
+    border-radius: 3px;
 }
 .img-menu-item{
     width: 230px;
@@ -217,4 +218,43 @@
 }
 .up-down-btns:hover{
     background-color: #fad370;
+}
+/*Pop-up Msg*/ 
+.pop-up{
+    width: 20vw;
+    height: 25vh;
+    position: fixed;
+    top: 40%;
+    left: 40%; 
+    background-color: #F8EFE5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 4px 3px gray;
+    z-index: 5;
+    display: none;
+}
+.close-btn{
+    background-color: none;
+    border: none;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    margin: 1%;
+}
+.close-btn svg{
+    fill: black;
+}
+.close-btn svg:hover{
+    fill: #FAD370;
+}
+#login-btn{
+    font-size: 1.2rem;
+    align-self: flex-end;
+    margin: 1%;
+    padding: 1% 2.5%;
+    border-radius: 12px;
+    background-color: #FAD370;
+    border: none;
+}
+#login-btn:hover{
+    background-color: #debb61;
 }

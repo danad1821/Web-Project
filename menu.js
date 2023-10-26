@@ -16,6 +16,7 @@ let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
 let upBtn = document.getElementById("up-btn");
 let addItems = document.getElementsByClassName("add-btn");
+let popUpMsg=document.getElementsByClassName("pop-up")[0];
 function goUp() {
     window.scrollTo(0, 0);
 }
@@ -37,7 +38,10 @@ window.addEventListener("scroll", function () {
         upDown[1].style.display = "block"
     }
 })
-
+let closePopUp=document.getElementById("close-btn");
+closePopUp.addEventListener("click", ()=>{
+    popUpMsg.style.display="none";
+})
 upDown[0].addEventListener("click", goUp)
 upDown[1].addEventListener("click", goDown)
 
@@ -117,42 +121,46 @@ fetch('menu.json')
         //     console.log(menuitems[i])
         // }
         bottom = document.documentElement.scrollHeight;
-
         for (let i = 0; i < addItems.length; i++) {
-            addItems[i].addEventListener("click", function () {
-                event.preventDefault();
-                let fName = document.getElementsByClassName("menu-item-name")[i].textContent;
-                let qt = document.getElementsByClassName("menu-item-quantity")[i].value;
-                let inOrder = false;
-                if (qt > 0) {
-                    total += menuitems[i].findPrice(qt);
-                    totalAmount.textContent = "$" + total.toFixed(2);
-                    for (let j = 0; j < orderedItems.length; j++) {
-                        console.log("inLoop")
-                        if (orderedItems[j].fname == fName) {
-                            console.log("in")
-                            inOrder = true;
-                            let newQt = parseInt(qt) + parseInt(orderedItems[j].quantity);
-                            orderedItems[j].quantity = newQt;
-                            orderedItems[j].price = menuitems[i].findPrice(newQt);
-                            break
-                        }
-                    }
-                    if (inOrder == false) {
-                        let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt));
-                        orderedItems.push(orderedItem);
-                    }
-                    console.log(orderedItems)
-                    
-                    window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
-                    window.sessionStorage.setItem('totalPrice', JSON.stringify(total))
-                    addItems[i].parentElement.reset()
-                }
-                
-            })
-        }
 
-    })
-    .catch(error => console.log('Error:', error));
+            addItems[i].addEventListener("click", function () {4
+                event.preventDefault();
+                if (window.sessionStorage.getItem("SignedIn") == "true") {
+                    let fName = document.getElementsByClassName("menu-item-name")[i].textContent;
+                    let qt = document.getElementsByClassName("menu-item-quantity")[i].value;
+                    let inOrder = false;
+                    if (qt > 0) {
+                        total += menuitems[i].findPrice(qt);
+                        totalAmount.textContent = "$" + total.toFixed(2);
+                        for (let j = 0; j < orderedItems.length; j++) {
+                            console.log("inLoop")
+                            if (orderedItems[j].fname == fName) {
+                                console.log("in")
+                                inOrder = true;
+                                let newQt = parseInt(qt) + parseInt(orderedItems[j].quantity);
+                                orderedItems[j].quantity = newQt;
+                                orderedItems[j].price = menuitems[i].findPrice(newQt);
+                                break
+                            }
+                        }
+                        if (inOrder == false) {
+                            let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt));
+                            orderedItems.push(orderedItem);
+                        }
+                        console.log(orderedItems)
+
+                        window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
+                        window.sessionStorage.setItem('totalPrice', JSON.stringify(total))
+                        addItems[i].parentElement.reset()
+                    }
+                }
+                else{
+                    popUpMsg.style.display="flex";
+                    popUpMsg.style.flexDirection="column";
+                }
+            })
+        }})
+
+    .catch (error => console.log('Error:', error));
 
 

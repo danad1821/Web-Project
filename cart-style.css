@@ -27,6 +27,7 @@
 }
 /* Body */
 table{
+    display: none;
     border-collapse: collapse;
     margin: 1%;
 }
@@ -37,4 +38,7 @@ th, td{
     width: 200px;
     padding: 2%;
     text-align: center;
+}
+#total-div{
+    display: none;
 }
