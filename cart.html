@@ -14,20 +14,84 @@
     <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-std" rel="stylesheet">
 </head>
 
-<body>
+<body onload="accountHover()">
     <!-- Navigation Bar -->
-    <nav class="nav-bar-cart" href="javascript:history.back()">
-        <a href="javascript:history.back()" class="go-back-text">
-            <svg class="go-back-btn" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                <path
-                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-            </svg>
-        </a>
-        <a href="javascript:history.back()" class="go-back-text">Go Back</a>
+    <nav class="nav-bar nav-1" id="nav-bar">
+        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
+                class="logo-img"></a>
+        <a href="index.html" class="nav-options">Home</a>
+        <a href="about.html" class="nav-options">About Us</a>
+        <a href="locations.html" class="nav-options">Locations</a>
+        <a href="menu.html" class="nav-options">Menu</a>
+        <a href="contact.html" class="nav-options">Contact Us</a>
+        <a href="review.html" class="nav-options">Leave a review</a>
+        <svg class="account-icon account-icons" id="account-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 448 512">
+            <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+        </svg>
+        <div class="account" id="account">
+            <ul class="signed-out account-section">
+                <li><a href="sign-in.html">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+            <ul class="account-info account-section">
+                <li>
+                    <div class="account-info_div">
+                        <h4 id="username-text">Username</h4>
+                        <a href="cart.html" class="cart-btn">
+                            <svg class="account-icons" class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li><button id="sign-out-btn">Sign Out</button></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav-2">
+        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
+                class="logo-img"></a>
+        <button class="drop-nav-bar">
+            <svg id="dropdown-menu" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafafa}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
+        <div class="nav-items">
+            <ul>
+                <li><a href="index.html" class="nav-options-nav2">Home</a></li>
+                <li><a href="about.html" class="nav-options-nav2">About Us</a></li>
+                <li><a href="locations.html" class="nav-options-nav2">Locations</a></li>
+                <li><a href="menu.html" class="nav-options-nav2">Menu</a></li>
+                <li><a href="contact.html" class="nav-options-nav2">Contact Us</a></li>
+                <li><a href="review.html" class="nav-options-nav2">Leave a review</a></li>
+            </ul>
+            <ul class="signed-out account-section">
+                <li><a href="sign-in.html">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+            <ul class="account-info account-section">
+                <li>
+                    <div class="account-info_div">
+                        <h4 id="username-text2">Username</h4>
+                        <a href="cart.html" class="cart-btn">
+                            <svg class="account-icons" class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li><button id="sign-out-btn2">Sign Out</button></li>
+            </ul>
+        </div>
     </nav>
     <!-- Body -->
+    <h1 style="text-align: center;">Cart:</h1>
     <main class="cart-body transition-fade">
-        <h1>Cart:</h1>
+        
         <div id="empty-cart">
             <h2>Your Cart is Empty :(</h2>
         </div>
@@ -49,7 +113,10 @@
             <p class="price-total">
                 $0.00
             </p>
-            <button>Checkout</button>
+            <button class="checkout-btn">
+                <svg id="checkout-icon" title="Checkout" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="fill:black;"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 0C46.3 0 32 14.3 32 32V96c0 17.7 14.3 32 32 32h80v32H87c-31.6 0-58.5 23.1-63.3 54.4L1.1 364.1C.4 368.8 0 373.6 0 378.4V448c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V378.4c0-4.8-.4-9.6-1.1-14.4L488.2 214.4C483.5 183.1 456.6 160 425 160H208V128h80c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H64zM96 48H256c8.8 0 16 7.2 16 16s-7.2 16-16 16H96c-8.8 0-16-7.2-16-16s7.2-16 16-16zM64 432c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm48-168a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm120-24a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zM160 344a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM328 240a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zM256 344a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM424 240a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zM352 344a24 24 0 1 1 0-48 24 24 0 1 1 0 48z"/></svg>
+                <h5>Checkout</h5>
+            </button>
         </div>
     </main>
     <!-- Footer -->

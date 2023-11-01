@@ -1,15 +1,13 @@
 const loginErrorMsg = document.getElementById("login-error-msg");
 const loginErrorHolder = document.getElementById("login-error-msg-holder");
 
-
-
-let user = ["dana", "pass"]
+let users = ["dana", "pass"];
 function signInLoad() {
-    let btnSignIn = document.getElementById("sign-in-btn")
+    let btnSignIn = document.getElementById("sign-in-btn-submit")
     btnSignIn.addEventListener("click", function () {
         let username = document.getElementById("sign-in-user").value
         let password = document.getElementById("sign-in-pass").value
-        if (username == user[0] && password == user[1]) {
+        if (username == users[0] && password == users[1]) {
             window.sessionStorage.setItem("SignedIn", "true")
             window.history.go(-1);
         }
@@ -19,6 +17,7 @@ function signInLoad() {
         }
     })
 }
+window.addEventListener("load", signInLoad);
 // Toggle password visibility code
 
 const togglePassword = document.querySelector('#togglePassword');
@@ -33,7 +32,3 @@ togglePassword.addEventListener("click", function() {
 });
 
 //go back to last page when back button is clicked
-let back_btn = querySelector(".go-back-text")
-back_btn.addEventListener("click" , function(){
-    window.history.go(-1);
-})

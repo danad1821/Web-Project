@@ -258,7 +258,7 @@ button {
         width: 210px;
     }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 950px) {
     .nav-bar {
         font-size: 1.3em;
     }

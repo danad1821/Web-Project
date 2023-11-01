@@ -26,6 +26,12 @@
     font-size: 1.2rem;
 }
 /* Body */
+.cart-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+}
 table{
     display: none;
     border-collapse: collapse;
@@ -41,4 +47,23 @@ th, td{
 }
 #total-div{
     display: none;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 125px;
+    right: 0.5%;
+    margin: 10px;
+}
+#total-div p, #total-div b, #total-div button{
+    margin: 5px;
+}
+.checkout-btn{
+    padding: 1% 1.5%;
+    font-size: 1.1rem;
+    margin: 1%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#empty-cart{
+    justify-self: center;
 }

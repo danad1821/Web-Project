@@ -18,12 +18,28 @@ let upBtn = document.getElementById("up-btn");
 let addItems = document.getElementsByClassName("add-btn");
 let popContainer = document.getElementsByClassName("pop-up-container")[0];
 let popUpMsg = document.getElementsByClassName("pop-up")[0];
+let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
 function goUp() {
     window.scrollTo(0, 0);
 }
 function goDown() {
     window.scrollTo(0, bottom);
 }
+function popUp() {
+    popContainer.style.display = "flex";
+    popContainer.style.alignItems = "center";
+    popContainer.style.justifyContent = "center";
+    popUpMsg.style.display = "flex";
+    popUpMsg.style.flexDirection = "column";
+}
+checkoutBtn.addEventListener("click", function () {
+    if (window.sessionStorage.getItem("SignedIn") == "true") {
+        window.location.replace("checkout.html");
+    }
+    else {
+        popUp()
+    }
+})
 window.addEventListener("scroll", function () {
     let sHeight = document.documentElement.scrollTop;
     if (sHeight == 0) {
@@ -46,7 +62,6 @@ closePopUp.addEventListener("click", () => {
 })
 upDown[0].addEventListener("click", goUp)
 upDown[1].addEventListener("click", goDown)
-
 var menulist = document.getElementById("menu");
 fetch('menu.json')
     .then(response => response.json())
@@ -126,9 +141,9 @@ fetch('menu.json')
         for (let i = 0; i < addItems.length; i++) {
 
             addItems[i].addEventListener("click", function () {
-                4
                 event.preventDefault();
                 if (window.sessionStorage.getItem("SignedIn") == "true") {
+
                     let fName = document.getElementsByClassName("menu-item-name")[i].textContent;
                     let qt = document.getElementsByClassName("menu-item-quantity")[i].value;
                     let inOrder = false;
@@ -158,11 +173,7 @@ fetch('menu.json')
                     }
                 }
                 else {
-                    popContainer.style.display = "flex";
-                    popContainer.style.alignItems = "center";
-                    popContainer.style.justifyContent = "center";
-                    popUpMsg.style.display = "flex";
-                    popUpMsg.style.flexDirection = "column";
+                    popUp()
                 }
             })
         }

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
-<body onload="signInLoad()">
+<body onload="accountHover()">
     <!-- Navigation Bar -->
     <nav class="nav-bar nav-1" id="nav-bar">
         <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
@@ -90,7 +90,7 @@
         </div>
     </nav>
     <!-- Body -->
-    <main class="sign-in-body">
+    <main class="sign-in-body transition-fade">
         <div class="home-sign-in">
             <h1 class="sign-in-title">
                 Log In:
@@ -106,7 +106,7 @@
                     id="sign-in-pass" required>
                 <i class="far fa-eye" id="togglePassword"></i>
             </div>
-            <button class="sign-in-btn" id="sign-in-btn">Log In</button>
+            <button class="sign-in-btn-submit" id="sign-in-btn-submit">Log In</button>
             <p class="sign-up-text">Don't have an account? <a href="" class="sign-up-link">Sign Up</a></p>
         </div>
         <div class="home-sign-in-img">
@@ -173,9 +173,9 @@
             <p class="copyright">&copy; 2023 Malaz Copyright</p>
         </div>
     </footer>
-    <script src="sign-in.js">
-
-    </script>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="main.js"></script>
+    <script src="sign-in.js"></script>
 </body>
 
 </html>
