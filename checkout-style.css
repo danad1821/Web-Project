@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* Order Info */
 .checkout-content{
     display: flex;
     flex-direction: column;
@@ -9,20 +10,28 @@
     height: 90vh;
     align-items: center;
 }
+.general-info{
+    margin-top: 5%;
+}
+.total-div{
+    display: flex;
+    align-items: center;
+}
+.total-title, .total-price{
+    margin: 1% 0.5%;
+}
+/* Location and Payments */
 .main-content{
     display: flex;
     width: 65vw;
 }
 .checkout-section{
-    background-color: gray;
+    background-color: #BAC9A3;
     color: white;
     margin: 1%;
     width: 60vw;
     max-height: 35vh;
     padding: 2%;
-}
-.general-info{
-    margin-top: 5%;
 }
 .section-title{
     margin: 0.2% 0;
@@ -36,15 +45,21 @@
 .payment-element, .location-element{
     display: flex;
     flex-direction: column;
-    margin: 1%;
+    margin: 0.8%;
 }
 .payment-info input, .payment-info select{
     max-width: 50%;
     /* margin: 1%; */
 }
+.payment-info input, .payment-info select, .location-delivery input, .location-takeaway select, .location-takeaway input{
+    font-size: 15px;
+}
 .location-takeaway input, .location-takeaway select, .location-element label{
     margin: 0.5%;
     margin-right: 3%;
+}
+.location-takeaway select{
+    width: 200px;
 }
 .location-delivery input{
     width: 80%;
@@ -52,8 +67,15 @@
 .address input{
     width: 300px;
 }
+input{
+    padding-left: 5px;
+}
 .payment-name{
     display: flex;
+}
+.name-inputs{
+    /* margin: 0.5%; */
+    width: 220px;
 }
 /* .payment-lbl{
     

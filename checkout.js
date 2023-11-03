@@ -1,13 +1,4 @@
-// import { menuItem, items } from "./menu";
-// window.addEventListener("load", function(){
-//     let listMenu=getElementById("menu-items-list");
-//     items.forEach(elem=>{
-//         let newItem=document.createElement("li");
-//         newItem=elem;
-//         listMenu.appendChild(newItem);
-//     })
-// })
-
+let ordered = JSON.parse(window.sessionStorage.getItem('order'));
 function showPaymentMethod() {
     let method = document.getElementsByClassName("payment-info");
     method[0].style.display = "flex";
@@ -55,3 +46,9 @@ placeBtn.addEventListener("click", function(){
         window.open("index.html", "_self");
     }
 })
+let tot=0;
+for (let i = 0; i < ordered.length; i++) {
+    tot+=ordered[i].price;
+}
+let price=document.getElementsByClassName("total-price")[0];
+price.textContent="$"+tot.toFixed(2).toString();

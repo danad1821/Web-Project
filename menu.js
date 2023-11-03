@@ -25,6 +25,22 @@ function goUp() {
 function goDown() {
     window.scrollTo(0, bottom);
 }
+let ordery=JSON.parse(window.sessionStorage.getItem('order'));
+// window.addEventListener("load", ()=>{
+//     let navOptions1=document.getElementsByClassName("nav-options");
+//     let navOptions2=document.getElementsByClassName("nav-options-nav2");
+//         navOptions1.forEach(option=>{
+//             if (ordery.length!=0 || orderedItems.length!=0){
+//             option.addEventListener("click", ()=>{
+//                 var orderConfirm=confirm("If you continue, you will lose all items in the cart. Are sure you want to proceed?")
+//                 if(orderConfirm){
+//                     orderedItems=[]
+//                     window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
+//                 }
+//             })
+//         }
+     
+// })})
 function popUp() {
     popContainer.style.display = "flex";
     popContainer.style.alignItems = "center";
@@ -34,19 +50,39 @@ function popUp() {
 }
 checkoutBtn.addEventListener("click", function () {
     if (window.sessionStorage.getItem("SignedIn") == "true") {
-        window.location.replace("checkout.html");
+        // if (ordery.length!=0){
+            window.location.replace("checkout.html");
+        // }
+        // else{
+        //     alert("Empty Cart")
+        // }
     }
     else {
         popUp()
     }
 })
 window.addEventListener("scroll", function () {
+    bottom = document.documentElement.scrollHeight;
+    let y=0;
+    if(bottom<20000 && bottom>=10000){
+        y=0.12
+    }
+    else if(bottom<30000 && bottom>=20000){
+        y=0.08
+    }
+    else if(bottom<30000 && bottom>=20000){
+        y=0.06
+    }
+    else{
+        y=0.05
+    }
+    console.log(bottom)
     let sHeight = document.documentElement.scrollTop;
     if (sHeight == 0) {
         upDown[0].style.display = "none";
         upDown[1].style.display = "block";
     }
-    else if (sHeight > bottom - bottom * 0.13) {
+    else if (sHeight > bottom - bottom * y) {
         upDown[0].style.display = "block"
         upDown[1].style.display = "none"
     }

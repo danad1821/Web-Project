@@ -57,12 +57,19 @@ th, td{
     margin: 5px;
 }
 .checkout-btn{
-    padding: 1% 1.5%;
-    font-size: 1.1rem;
+    padding: 1.5% 2%;
+    font-size: 1.15rem;
     margin: 1%;
     background-color: white;
     border: 1px solid black;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#checkout-icon{
+    font-size: 1rem;
+    margin-right: 5px;
 }
 #empty-cart{
     justify-self: center;

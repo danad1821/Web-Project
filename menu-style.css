@@ -31,6 +31,9 @@
     top: 0;
     z-index: 1;
 }
+.menu-nav-2{
+    display: none;
+}
 .menu-section-nav{
     margin: 0 1%;
     font-size: 1.4em;
@@ -191,16 +194,22 @@
     align-self: center;
 }
 .checkout-btn{
-    padding: 1% 1.5%;
-    font-size: 1.1rem;
+    padding: 0.7% 1%;
+    font-size: 1.2rem;
     margin: 1%;
     background-color: white;
     border: 1px solid black;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
 }
-#cart-icon-checkout, #checkout-icon{
+#cart-icon-checkout{
     fill: black;
     font-size: 2em;
+}
+#checkout-icon{
+    fill: black;
+    margin-right: 5px;
 }
 /*Up and Down Buttons*/
 .up-down{
@@ -224,6 +233,9 @@
 }
 .up-down-btns:hover{
     background-color: #fad370;
+}
+.small-cart{
+    display: none;
 }
 /*Pop-up Msg*/ 
 .pop-up-container{
@@ -272,4 +284,73 @@
 }
 #login-btn:hover{
     background-color: #debb61;
+}
+@media screen and (max-width: 899px) {
+    .menu-section-links {
+        font-size: 20px;
+    }
+    .main-items-links, .bev-items-links{
+        font-size: 17px;
+    }
+    .beverages-items-list, .main-items-list{
+        min-width: 120px;
+        margin-top: 1.5%;
+    }
+}
+@media screen and (max-width: 840px) {
+    .menu-nav{
+        display: none;
+    }
+    .menu-nav-2{
+        display: block;
+        align-items: center;
+        background-color: #CE5B68;
+        height: fit-content;
+        padding: 4px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .menu-nav-2 ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-nav-2 li{
+        display: inline;
+        border: 1px solid #F8EFE5;
+        box-shadow: 1px 1px gray;
+        padding: 5px;
+        margin: 0.5%;
+        border-radius: 12px;
+    }
+    .menu-nav-2 a{
+        text-decoration: none;
+        color: #F8EFE5;
+    }
+    .menu-nav-2 li:hover{
+        border-color: #FAD370;
+    }
+    .menu-nav-2 a:hover{
+        color: #fad370;
+    }
+    .small-cart{
+        display: flex;
+        align-items: center;
+        background-color: #CE5B68;
+        padding: 1%;
+        border-radius: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* .section-title{
+        scroll-margin-top: 80px;
+    } */
+}
+@media screen and (max-width: 480px) {
+    .subsection-title{
+        scroll-margin-top: 120px;
+    }
 }
