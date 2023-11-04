@@ -19,13 +19,55 @@ let addItems = document.getElementsByClassName("add-btn");
 let popContainer = document.getElementsByClassName("pop-up-container")[0];
 let popUpMsg = document.getElementsByClassName("pop-up")[0];
 let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
+
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1, 33: 1, 34: 1, 35: 1, 36: 1};
+
+function preventDefaultt(e) {
+  e.preventDefault();
+}
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefaultt(e);
+        return false;
+    }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function () { supportsPassive = true; }
+    }));
+} catch (e) { }
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+    window.addEventListener('DOMMouseScroll', preventDefaultt, false); // older FF
+    window.addEventListener(wheelEvent, preventDefaultt, wheelOpt); // modern desktop
+    window.addEventListener('touchmove', preventDefaultt, wheelOpt); // mobile
+    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+    window.removeEventListener('DOMMouseScroll', preventDefaultt, false);
+    window.removeEventListener(wheelEvent, preventDefaultt, wheelOpt);
+    window.removeEventListener('touchmove', preventDefaultt, wheelOpt);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
 function goUp() {
     window.scrollTo(0, 0);
 }
 function goDown() {
     window.scrollTo(0, bottom);
 }
-let ordery=JSON.parse(window.sessionStorage.getItem('order'));
+let ordery = JSON.parse(window.sessionStorage.getItem('order'));
 // window.addEventListener("load", ()=>{
 //     let navOptions1=document.getElementsByClassName("nav-options");
 //     let navOptions2=document.getElementsByClassName("nav-options-nav2");
@@ -39,9 +81,10 @@ let ordery=JSON.parse(window.sessionStorage.getItem('order'));
 //                 }
 //             })
 //         }
-     
+
 // })})
 function popUp() {
+    disableScroll();
     popContainer.style.display = "flex";
     popContainer.style.alignItems = "center";
     popContainer.style.justifyContent = "center";
@@ -51,7 +94,7 @@ function popUp() {
 checkoutBtn.addEventListener("click", function () {
     if (window.sessionStorage.getItem("SignedIn") == "true") {
         // if (ordery.length!=0){
-            window.location.replace("checkout.html");
+        window.location.replace("checkout.html");
         // }
         // else{
         //     alert("Empty Cart")
@@ -63,18 +106,18 @@ checkoutBtn.addEventListener("click", function () {
 })
 window.addEventListener("scroll", function () {
     bottom = document.documentElement.scrollHeight;
-    let y=0;
-    if(bottom<20000 && bottom>=10000){
-        y=0.12
+    let y = 0;
+    if (bottom < 20000 && bottom >= 10000) {
+        y = 0.12
     }
-    else if(bottom<30000 && bottom>=20000){
-        y=0.08
+    else if (bottom < 30000 && bottom >= 20000) {
+        y = 0.08
     }
-    else if(bottom<30000 && bottom>=20000){
-        y=0.06
+    else if (bottom < 30000 && bottom >= 20000) {
+        y = 0.06
     }
-    else{
-        y=0.05
+    else {
+        y = 0.05
     }
     console.log(bottom)
     let sHeight = document.documentElement.scrollTop;
@@ -93,12 +136,14 @@ window.addEventListener("scroll", function () {
 })
 let closePopUp = document.getElementById("close-btn");
 closePopUp.addEventListener("click", () => {
+    enableScroll();
     popContainer.style.display = "none";
     popUpMsg.style.display = "none";
 })
 upDown[0].addEventListener("click", goUp)
 upDown[1].addEventListener("click", goDown)
 var menulist = document.getElementById("menu");
+
 fetch('menu.json')
     .then(response => response.json())
     .then(data => {

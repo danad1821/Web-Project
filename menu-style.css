@@ -240,13 +240,13 @@
 /*Pop-up Msg*/ 
 .pop-up-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(128, 128, 128, 0.705);
     display: none;
     position: fixed;
 }
 .pop-up{
-    width: 20vw;
+    width: 300px;
     height: 25vh;
     position: fixed;
     top: 40%;
@@ -255,9 +255,9 @@
     box-shadow: 5px 4px 3px gray;
     z-index: 5;
     display: none;
+    text-align: center;
 }
 .pop-up h2{
-    text-align: center;
     margin-bottom: 2%;
 }
 .close-btn{
@@ -275,15 +275,22 @@
 }
 #login-btn{
     font-size: 1.2rem;
-    align-self: flex-end;
     margin: 1%;
+    margin-top: 10%;
     padding: 1% 2.5%;
+    align-self: center;
     border-radius: 12px;
     background-color: #FAD370;
     border: none;
+    width: 100px;
 }
 #login-btn:hover{
     background-color: #debb61;
+}
+@media screen and (max-width: 1100px) {
+    .pop-up{
+        left: 35%;
+    }
 }
 @media screen and (max-width: 899px) {
     .menu-section-links {
@@ -298,6 +305,9 @@
     }
 }
 @media screen and (max-width: 840px) {
+    .pop-up{
+        left: 30%;
+    }
     .menu-nav{
         display: none;
     }
@@ -348,9 +358,15 @@
     /* .section-title{
         scroll-margin-top: 80px;
     } */
+    .pop-up{
+        left: 24%;
+    }
 }
 @media screen and (max-width: 480px) {
     .subsection-title{
         scroll-margin-top: 120px;
+    }
+    .pop-up{
+        left: 20%;
     }
 }

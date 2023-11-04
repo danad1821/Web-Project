@@ -161,7 +161,10 @@ button {
 
 .signed-out li {
     padding-right: 2%;
-    margin: 1.5% 0;
+    margin-bottom: 7px;
+}
+.signed-out li:nth-child(1){
+    margin-top: 8px;
 }
 
 .signed-out a:hover {
