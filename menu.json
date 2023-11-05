@@ -61,25 +61,25 @@
                 {
                     "itemName": "Warak Enab",
                     "img":"https://bistrobadia.de/wp-content/uploads/2022/05/gefuellte-weinblaetter-warak-enab-500x375.jpg",
-                    "description": "6 pcs of grape Leaves stuffed with rice and meat.",
+                    "description": "6 pcs of grape leaves stuffed with rice and meat.",
                     "price": 6.00
                 },
                 {
-                    "itemName": "Kebbe",
+                    "itemName": "Kibbeh",
                     "img":"https://zaatarandzaytoun.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-08-at-11.21.11.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "description": "Made out of beef, these football-shaped croquettes are a flavorful blend of herbs and spices filling meat, and hearty bulgur wheat.",
                     "price": 10.00
                 },
                 {
                     "itemName": "Crispy Shrimp",
                     "img":"https://www.thespruceeats.com/thmb/5xkGMB8ZXz3KGF_y4Uxf7ZfQAvQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ebi-fry-fried-shrimp-2031450-hero-01-46c436a89c164a9ab5980f888097fcd2.jpg",
-                    "description": "Crispy chicken wings tossed in your choice of sauce.",
+                    "description": "8pcs of deep fried breaded shrimp with a side of thousand islands sauce.",
                     "price": 10.00
                 },
                 {
                     "itemName": "Crispy Chicken",
                     "img":"https://www.licious.in/blog/wp-content/uploads/2019/05/Drumsticks-liquidation-plan-05.jpg",
-                    "description": "Loaded nachos with your choice of toppings.",
+                    "description": "8pcs of deep fried breaded chicken strips with a side of honey mustard sauce.",
                     "price": 12.00
                 }
             ]
@@ -95,44 +95,44 @@
                         {
                             "itemName": "Grilled Shrimps Platter",
                             "img":"data:image/jpeg;base64,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",
-                            "description": "A grilled steak with your choice of sides.",
+                            "description": "A flavorful feast of succulent grilled shrimp, vibrant vegetables, and arabic bread, all complemented by a zesty lemon-herb sauce.",
                             "price": 25.00
                         },
                         {
                             "itemName": "Grilled Chicken Platter",
                             "img":"https://jjchicken.com/wp-content/uploads/2020/09/0000s_0004_Chicken-Breast-Platter.jpg",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "description": "A symphony of grilled flavors, featuring juicy chicken, crispy vegetables, and arabic bread, all enveloped in a zesty lemon-herb sauce.",
+                            "price": 20.00
                         },
                         {
                             "itemName": "Grilled Beef Steak Platter",
                             "img":"https://embed.widencdn.net/img/beef/jdx2takgxr/exact/moroccan-spiced-grilled-steak-aerial.tif?keep=c&u=7fueml",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "description": "A tender grilled steak served with savory vegetables, and arabic bread, all drizzled with a rich and creamy béarnaise sauce.",
+                            "price": 28.00
                         },
                         {
                             "itemName": "Grilled Shish Kafta Platter",
                             "img":"https://www.themediterraneandish.com/wp-content/uploads/2014/08/Kofta-Kebab-Recipe-15.jpg",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "description": "Juicy grilled kafta skewers served with vibrant vegetables, arabic bread, and a dollop of creamy hummus and tangy tahini sauce. ",
+                            "price": 20.00
                         },
                         {
                             "itemName": "Grilled Shish Tawouk Platter",
                             "img":"https://www.anediblemosaic.com/wp-content/uploads//2021/07/grilled-shish-tawook-featured-image.jpg",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "description": "Tender grilled chicken skewers marinated in aromatic spices, accompanied by grilled vegetables, arabic bread, and a garlic dip.",
+                            "price": 20.00
                         },
                         {
                             "itemName": "Grilled Shish Beef Platter",
                             "img":"https://i0.wp.com/chefsavvy.com/wp-content/uploads/beef-kabobs-on-white-plate.jpg?resize=665%2C374&ssl=1",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "description": "Juicy and tender grilled beef skewers, accompanied by vibrant vegetables, arabic bread, and a savory marinade.",
+                            "price": 20.00
                         },
                         {
                             "itemName": "Mixed Grill Platter",
                             "img":"https://www.kababjiarabia.com/wp-content/uploads/2020/06/Mixed-Grill-Platter-2-1000x600.jpg",
-                            "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "description": "An assortment of grilled meats accompanied by a medley of grilled vegetables, fries, and arabic bread.",
+                            "price": 30.00
                         }
                     ]
                 },
@@ -144,43 +144,43 @@
                             "itemName": "Grilled Chicken Sandwich",
                             "img":"https://thecozyapron.com/wp-content/uploads/2020/09/grilled-chicken-sandwich_thecozyapron_1.jpg",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 7.50
                         },
                         {
                             "itemName": "American Sub",
                             "img":"https://vaya.in/recipes/wp-content/uploads/2018/06/All-American-Sub-Sandwich.jpg",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 10.00
                         },
                         {
                             "itemName": "Philly Cheese Steak Sandwich",
                             "img":"https://images.themodernproper.com/billowy-turkey/production/posts/2022/PhillyCheesesteaks_12.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1674669377&s=ba2c4045a89595799b5bd72c403ffe0c",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 11.25
                         },
                         {
                             "itemName": "Fries Sandwich",
                             "img":"https://images.deliveryhero.io/image/talabat/Menuitems/Fries-Sandwich_636209316215877812.jpg",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 4.00
                         },
                         {
                             "itemName": "Tawouk Sandwich",
                             "img":"https://media-cdn.tripadvisor.com/media/photo-s/14/60/66/6d/tawouk-sandwich.jpg",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 6.00
                         },
                         {
                             "itemName": "Spicy Chicken Sandwich",
                             "img":"https://www.lennys.com/wp-content/uploads/2022/08/f75ced5bd75d4864a63b335d67d056fd.png",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 6.50
                         },
                         {
                             "itemName": "Falafel Sandwich",
                             "img":"https://www.americangarden.us/wp-content/uploads/Pita-Sandwich-with-Falafel.jpg",
                             "description": "A grilled steak with your choice of sides.",
-                            "price": 25.00
+                            "price": 5.20
                         },
                         {
                             "itemName": "Chicken Shawarma",

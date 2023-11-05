@@ -18,8 +18,12 @@ let upBtn = document.getElementById("up-btn");
 let addItems = document.getElementsByClassName("add-btn");
 let popContainer = document.getElementsByClassName("pop-up-container")[0];
 let popUpMsg = document.getElementsByClassName("pop-up")[0];
+let loginBtn=document.getElementById("login-btn");
 let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
 
+loginBtn.addEventListener("click", ()=>{
+    window.location.replace("sign-in.html", "_self");
+});
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {37: 1, 38: 1, 39: 1, 40: 1, 33: 1, 34: 1, 35: 1, 36: 1};
@@ -166,7 +170,7 @@ fetch('menu.json')
                     <img class="img-menu-item"src="${item.img}"">
                     <h4 class="menu-item-name">${item.itemName}</h4>
                     <p class="menu-item-description"><b>Description:</b> ${item.description}</p>
-                    <p class="menu-item-price"><b>Price:</b> $${item.price}</p>
+                    <p class="menu-item-price"><b>Price:</b> $${item.price.toFixed(2)}</p>
                     <form class="menu-item-details">
                         <label for="quantity" class="quantity-title">Quantity:</label>
                         <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
@@ -196,7 +200,7 @@ fetch('menu.json')
                         <img class="img-menu-item"src="${subItem.img}"">
                         <h4 class="menu-item-name">${subItem.itemName}</h4>
                         <p class="menu-item-description"><b>Description:</b> ${subItem.description}</p>
-                        <p class="menu-item-price"><b>Price:</b> $${subItem.price}</p>
+                        <p class="menu-item-price"><b>Price:</b> $${subItem.price.toFixed(2)}</p>
                         <form class="menu-item-details">
                             <label for="quantity" class="quantity-title">Quantity:</label>
                             <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
