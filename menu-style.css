@@ -1,3 +1,18 @@
+/*Animations*/
+@keyframes dropDownMain {
+    0%{height: 0; font-size: 0;}
+    99%{height: 270%; font-size: 1.2rem;}
+    100%{height: fit-content;}
+}
+@keyframes dropDownBev {
+    0%{height: 0; font-size: 0;}
+    99%{height: 90%; font-size: 1.2rem;}
+    100%{height: fit-content;}
+}
+@keyframes dropUp {
+    0%{height: fit-content;}
+    100%{height: 0vh;}
+}
 /*Menu Page*/
 .menu-body{
     min-height: 100vh;
@@ -81,11 +96,11 @@
 }
 .main-section-nav:hover .main-items-list{
     display: block;
-    transition: all 5s ease;
+   animation: dropDownMain 0.8s forwards;
 }
 .bev-section-nav:hover .beverages-items-list{
     display: block;
-    transition: all 5s ease;
+    animation: dropDownBev 0.8s forwards;
 }
 #cart-icon-menu{
     cursor: pointer;

@@ -25,7 +25,12 @@ const password = document.querySelector('#sign-in-pass');
 
 togglePassword.addEventListener("click", function() {
     // toggle the icon
-    this.classList.toggle('fa-eye-slash');
+    if (this.className=='far fa-eye-slash'){
+        this.className='far fa-eye';
+    }
+    else{
+        this.className='far fa-eye-slash';
+    }
     // toggle the type attribute
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);

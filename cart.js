@@ -18,6 +18,7 @@ for (let i = 0; i < ordered.length; i++) {
     tot += parseFloat(ordered[i].price.toFixed(2))
     tableBody.appendChild(row);
 }
+window.sessionStorage.setItem('totalPrice', JSON.stringify(tot))
 displayOfTotal.textContent = "$" + tot.toFixed(2);
 let qtNum = document.querySelectorAll("td input");
 let foodName = document.querySelectorAll("td:nth-child(1)")
@@ -45,13 +46,15 @@ for (let j = 0; j < qtNum.length; j++) {
             let tPrice = ogPrice * parseFloat(qtNum[j].value);
             document.querySelectorAll(".price")[j].textContent = "$" + tPrice.toFixed(2);
             ordered[j].price = tPrice;
+            ordered[j].quantity=qtNum[j].value;
+            window.sessionStorage.setItem('order', JSON.stringify(ordered))
         }
         tot = 0;
         ordered.forEach(element => {
             tot += parseFloat(element.price);
             displayOfTotal.textContent = "$" + tot.toFixed(2);
         });
-
+        window.sessionStorage.setItem('totalPrice', JSON.stringify(tot))
     })
 }
 
@@ -81,5 +84,16 @@ window.addEventListener("load", ()=>{
         totalDiv.style.flexDirection="row"
         totalDiv.style.alignItems="flex-end"
         emptyCart.style.display="none"
+    }
+})
+let checkoutBtn=document.getElementsByClassName("checkout-btn")[0];
+checkoutBtn.addEventListener("click", ()=>{
+    if (window.sessionStorage.getItem("SignedIn") == "true") {
+        // if (ordery.length!=0){
+        window.location.replace("checkout.html");
+        // }
+        // else{
+        //     alert("Empty Cart")
+        // }
     }
 })

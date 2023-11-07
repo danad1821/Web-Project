@@ -10,8 +10,22 @@ class oItem {
 }
 let total = 0;
 let menuitems = [];
+let ordery=JSON.parse(window.sessionStorage.getItem('order'));
+console.log(ordery)
+let orderedItems=new Array();
+if(ordery!=null){
+    for(let q=0; q<ordery.length; q++){
+        orderedItems.push(ordery[q]);
+    }
+}
+else{
+    orderedItems=[]
+}
 let totalAmount = document.getElementsByClassName("total-price")[0];
-let orderedItems = [];
+if(JSON.parse(window.sessionStorage.getItem('totalPrice'))!=null){
+    total+=JSON.parse(window.sessionStorage.getItem('totalPrice'));
+    totalAmount.textContent="$"+JSON.parse(window.sessionStorage.getItem('totalPrice')).toFixed(2);
+}
 let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
 let upBtn = document.getElementById("up-btn");
@@ -71,22 +85,7 @@ function goUp() {
 function goDown() {
     window.scrollTo(0, bottom);
 }
-let ordery = JSON.parse(window.sessionStorage.getItem('order'));
-// window.addEventListener("load", ()=>{
-//     let navOptions1=document.getElementsByClassName("nav-options");
-//     let navOptions2=document.getElementsByClassName("nav-options-nav2");
-//         navOptions1.forEach(option=>{
-//             if (ordery.length!=0 || orderedItems.length!=0){
-//             option.addEventListener("click", ()=>{
-//                 var orderConfirm=confirm("If you continue, you will lose all items in the cart. Are sure you want to proceed?")
-//                 if(orderConfirm){
-//                     orderedItems=[]
-//                     window.sessionStorage.setItem('order', JSON.stringify(orderedItems))
-//                 }
-//             })
-//         }
 
-// })})
 function popUp() {
     disableScroll();
     popContainer.style.display = "flex";
@@ -97,12 +96,7 @@ function popUp() {
 }
 checkoutBtn.addEventListener("click", function () {
     if (window.sessionStorage.getItem("SignedIn") == "true") {
-        // if (ordery.length!=0){
         window.location.replace("checkout.html");
-        // }
-        // else{
-        //     alert("Empty Cart")
-        // }
     }
     else {
         popUp()
@@ -219,9 +213,6 @@ fetch('menu.json')
             sectionElement.appendChild(content)
             menulist.appendChild(sectionElement);
         });
-        // for (let i = 0; i < menuitems.length; i++) {
-        //     console.log(menuitems[i])
-        // }
         bottom = document.documentElement.scrollHeight;
         for (let i = 0; i < addItems.length; i++) {
 

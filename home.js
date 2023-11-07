@@ -1,10 +1,7 @@
-window.addEventListener("load", ()=>{
-    if (window.sessionStorage.getItem("SignedIn") == "true"){
-        let signingOp=document.getElementsByClassName("signing-options");
-        signingOp[0].style.display="none"
+$(document).ready(function () {
+    if (sessionStorage.getItem("SignedIn") == "true") {
+        $(".signing-options").hide();
+    } else {
+        $(".signing-options").show();
     }
-    else{
-        let signingOp=document.getElementsByClassName("signing-options");
-        signingOp[0].style.display="block"
-    }
-})
+});
