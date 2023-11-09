@@ -90,7 +90,7 @@ let checkoutBtn=document.getElementsByClassName("checkout-btn")[0];
 checkoutBtn.addEventListener("click", ()=>{
     if (window.sessionStorage.getItem("SignedIn") == "true") {
         // if (ordery.length!=0){
-        window.location.replace("checkout.html");
+        window.open("checkout.html", "_self");
         // }
         // else{
         //     alert("Empty Cart")

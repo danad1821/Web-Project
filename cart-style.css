@@ -1,4 +1,5 @@
 /* Navigation */
+
 .nav-bar-cart {
     display: flex;
     flex-direction: row;
@@ -26,11 +27,13 @@
     font-size: 1.2rem;
 }
 /* Body */
+
 .cart-body{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 50vh;
+    min-height: 70vh;
 }
 table{
     display: none;
@@ -46,19 +49,20 @@ th, td{
     text-align: center;
 }
 #total-div{
+    position: absolute;
+    bottom: 5px;
     display: none;
     align-self: flex-end;
-    position: absolute;
-    bottom: 125px;
-    right: 0.5%;
-    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 #total-div p, #total-div b, #total-div button{
-    margin: 5px;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 .checkout-btn{
     padding: 1.5% 2%;
-    font-size: 1.15rem;
     margin: 1%;
     background-color: white;
     border: 1px solid black;
@@ -73,4 +77,8 @@ th, td{
 }
 #empty-cart{
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
 }
