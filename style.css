@@ -25,6 +25,9 @@ h1 {
 button {
     cursor: pointer;
 }
+a, button{
+    color: black;
+}
 
 @keyframes openPage {
     0% {
@@ -252,6 +255,9 @@ button {
 .social-media-icons {
     font-size: 2rem;
 }
+.social-media-icons:hover{
+    fill: #fad370;
+}
 /*Media Queries*/
 @media screen and (max-width:1200px){
     .nav-options:nth-child(2){
@@ -293,7 +299,7 @@ button {
         right: 5%;
         background-color: #104d40;
         border: none;
-        width: 10px;
+        width: 15px;
     }
     .nav-items {
         display: none;

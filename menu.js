@@ -141,6 +141,21 @@ closePopUp.addEventListener("click", () => {
 upDown[0].addEventListener("click", goUp)
 upDown[1].addEventListener("click", goDown)
 var menulist = document.getElementById("menu");
+$(document).ready(function(){
+    $(".main-section-nav").mouseenter(function(){
+        $(".main-items-list").stop().slideToggle(700);
+    });
+    $(".main-section-nav").mouseleave(function(){
+        $(".main-items-list").stop().slideToggle(700);
+    });
+    $(".bev-section-nav").mouseenter(function(){
+        $(".beverages-items-list").stop().slideToggle(700);
+    });
+    $(".bev-section-nav").mouseleave(function(){
+        $(".beverages-items-list").stop().slideToggle(700);
+    });
+})
+
 
 fetch('menu.json')
     .then(response => response.json())

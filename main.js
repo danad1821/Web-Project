@@ -49,7 +49,8 @@ dropDown[0].addEventListener("click", ()=>{
 })
 let btnSignOut=document.getElementById("sign-out-btn")
 btnSignOut.addEventListener("click", function(){
-    window.sessionStorage.setItem("SignedIn", "false")
+    window.sessionStorage.setItem("SignedIn", "false");
+    document.getElementById("account").style.display="none";
     location.reload()
     document.getElementsByClassName("signed-out")[0].style.display = "block";
     document.getElementsByClassName("account-info")[0].style.display = "none";
@@ -57,7 +58,9 @@ btnSignOut.addEventListener("click", function(){
 })
 let btnSignOut2=document.getElementById("sign-out-btn2")
 btnSignOut2.addEventListener("click", function(){
-    window.sessionStorage.setItem("SignedIn", "false")
+    window.sessionStorage.setItem("SignedIn", "false");
+    let navItems=document.getElementsByClassName("nav-items");
+        navItems[0].style.display="none";
     location.reload()
     document.getElementsByClassName("signed-out")[1].style.display = "block";
     document.getElementsByClassName("account-info")[1].style.display = "none";
