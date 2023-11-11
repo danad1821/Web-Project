@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-std" rel="stylesheet">
+
+
 </head>
+
 <body onload="accountHover()">
     <!-- Navigation Bar -->
-    <nav class="nav-bar nav-1" id="nav-bar">
+    <nav class="nav-bar" id="nav-bar">
         <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
                 class="logo-img"></a>
         <a href="index.html" class="nav-options">Home</a>
@@ -37,58 +41,367 @@
                 <li>
                     <div class="account-info_div">
                         <h4 id="username-text">Username</h4>
-                        <a href="cart.html" class="cart-btn">
-                            <svg class="account-icons" class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 576 512">
-                                <path
-                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
-                            </svg>
-                        </a>
+                        <svg class="account-icons" id="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                        </svg>
                     </div>
                 </li>
                 <li><button id="sign-out-btn">Sign Out</button></li>
             </ul>
         </div>
     </nav>
-    <nav class="nav-2">
-        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
-                class="logo-img"></a>
-        <button class="drop-nav-bar">
-            <svg id="dropdown-menu" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafafa}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-        </button>
-        <div class="nav-items">
-            <ul>
-                <li><a href="index.html" class="nav-options-nav2">Home</a></li>
-                <li><a href="about.html" class="nav-options-nav2">About Us</a></li>
-                <li><a href="locations.html" class="nav-options-nav2">Locations</a></li>
-                <li><a href="menu.html" class="nav-options-nav2">Menu</a></li>
-                <li><a href="contact.html" class="nav-options-nav2">Contact Us</a></li>
-                <li><a href="review.html" class="nav-options-nav2">Leave a review</a></li>
-            </ul>
-            <ul class="signed-out account-section">
-                <li><a href="sign-in.html">Log In</a></li>
-                <li><a href="">Sign Up</a></li>
-            </ul>
-            <ul class="account-info account-section">
-                <li>
-                    <div class="account-info_div">
-                        <h4 id="username-text2">Username</h4>
-                        <a href="cart.html" class="cart-btn">
-                            <svg class="account-icons" class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 576 512">
-                                <path
-                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-                <li><button id="sign-out-btn2">Sign Out</button></li>
-            </ul>
-        </div>
-    </nav>
     <!-- Body -->
-    <main class="review-body transition-fade">
+    <!-- page title  -->
+    <main class="review-body">
+        <div class="Title">
 
+            <img src="Malaz Design/Malaz---icon cropped.png">
+            <section class="title-text">
+                <h1 class="first-part">Share Your</h1>
+                <h1 class="second-part">Experience</h1>
+            </section>
+        </div>
+        <div class="text">
+            <h6>We aim to provide you with an excellent experience. <br> Share your feedback.</h6>
+        </div>
+
+        <div class="main-container">
+            <!-- information  -->
+            <form  name="feedback-form" noval  >
+                <!-- Username -->
+            <section class="names">
+                <!-- first name -->
+                <section id="first-name"  class="required-feedback">
+                    <div class="label">
+                        <label for="firstname">First Name</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="text" placeholder="Your Name" class="input" id="firstname" name="firstname">
+                    <small>Error Message</small>
+                </section>
+                <!-- last-name -->
+                <section id="last-name"  class="required-feedback">
+                    <div class="label other">
+                        <label>Last Name</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="text" placeholder="Your Name" class="input other" id="lastname">
+                    <small>Error Message</small>
+                    
+                </section>
+
+            </section>
+
+            <section class="information">
+                <section class="phone-number required-feedback ">
+                    <div class="label">
+                        <label>Phone Number</label>
+                        <span class="required">*</span>
+                    </div>
+                    <div>
+                    <div class="prefix">
+                        <select name="mobileprefix" class="input">
+                            <option value="+961" selected>+961</option>
+                            <option value="93">+93</option>
+                            <option value="355">+355</option>
+                            <option value="213">+213</option>
+                            <option value="1">+1</option>
+                            <option value="213"> +213</option>
+                        </select>
+
+                            <input type="tel" id="mobilenumber" class="input" name="mobilenumber">
+                           
+                
+                        </div>
+                        <small>Error Message</small>
+                    </div>
+
+                </section>
+
+                <section class="email required-feedback" >
+                    <div class="label other">
+                        <label>Email</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="text" placeholder="Email" class="input other" name="email" id="email">
+                    <small>Error Message</small>
+                </section>
+
+                <section class="birthday required-feedback ">
+                    <div class="label other">
+                        <label>Birthday</label>
+                        <span class="required">*</span>
+                    </div>
+                    <input type="date" placeholder="dd/mm/yyyy" class="input other" id="bday" name="bday">
+                    <small>Error Message</small>
+                </section>
+            </section>
+            <!-- order type: delivery or in house -->
+            <section class="order-type required-feedback">
+                <div class="service-type delivery">
+                    <input type="radio" name="type-of-order" value="Delivery" id="DeliveryRadio" >
+                    <label>Delivery</label>
+                </div>
+
+                <div class="service-type in-house">
+                    <input type="radio" name="type-of-order" value="In-House" id="InHouseRadio">
+                    <label> In House</label>
+                </div>
+                <small id="order">Error Message</small>
+            </section>
+            <!-- Delivery  -->
+            <section class="hidden Experience Delivery-Active">
+                <section class="Waiter">
+                    <label>What was the name of the server that talked to you?</label>
+                    <input type="text" class="Delivery" id="nameofserver">
+                </section>
+                <section class="rating">
+                    <div class="rating-item">
+                        <label>Delivery Time</label>
+                        <div class="rate Delivery">
+                            <input type="radio" id="star5-deliverytime"  name="rate-deliverytime" value="5"
+                                data-category="delivery" />
+                            <label for="star5-deliverytime"></label>
+                            <input type="radio" id="star4-deliverytime"  name="rate-deliverytime" value="4"
+                                data-category="delivery" />
+                            <label for="star4-deliverytime"></label>
+                            <input type="radio" id="star3-deliverytime"  name="rate-deliverytime" value="3"
+                                data-category="delivery" />
+                            <label for="star3-deliverytime"></label>
+                            <input type="radio" id="star2-deliverytime"  name="rate-deliverytime" value="2"
+                                data-category="delivery" />
+                            <label for="star2-deliverytime"></label>
+                            <input type="radio" id="star1-deliverytime"  name="rate-deliverytime" value="1"
+                                data-category="delivery" />
+                            <label for="star1-deliverytime"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Food Quality</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-foodquality" name="rate-foodquality" value="5"
+                                data-category="delivery" />
+                            <label for="star5-foodquality"></label>
+                            <input type="radio" id="star4-foodquality" name="rate-foodquality" value="4"
+                                data-category="delivery" />
+                            <label for="star4-foodquality"></label>
+                            <input type="radio" id="star3-foodquality" name="rate-foodquality" value="3"
+                                data-category="delivery" />
+                            <label for="star3-foodquality"></label>
+                            <input type="radio" id="star2-foodquality" name="rate-foodquality" value="2"
+                                data-category="delivery" />
+                            <label for="star2-foodquality"></label>
+                            <input type="radio" id="star1-foodquality" name="rate-foodquality" value="1"
+                                data-category="delivery" />
+                            <label for="star1-foodquality"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Cleanliness</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-cleanliness" name="rate-cleanliness" value="5"
+                                data-category="delivery" />
+                            <label for="star5-cleanliness"></label>
+                            <input type="radio" id="star4-cleanliness" name="rate-cleanliness" value="4"
+                                data-category="delivery" />
+                            <label for="star4-cleanliness"></label>
+                            <input type="radio" id="star3-cleanliness" name="rate-cleanliness" value="3"
+                                data-category="delivery" />
+                            <label for="star3-cleanliness"></label>
+                            <input type="radio" id="star2-cleanliness" name="rate-cleanliness" value="2"
+                                data-category="delivery" />
+                            <label for="star2-cleanliness"></label>
+                            <input type="radio" id="star1-cleanliness" name="rate-cleanliness" value="1"
+                                data-category="delivery" />
+                            <label for="star1-cleanliness"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Packaging</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-packaging" name="rate-packaging" value="5"
+                                data-category="delivery" />
+                            <label for="star5-packaging"></label>
+                            <input type="radio" id="star4-packaging" name="rate-packaging" value="4"
+                                data-category="delivery" />
+                            <label for="star4-packaging"></label>
+                            <input type="radio" id="star3-packaging" name="rate-packaging" value="3"
+                                data-category="delivery" />
+                            <label for="star3-packaging"></label>
+                            <input type="radio" id="star2-packaging" name="rate-packaging" value="2"
+                                data-category="delivery" />
+                            <label for="star2-packaging"></label>
+                            <input type="radio" id="star1-packaging" name="rate-packaging" value="1"
+                                data-category="delivery" />
+                            <label for="star1-packaging"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Customer Service</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-customerservice" name="rate-customerservice" value="5"
+                                data-category="delivery" />
+                            <label for="star5-customerservice"></label>
+                            <input type="radio" id="star4-customerservice" name="rate-customerservice" value="4"
+                                data-category="delivery" />
+                            <label for="star4-customerservice"></label>
+                            <input type="radio" id="star3-customerservice" name="rate-customerservice" value="3"
+                                data-category="delivery" />
+                            <label for="star3-customerservice"></label>
+                            <input type="radio" id="star2-customerservice" name="rate-customerservice" value="2"
+                                data-category="delivery" />
+                            <label for="star2-customerservice"></label>
+                            <input type="radio" id="star1-customerservice" name="rate-customerservice" value="1"
+                                data-category="delivery" />
+                            <label for="star1-customerservice"></label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="extra-feedback">
+                    <label>What can we do to improve your experience?</label>
+                    <textarea rows="5" cols="40" class="text-area" id="improve"></textarea>
+                </section>
+            </section>
+
+            <section class="hidden Experience InHouse-Active">
+                <select value="locations" id="Select">
+                    <option value=""> Select Restaurant</option>
+                    <option value="5">Beirut</option>
+                    <option value="10">Tripoli</option>
+                    <option value="15">Tyre</option>
+                </select>
+                <section class="Waiter">
+                    <label>What was the name of the waiter that served you?</label>
+                    <input type="text" id="waitername">
+                </section>
+                <section class="Manager">
+                    <div>
+                        <label>Did the manager visit your name</label>
+                        <input type="radio" name="Yes/No" value="Yes" id="Yes">
+                        <label>Yes</label>
+                        <input type="radio" name="Yes/No" value="No" id="No">
+                        <label>No</label>
+                        <div class="hidden Yes-Active" id="managername">
+                            <label>What was the name of the manager who visited your table</label>
+                            <input type="text" >
+
+                        </div>
+
+                    </div>
+                </section>
+                <section class="rating">
+                    <div class="rating-item">
+                        <label>Service</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-service" name="rate-service" value="5"
+                                data-category="house" />
+                            <label for="star5-service"></label>
+                            <input type="radio" id="star4-service" name="rate-service" value="4"
+                                data-category="house" />
+                            <label for="star4-service"></label>
+                            <input type="radio" id="star3-service" name="rate-service" value="3"
+                                data-category="house" />
+                            <label for="star3-service"></label>
+                            <input type="radio" id="star2-service" name="rate-service" value="2"
+                                data-category="house" />
+                            <label for="star2-service"></label>
+                            <input type="radio" id="star1-service" name="rate-service" value="1"
+                                data-category="house" />
+                            <label for="star1-service"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Food Quality</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-foodquality2" name="rate-foodquality2" value="5"
+                                data-category="house" />
+                            <label for="star5-foodquality2"></label>
+                            <input type="radio" id="star4-foodquality2" name="rate-foodquality2" value="4"
+                                data-category="house" />
+                            <label for="star4-foodquality2"></label>
+                            <input type="radio" id="star3-foodquality2" name="rate-foodquality2" value="3"
+                                data-category="house" />
+                            <label for="star3-foodquality2"></label>
+                            <input type="radio" id="star2-foodquality2" name="rate-foodquality2" value="2"
+                                data-category="house" />
+                            <label for="star2-foodquality2"></label>
+                            <input type="radio" id="star1-foodquality2" name="rate-foodquality2" value="1"
+                                data-category="house" />
+                            <label for="star1-foodquality2"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Cleanliness</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-cleanliness2" name="rate-cleanliness2" value="5"
+                                data-category="house" />
+                            <label for="star5-cleanliness2"></label>
+                            <input type="radio" id="star4-cleanliness2" name="rate-cleanliness2" value="4"
+                                data-category="house" />
+                            <label for="star4-cleanliness2"></label>
+                            <input type="radio" id="star3-cleanliness2" name="rate-cleanliness2" value="3"
+                                data-category="house" />
+                            <label for="star3-cleanliness2"></label>
+                            <input type="radio" id="star2-cleanliness2" name="rate-cleanliness2" value="2"
+                                data-category="house" />
+                            <label for="star2-cleanliness2"></label>
+                            <input type="radio" id="star1-cleanliness2" name="rate-cleanliness2" value="1"
+                                data-category="house" />
+                            <label for="star1-cleanliness2"></label>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <label>Atmosphere</label>
+                        <div class="rate">
+                            <input type="radio" id="star5-atmosphere" name="rate-atmosphere" value="5"
+                                data-category="house" />
+                            <label for="star5-atmosphere"></label>
+                            <input type="radio" id="star4-atmosphere" name="rate-atmosphere" value="4"
+                                data-category="house" />
+                            <label for="star4-atmosphere"></label>
+                            <input type="radio" id="star3-atmosphere" name="rate-atmosphere" value="3"
+                                data-category="house" />
+                            <label for="star3-atmosphere"></label>
+                            <input type="radio" id="star2-atmosphere" name="rate-atmosphere" value="2"
+                                data-category="house" />
+                            <label for="star2-atmosphere"></label>
+                            <input type="radio" id="star1-atmosphere" name="rate-atmosphere" value="1"
+                                data-category="house" />
+                            <label for="star1-atmosphere"></label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="extra-feedback">
+                    <label>What can we do to improve your experience?</label>
+                    <textarea rows="5" cols="40" class="text-area" id="improve2"></textarea>
+                </section>
+
+
+            </section>
+            <button type="submit" class="show-popup" id="btn">Submit</button>
+            <p class="success"></p>
+        </form>
+
+            <div id="overlay" class="hidden"></div>
+
+            <div id="popup-container" class="hidden">
+                <div class="card">
+                    <button type="button" class="dismiss">×</button>
+                    <div class="header">
+                        <!-- Your pop-up content goes here -->
+                        <span class="title">Thank You!</span>
+                        <p class="message">Thank you for your feedback. We hope to have provided you a wonderful
+                            experience and will improve iin the future.</p>
+                    </div>
+                    <button type="button" class="confirm">confirm</button>
+                </div>
+            </div>
+            
+            <!-- <span role="alert" id="nameError" aria-hidden="true"> Please enter First Name </span> -->
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -102,13 +415,15 @@
         <div class="footer-p2">
             <div class="icons-list">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <path
                             d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
                     </svg>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <style>
                             svg {
                                 fill: #ffffff;
@@ -119,7 +434,8 @@
                     </svg>
                 </a>
                 <a href="https://twitter.com/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512">
                         <style>
                             svg {
                                 fill: #ffffff
@@ -130,7 +446,8 @@
                     </svg>
                 </a>
                 <a href="https://www.tiktok.com/en/" target="_blank">
-                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
                         <style>
                             svg {
                                 fill: #ffffff
@@ -144,7 +461,9 @@
             <p class="copyright">&copy; 2023 Malaz Copyright</p>
         </div>
     </footer>
-    <script src="https://unpkg.com/swup@4"></script>
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="review.js"></script>
+
 </body>
+
 </html>
