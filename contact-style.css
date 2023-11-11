@@ -487,6 +487,9 @@ button:active {
   max-height: 40vh;
   color: #104d40;
 }
+.ask-a-question input{
+  padding-left: 5px;
+}
 #ask-h1 {
   font-size: 2em;
   margin-bottom: 3%;
