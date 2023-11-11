@@ -8,7 +8,29 @@
 
 html {
     scroll-behavior: smooth;
+}
+body{
+    background-color: #F8EFE5;
+}
 
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fad370;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #CE5B68;
 }
 
 body {
@@ -25,7 +47,9 @@ h1 {
 button {
     cursor: pointer;
 }
-a, button{
+
+a,
+button {
     color: black;
 }
 
@@ -104,7 +128,7 @@ a, button{
     font-size: 1.5rem;
 }
 
-.account{
+.account {
     list-style: none;
     position: absolute;
     top: 82%;
@@ -123,6 +147,7 @@ a, button{
 #account {
     display: none;
 }
+
 .account-section,
 .signed-out {
     margin: 1%;
@@ -166,7 +191,8 @@ a, button{
     padding-right: 2%;
     margin-bottom: 7px;
 }
-.signed-out li:nth-child(1){
+
+.signed-out li:nth-child(1) {
     margin-top: 8px;
 }
 
@@ -190,7 +216,8 @@ a, button{
     fill: #CE5B68;
 }
 
-#sign-out-btn, #sign-out-btn2 {
+#sign-out-btn,
+#sign-out-btn2 {
     border: none;
     background-color: #F8EFE5;
     font-weight: 600;
@@ -255,19 +282,24 @@ a, button{
 .social-media-icons {
     font-size: 2rem;
 }
-.social-media-icons:hover{
+
+.social-media-icons:hover {
     fill: #fad370;
 }
+
+
 /*Media Queries*/
-@media screen and (max-width:1200px){
-    .nav-options:nth-child(2){
+@media screen and (max-width:1200px) {
+    .nav-options:nth-child(2) {
         margin-left: 8%;
     }
-    .logo-img{
+
+    .logo-img {
         height: 110px;
         width: 210px;
     }
 }
+
 @media screen and (max-width: 950px) {
     .nav-bar {
         font-size: 1.3em;
@@ -277,7 +309,7 @@ a, button{
         font-size: 15px;
     }
 
-    
+
     .nav-1 {
         display: none;
     }
@@ -294,13 +326,15 @@ a, button{
         font-weight: 400;
         height: 10vh;
     }
-    .drop-nav-bar{
+
+    .drop-nav-bar {
         position: absolute;
         right: 5%;
         background-color: #104d40;
         border: none;
         width: 15px;
     }
+
     .nav-items {
         display: none;
         list-style: none;
@@ -318,10 +352,12 @@ a, button{
         margin: 0.2%;
         border: 1px solid gray;
     }
-    .nav-2 li{
+
+    .nav-2 li {
         list-style: none;
     }
-    .nav-options-nav2{
+
+    .nav-options-nav2 {
         text-decoration: none;
         color: black;
         margin-left: 5px;
@@ -329,13 +365,16 @@ a, button{
         font-size: 1.2rem;
         padding: 5px 0;
     }
-    .nav-options-nav2:hover{
+
+    .nav-options-nav2:hover {
         color: #CE5B68;
     }
-    .account-section{
+
+    .account-section {
         border-top: 1px solid black;
     }
-    .account-info_div{
+
+    .account-info_div {
         width: 135px;
     }
 }
@@ -352,7 +391,7 @@ a, button{
 }
 
 .transition-fade {
-    animation: openPage 400ms linear 1 forwards;
+    animation: openPage 500ms linear 1 forwards;
 }
 
 html.is-animating .transition-fade {

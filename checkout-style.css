@@ -1,22 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-#back-div{
+
+#back-div {
     margin: 1% 0.5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    align-self: flex-start;
+    margin-left: 10px;
 }
-/* Order Info */
-body{
+#back-div h3{
+    padding-left: 6px;
+}
+
+body {
     background-color: #BAC9A3;
+    display: flex;
+    justify-content: center;
 }
-input{
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+input {
     border: none;
     border-bottom: 1px solid black;
+    padding-left: 5px;
+    border-radius: 2px;
 }
-label{
-    margin-bottom: 5px;
+
+input:focus {
+    outline: none;
 }
-.checkout-content{
+
+input:required:focus {
+    border-bottom: 1px solid red;
+    outline: none;
+}
+
+textarea:required:focus {
+    border-bottom: 1px solid red;
+    outline: none;
+}
+
+input:focus:valid {
+    border-bottom: 1px solid #104d40;
+    outline: none;
+}
+
+input:focus:invalid {
+    border-bottom: 1px solid red;
+    outline: none;
+}
+
+
+input:valid {
+    border-bottom: 1px solid #104d40;
+}
+
+label {
+    margin-bottom: 7px;
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+}
+
+select:focus {
+    outline: none;
+}
+
+option,
+select,
+button {
+    color: black;
+}
+
+.checkout-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -25,26 +95,40 @@ label{
     align-items: center;
     justify-content: center;
 }
-.general-info{
-    margin-top: 5%;
 
+.general-info {
+    margin-top: 5%;
 }
-.total-div{
+
+.general-info>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-div {
     display: flex;
     align-items: center;
+    margin-left: 1px;
 }
-.total-title, .total-price{
-    margin: 1% 0.5%;
+
+.total-title,
+.total-price {
+    margin: 1% 0 1% 0
 }
-/* Location and Payments */
-.main-content{
+
+.total-price {
+    margin-left: 10px;
+}
+
+.main-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 79.5vw;
 }
-.checkout-section{
+
+.checkout-section {
     background-color: white;
     color: black;
     margin: 1%;
@@ -53,24 +137,29 @@ label{
     padding: 4%;
     border-radius: 6px;
 }
-.sub-section{
+
+.sub-section {
     width: 40%;
     min-height: 40vh;
 }
-.section-title{
+
+.section-title {
     margin: 0.2% 0;
 }
-.payment-info{
+
+.payment-info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.payment-element, .location-element{
+.payment-element,
+.location-element {
     display: flex;
     flex-direction: column;
     margin: 0.8%;
 }
+
 /* .address .location-element:nth-child(1){
     width: 38vw;
     margin-right: 2%;
@@ -79,48 +168,58 @@ label{
     max-width: 50%;
     margin: 1%;
 }*/
+.location-element input {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
 
-.payment-info input, .payment-info select, .location-delivery input{
+.payment-info input,
+.payment-info select,
+.location-delivery input,
+.location-delivery select {
     font-size: 15px;
 }
-.location-element label{
+
+.location-element label {
     margin: 0.5%;
     margin-right: 3%;
 }
-.location-delivery input{
+
+.location-delivery input {
     width: 80%;
 }
 
-input{
-    padding-left: 5px;
-    border-radius: 2px;
-}
-.payment-name, .final-payment-elements{
+.payment-name,
+.final-payment-elements {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* .name-inputs{
     margin: 0.5%; 
     width: 220px;
 } */
-.final-payment-elements{
+.final-payment-elements {
     margin-top: 10px;
 }
-.final-payment-elements input{
+
+.final-payment-elements input {
     max-width: 100px;
 }
-.final-payment-elements .payment-element{
+
+.final-payment-elements .payment-element {
     margin-right: 10px;
 }
-#finalizeBtn{
+
+#finalizeBtn {
     display: inline-block;
     padding: 1%;
     margin: 1%;
     border-radius: 12px;
-    justify-self: end;
-}  
-@media screen and (max-width: 1250px){
-    .checkout-section{
+}
+
+@media screen and (max-width: 1250px) {
+    .checkout-section {
         min-width: 70vw;
     }
 }

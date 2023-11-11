@@ -1,35 +1,42 @@
-let ordered = JSON.parse(window.sessionStorage.getItem('order'));
-function showPaymentMethod() {
-    let method = document.getElementsByClassName("payment-info");
-    method[0].style.display = "flex";
-    method[0].style.flexDirection = "column"
-    let placeBtn=document.getElementById("finalizeBtn")
-    placeBtn.style.display="inline-block"
-    placeBtn.style.marginBottom="1.5%"
-}
-
-let placeBtn=document.getElementById("finalizeBtn")
-placeBtn.addEventListener("click", function(){
-    let place=true;
-    let reqFields=document.getElementsByClassName("required")
-    for(let i=0; i<reqFields.length; i++) {
-        if (reqFields[i].value==""){
-            place=false
+$(document).ready(function () {
+    // Get the ordered items from session storage
+    const ordered = JSON.parse(window.sessionStorage.getItem('order'));
+    event.preventDefault()
+    // $("input[type='tel']").keydown(()=>{
+        
+    // })
+    
+    // Place the order when the finalize button is clicked
+    $('#finalizeBtn').click(function () {
+        // Check if all required fields are filled in
+        let place = true;
+        $('.required').each(function () {
+            if ($(this).val() === '') {
+                place = false;
+            }
+        });
+        // If not all required fields are filled in, show an alert
+        if (!place) {
+            alert("error")
         }
-    };
-    if(place==false){
-        alert("an error has occured")
-    }
-    else{
-        window.sessionStorage.removeItem('order')
-        window.sessionStorage.removeItem('totalPrice')
-        window.open("index.html", "_self");
-    }
-})
-let tot=0;
-for (let i = 0; i < ordered.length; i++) {
-    tot+=ordered[i].price;
-}
-let price=document.getElementsByClassName("total-price")[0];
-price.textContent="$"+tot.toFixed(2).toString();
+        else {
+            // Remove the order and total price from session storage
+            window.sessionStorage.removeItem('order');
+            window.sessionStorage.removeItem('totalPrice');
 
+            // Open the index page
+            window.open('index.html', '_self');
+        }
+
+    });
+
+    // Calculate the total price
+    let totalPrice = 0;
+    for (let i = 0; i < ordered.length; i++) {
+        totalPrice += ordered[i].price;
+    }
+
+    // Display the total price
+    $('.total-price').first().text('$' + totalPrice.toFixed(2));
+
+})

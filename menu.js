@@ -181,8 +181,10 @@ fetch('menu.json')
                     <p class="menu-item-description"><b>Description:</b> ${item.description}</p>
                     <p class="menu-item-price"><b>Price:</b> $${item.price.toFixed(2)}</p>
                     <form class="menu-item-details">
-                        <label for="quantity" class="quantity-title">Quantity:</label>
-                        <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
+                        <div>
+                            <label for="quantity" class="quantity-title">Quantity:</label>
+                            <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
+                        </div>
                         <button class="add-btn">+</button>
                     </form>
                 `
@@ -211,8 +213,10 @@ fetch('menu.json')
                         <p class="menu-item-description"><b>Description:</b> ${subItem.description}</p>
                         <p class="menu-item-price"><b>Price:</b> $${subItem.price.toFixed(2)}</p>
                         <form class="menu-item-details">
-                            <label for="quantity" class="quantity-title">Quantity:</label>
-                            <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
+                            <div>
+                                <label for="quantity" class="quantity-title">Quantity:</label>
+                                <input type="number" class="menu-item-quantity" min="0" max="10" placeholder="0">
+                            </div>
                             <button class="add-btn">+</button>
                         </form>
                         `
