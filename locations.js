@@ -58,31 +58,61 @@ document.addEventListener("DOMContentLoaded", function () {
     
     let controller = new ScrollMagic.Controller();
 
+    
+    let fadeInDuration = 0.5;
+    let fadeOutDuration = 1.2; 
+
+    
+    let fadeInBeirut = new ScrollMagic.Scene({
+        triggerElement: '.locations-lebanon.Beirut',
+        duration: fadeInDuration * window.innerHeight,
+        triggerHook: 'onEnter'
+    })
+    .setTween(TweenMax.fromTo('.locations-lebanon.Beirut', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
+    .addTo(controller);
+
+    
+    let fadeOutBeirut = new ScrollMagic.Scene({
+        triggerElement: '.locations-lebanon.Beirut',
+        duration: fadeOutDuration * window.innerHeight, // Longer duration for fade-out
+        triggerHook: 'onLeave'
+    })
+    .setTween(TweenMax.fromTo('.locations-lebanon.Beirut', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
+    .addTo(controller);
+
+    
+    let fadeInTripoli = new ScrollMagic.Scene({
+        triggerElement: '.locations-lebanon.Byblos',
+        duration: fadeInDuration * window.innerHeight,
+        triggerHook: 'onEnter'
+    })
+    .setTween(TweenMax.fromTo('.locations-lebanon.Byblos', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
+    .addTo(controller);
+
+    
+    let fadeOutTripoli = new ScrollMagic.Scene({
+        triggerElement: '.locations-lebanon.Byblos',
+        duration: fadeOutDuration * window.innerHeight, // Longer duration for fade-out
+        triggerHook: 'onLeave'
+    })
+    .setTween(TweenMax.fromTo('.locations-lebanon.Byblos', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
+    .addTo(controller);
+
    
-    let transitionDuration = 0.5;
+    let fadeInTyre = new ScrollMagic.Scene({
+        triggerElement: '.locations-lebanon.Batroun',
+        duration: fadeInDuration * window.innerHeight,
+        triggerHook: 'onEnter'
+    })
+    .setTween(TweenMax.fromTo('.locations-lebanon.Batroun', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
+    .addTo(controller);
 
-  
-    let transitionBeirutTripoli = new ScrollMagic.Scene({
-            triggerElement: '.locations-lebanon.Beirut',
-            duration: transitionDuration * window.innerHeight,
-            triggerHook: 'onLeave'
-        })
-        .setTween(TweenMax.to('.locations-lebanon.Beirut', transitionDuration, { opacity: 0 }))
-        .addTo(controller);
-
-    let transitionTripoliTyre = new ScrollMagic.Scene({
-            triggerElement: '.locations-lebanon.Tripoli',
-            duration: transitionDuration * window.innerHeight,
-            triggerHook: 'onLeave'
-        })
-        .setTween(TweenMax.to('.locations-lebanon.Tripoli', transitionDuration, { opacity: 0 }))
-        .addTo(controller);
-
-    let transitionTyreBeirut = new ScrollMagic.Scene({
-            triggerElement: '.locations-lebanon.Tyre',
-            duration: transitionDuration * window.innerHeight,
-            triggerHook: 'onEnter'
-        })
-        .setTween(TweenMax.fromTo('.locations-lebanon.Tyre', transitionDuration, { opacity: 0 }, { opacity: 1 }))
-        .addTo(controller);
+    
+    let fadeOutTyre = new ScrollMagic.Scene({
+        triggerElement: '.locations-lebanon.Batroun',
+        duration: fadeOutDuration * window.innerHeight, // Longer duration for fade-out
+        triggerHook: 'onLeave'
+    })
+    .setTween(TweenMax.fromTo('.locations-lebanon.Batroun', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
+    .addTo(controller);
 });

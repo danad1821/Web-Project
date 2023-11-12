@@ -8,6 +8,7 @@
     margin: 5% 0%;
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -27,7 +28,7 @@
 
 .title {
     margin-bottom: 5px;
-    font-size: 50px;
+    font-size: 65px;
     font-family: tw cen mt std;
 }
 
@@ -42,9 +43,14 @@
     min-height: 40px;
     border-radius: 30px;
     border: none;
-    color: #f6f6f6;
     background-color: #ce5b68;
     font-size: 1.1em;
+}
+
+.info button a {
+    text-decoration: none;
+    color: #f6f6f6;
+    
 }
 
 .info button:hover {
@@ -75,7 +81,7 @@
 
 .list img {
     width: 60vw;
-    height: 70vh;
+    height: auto;
     object-fit: cover;
 
 }
@@ -143,7 +149,7 @@
     position: absolute;
     bottom: 10px;
     color: #fff;
-    top: 70%;
+    top: 63%;
     left: 0;
     width: 100%;
     margin: 0;
@@ -171,9 +177,18 @@
 
 
 }
+
+.slider .dots li {
+    cursor: pointer; 
+}
+
+
+.slider .dots li:hover {
+    pointer-events: auto;
+}
 .locations-lebanon h5{
     font-family: tw cen mt std ;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 10px;
     color: #104d40;
 }
@@ -188,9 +203,17 @@
 
 .locations-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-size: 65px;
+    font-family: tw cen mt std;
+    margin: 20px 0px;
 }
 
 .locations-lebanon {
@@ -218,47 +241,165 @@
     padding: 1.5%;
     border-radius: 30px;
     border: none;
-    color: #104d40;
     background-color: #fad370;
     font-size: 1.1em;
 }
 
-#go-to-contactus {
+.go-to-contactus {
     font-weight: bolder;
     padding: 18px;
-    margin: 20px 0px;
+   
 }
 
-#go-to-contactus:hover {
+.go-to-contactus a {
+   text-decoration: none;
+   color: #104d40;
+   
+}
+.go-to-contactus:hover {
     background-color: #fdc841;
 }
 
 
+.item img {
+    width: 700px;
+    height: 600px;
+    
+}
+
+@media screen and (max-width: 900px) {
+   .beginning{
+    margin-bottom: 100px;
+   }
+    .info {
+        margin-top: -100px;
+        margin-left: 5%;
+        max-width: 40%;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        
+    } 
+    
+.item img {
+    width: 500px;
+    height: 600px;
+    
+}
+}
+@media screen and (max-width: 768px) {
+    .beginning{
+        margin-top: -50px;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .info {
+        margin-left: 5%;
+        max-width: 55%;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .info button {
+        width: 50%;
+        font-size: 12px;
+        
+    }
+
+    .info p {
+        width: 80%;
+        font-size: 15px;
+
+    }
+    .slider {
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    .dots{
+       visibility: hidden;
+    }
+
+.item img {
+    width: 250px;
+    height: 250px;
+    
+}
+#title{
+    font-size: 40px;
+}
+
+.locations-lebanon h5{
+    font-size: 25px;
+}
+.locations-lebanon p{
+    font-size: 15px;
+}
+.locations-lebanon{
+    width: fit-content;
+    height: fit-content;
+}
+.locations-lebanon button{
+   font-size: 12px;
+}
+
+.buttons {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.buttons button {
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: transparent;
+
+
+}
 
 
 
+.buttons button:hover{
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.13);
+    background-color: #a8a8a8a9;
+    
+}
 
 
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 3px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .arrow.right:hover,
+  .arrow.left:hover{
+    border-width: 0 2px 2px 0;
+    
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  
+}

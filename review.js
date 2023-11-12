@@ -9,10 +9,9 @@ let yesQuest = document.querySelector(".Yes-Active")
 let noAnswer=document.querySelector("#No");
 let frstname=document.querySelector("#firstname");
 let lstname=document.querySelector("#lastname");
-let mobilenumber=document.querySelector("#mobilenumber");
-let email=document.querySelector("#email");
+let contactinfo=document.querySelector("#email-phone");
 let bdayInput = document.querySelector("#bday")
-// let orderType =document.querySelector (".service-type")
+let orderType =document.querySelector (".service-type")
 
 /*prevent form from submitting by default*/
 form.addEventListener('submit', function(event){
@@ -135,10 +134,12 @@ inHouseRadio.addEventListener('click', function() {
 });
 
 function resetForm() {
-    form.reset();
+    document.body.classList.remove('popup-open');
+    location.reload();
 }
 
 function showPopup() {
+    document.body.classList.add('popup-open');
     document.getElementById('overlay').style.display = 'block';
     document.getElementById('popup-container').style.display = 'block';
 }
@@ -150,11 +151,10 @@ form.addEventListener('submit', (event) => {
 });
 
 function dismissPopup() {
+    document.body.classList.remove('popup-open');
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('popup-container').style.display = 'none';
-  
 }
-
 
 let dismissElements = document.querySelectorAll('.dismiss');
 
@@ -199,11 +199,11 @@ function validateFirstName(frstname) {
 function validateLastName(lstname) {
     return /^[a-zA-Z]{1,10}$/i.test(lstname);
 }
-function validateEmail(email) {
-    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email);
-}
-function validateNumber(mobilenumber) {
-    return /^[0-9]+$/.test(mobilenumber.trim());
+function validateEmailOrPhoneNumber(inputValue) {
+    const isEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(inputValue);
+    const isPhoneNumber = /^[0-9]+$/.test(inputValue.trim());
+
+    return isEmail || isPhoneNumber;
 }
 
 
@@ -235,26 +235,14 @@ function validateForm(callback) {
         removeError(lstname);
     }
 
-    if (mobilenumber.value.trim() == '') {
-        setError(mobilenumber, 'Name cannot be empty');
+    if (contactinfo.value.trim() == '') {
+        setError(contactinfo, 'Please enter either a mobile number or an email');
         isValid = false;
-    } else if (!validateNumber(mobilenumber.value.trim())){
-        setError(mobilenumber, 'Enter a valid number');
+    } else if (!validateEmailOrPhoneNumber(contactinfo.value.trim())) {
+        setError(contactinfo, 'Enter a valid mobile number or email');
         isValid = false;
-    }
-    else {
-        removeError(mobilenumber);
-    }
-
-    if (email.value == '') {
-        setError(email, 'Email cannot be empty');
-        isValid = false;
-    } else if (!validateEmail(email.value)) {
-        setError(email, 'Enter a valid email');
-        isValid = false;
-    }
-    else {
-        removeError(email);
+    } else {
+        removeError(contactinfo);
     }
 
 
@@ -286,34 +274,4 @@ function validateForm(callback) {
             
     }
     
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-//     
-//             else {
-        
-//         var regex = /^\S+@\S+\.\S+$/;
-//         if(regex.test(email) === false) {
-//             printError("emailErr", "Please enter a valid email address");
-//          
- 
-//     if(mobile == "") {
-//         printError("mobileErr", "Please enter your mobile number");
-//         var elem = document.getElementById("mobile");
-//             elem.classList.add("input-2");
-//             elem.classList.remove("input-1");
-//     } else {
-//         var regex = /^[1-9]\d{9}$/;
-//         if(regex.test(mobile) === false) {
-//             printError("mobileErr", "Please enter a valid 10 digit mobile number");
-//          
+       

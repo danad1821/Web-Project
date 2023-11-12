@@ -92,24 +92,38 @@
     </nav>
     <!-- Body -->
     <!-- page title  -->
+    <section class="main-section">
+    <div class="image">
+   
+    <img src="Malaz Design/Malaz---Brand-Pattern-2.png">
+</div>
     <main class="review-body">
         <div class="Title">
 
-            <img src="Malaz Design/Malaz---icon cropped.png">
+            
             <section class="title-text">
-                <h1 class="first-part">Share Your</h1>
-                <h1 class="second-part">Experience</h1>
+                <h1 class="first-part">Share Your Experience</h1>
+                <h6  class="text" >We aim to provide you with an excellent experience. Share your feedback.</h6>
             </section>
         </div>
-        <div class="text">
-            <h6>We aim to provide you with an excellent experience. <br> Share your feedback.</h6>
-        </div>
+          
+        
+
+    </div>
 
         <div class="main-container">
             <!-- information  -->
-            <form  name="feedback-form" noval  >
+           <div class="wrapper"> 
+            <form  name="feedback-form"  >
                 <!-- Username -->
+            <section class="general-information">
+                <section class="overflow">
+                    <section class="section">
+    
+                    <h5>Name</h5>
+                
             <section class="names">
+                
                 <!-- first name -->
                 <section id="first-name"  class="required-feedback">
                     <div class="label">
@@ -127,13 +141,16 @@
                     </div>
                     <input type="text" placeholder="Your Name" class="input other" id="lastname">
                     <small>Error Message</small>
-                    
+                </section>   
                 </section>
 
             </section>
-
+            <section class="section">
+            <h5> Contact Information</h5>
             <section class="information">
-                <section class="phone-number required-feedback ">
+               
+                
+                <!-- <section class="phone-number required-feedback ">
                     <div class="label">
                         <label>Phone Number</label>
                         <span class="required">*</span>
@@ -156,14 +173,14 @@
                         <small>Error Message</small>
                     </div>
 
-                </section>
+                </section> -->
 
-                <section class="email required-feedback" >
+                <section class="email-or-phone required-feedback" >
                     <div class="label other">
-                        <label>Email</label>
+                        <label>Email or</label>
                         <span class="required">*</span>
                     </div>
-                    <input type="text" placeholder="Email" class="input other" name="email" id="email">
+                    <input type="text" placeholder="Email" class="input other" name="email" id="email-phone">
                     <small>Error Message</small>
                 </section>
 
@@ -176,24 +193,31 @@
                     <small>Error Message</small>
                 </section>
             </section>
+        </section>
+        </section>
+        </section>
+        <section class="order">
+            <h5>Service </h5>
             <!-- order type: delivery or in house -->
             <section class="order-type required-feedback">
+                <section class="delivery-InHouse">
                 <div class="service-type delivery">
-                    <input type="radio" name="type-of-order" value="Delivery" id="DeliveryRadio" >
-                    <label>Delivery</label>
+                    <input type="radio" name="type-of-order" value="Delivery" id="DeliveryRadio" class="type-check">
+                    <label  for="DeliveryRadio" class="order-name" >Delivery</label>
                 </div>
 
                 <div class="service-type in-house">
-                    <input type="radio" name="type-of-order" value="In-House" id="InHouseRadio">
-                    <label> In House</label>
+                    <input type="radio" name="type-of-order" value="In-House" id="InHouseRadio" class="type-check">
+                    <label for="InHouseRadio" class="order-name" > In House</label>
                 </div>
+            </section>
                 <small id="order">Error Message</small>
             </section>
             <!-- Delivery  -->
             <section class="hidden Experience Delivery-Active">
                 <section class="Waiter">
                     <label>What was the name of the server that talked to you?</label>
-                    <input type="text" class="Delivery" id="nameofserver">
+                    <input type="text" class="Delivery" id="nameofserver" placeholder="Server Name">
                 </section>
                 <section class="rating">
                     <div class="rating-item">
@@ -300,20 +324,21 @@
 
                 <section class="extra-feedback">
                     <label>What can we do to improve your experience?</label>
-                    <textarea rows="5" cols="40" class="text-area" id="improve"></textarea>
+                    <textarea rows="5" cols="40" class="text-area" id="improve" placeholder=" Enter your text here"></textarea>
                 </section>
             </section>
+        
 
             <section class="hidden Experience InHouse-Active">
                 <select value="locations" id="Select">
-                    <option value=""> Select Restaurant</option>
-                    <option value="5">Beirut</option>
-                    <option value="10">Tripoli</option>
-                    <option value="15">Tyre</option>
+                    <option class="options" value=""> Select Restaurant</option>
+                    <option class="options" value="5">Beirut</option>
+                    <option class="options" value="10">Tripoli</option>
+                    <option class="options" value="15">Tyre</option>
                 </select>
                 <section class="Waiter">
                     <label>What was the name of the waiter that served you?</label>
-                    <input type="text" id="waitername">
+                    <input type="text" id="waitername" placeholder=" Waiter Name">
                 </section>
                 <section class="Manager">
                     <div>
@@ -324,7 +349,7 @@
                         <label>No</label>
                         <div class="hidden Yes-Active" id="managername">
                             <label>What was the name of the manager who visited your table</label>
-                            <input type="text" >
+                            <input type="text"placeholder=" Manager Name " >
 
                         </div>
 
@@ -415,14 +440,17 @@
 
                 <section class="extra-feedback">
                     <label>What can we do to improve your experience?</label>
-                    <textarea rows="5" cols="40" class="text-area" id="improve2"></textarea>
+                    <textarea rows="5" cols="40" class="text-area" id="improve2" placeholder=" Enter your text here"></textarea>
                 </section>
 
 
             </section>
+        </section>
             <button type="submit" class="show-popup" id="btn">Submit</button>
             <p class="success"></p>
         </form>
+    </div>
+</section>
 
             <div id="overlay" class="hidden"></div>
 
