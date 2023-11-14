@@ -175,6 +175,9 @@
 .quantity-title{
     font-weight: 700;
 }
+.menu-item-price{
+    font-weight: bold;
+}
 .menu-item-quantity{
     margin: 1%;
     margin-right: 5%;
@@ -184,6 +187,7 @@
 input[type=number]{
     outline: none;
     margin-left: 5px;
+    font-size: 1.1rem
 }
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1;
@@ -196,6 +200,8 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
     font-weight: 800;
     font-size: 1.3rem;
+    background-color: #104d40;
+    color: white;
 }
 /*Checkout*/
 .checkout{
@@ -370,6 +376,7 @@ input[type=number]::-webkit-inner-spin-button {
         background-color: #CE5B68;
         padding: 15px;
         border-radius: 100%;
+        margin-bottom: 8px;
     }
 }
 @media screen and (max-width: 600px) {

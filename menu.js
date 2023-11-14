@@ -179,7 +179,7 @@ fetch('menu.json')
                     <img class="img-menu-item"src="${item.img}"">
                     <h4 class="menu-item-name">${item.itemName}</h4>
                     <p class="menu-item-description"><b>Description:</b> ${item.description}</p>
-                    <p class="menu-item-price"><b>Price:</b> $${item.price.toFixed(2)}</p>
+                    <p class="menu-item-price">Price: $${item.price.toFixed(2)}</p>
                     <form class="menu-item-details">
                         <div>
                             <label for="quantity" class="quantity-title">Quantity:</label>
@@ -211,7 +211,7 @@ fetch('menu.json')
                         <img class="img-menu-item"src="${subItem.img}"">
                         <h4 class="menu-item-name">${subItem.itemName}</h4>
                         <p class="menu-item-description"><b>Description:</b> ${subItem.description}</p>
-                        <p class="menu-item-price"><b>Price:</b> $${subItem.price.toFixed(2)}</p>
+                        <p class="menu-item-price">Price: $${subItem.price.toFixed(2)}</p>
                         <form class="menu-item-details">
                             <div>
                                 <label for="quantity" class="quantity-title">Quantity:</label>

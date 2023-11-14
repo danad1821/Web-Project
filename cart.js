@@ -147,7 +147,8 @@ window.addEventListener("load", () => {
     if (tableBody.childElementCount == 0) {
         tableBody.parentElement.style.display = "none"
         totalDiv.style.display = "none"
-        emptyCart.style.display = "block"
+        emptyCart.style.display = "flex"
+        document.querySelector("body>h1").style.display="none"
     }
     else {
         tableBody.parentElement.style.display = "table"
@@ -155,6 +156,7 @@ window.addEventListener("load", () => {
         totalDiv.style.flexDirection = "row"
         totalDiv.style.alignItems = "flex-end"
         emptyCart.style.display = "none"
+        document.querySelector("body>h1").style.display="block"
     }
 })
 let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
