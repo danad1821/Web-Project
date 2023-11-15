@@ -57,13 +57,20 @@ function popUp() {
     popUpMsg.style.flexDirection = "column";
 }
 
+let closePopUp = document.getElementById("close-btn");
+closePopUp.addEventListener("click", () => {
+    enableScroll();
+    popContainer.style.display = "none";
+    popUpMsg.style.display = "none";
+})
+
 for (let i = 0; i < ordered.length; i++) {
     let row = document.createElement("tr");
     row.classList.add("tableBody-row")
     row.innerHTML = `
     <td class="row-box">${ordered[i].fname}</td>
-    <td class="row-box"><input type="number" name="" id="" min="0" max="10" value="${ordered[i].quantity}"></td>
-    <td class="row-box price">$${ordered[i].price.toFixed(2)}</td>
+    <td class="row-box middle-box"><input type="number" name="" id="" min="0" max="10" value="${ordered[i].quantity}"></td>
+    <td class="row-box price middle-box">$${ordered[i].price.toFixed(2)}</td>
     <td class="row-box">
         <button class="remove-btn">Remove</button>
     </td>
@@ -86,6 +93,12 @@ for (let j = 0; j < qtNum.length; j++) {
                 j = 0
             });
             document.getElementById("no").addEventListener("click", () => {
+                enableScroll();
+                popContainer.style.display = "none";
+                popUpMsg.style.display = "none";
+                qtNum[j].value = 1;
+            })
+            closePopUp.addEventListener("click", () => {
                 enableScroll();
                 popContainer.style.display = "none";
                 popUpMsg.style.display = "none";
@@ -114,14 +127,6 @@ for (let j = 0; j < qtNum.length; j++) {
     })
 }
 
-
-
-let closePopUp = document.getElementById("close-btn");
-closePopUp.addEventListener("click", () => {
-    enableScroll();
-    popContainer.style.display = "none";
-    popUpMsg.style.display = "none";
-})
 
 let removeBtn = document.getElementsByClassName("remove-btn");
 for (let l = 0; l < removeBtn.length; l++) {

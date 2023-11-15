@@ -45,12 +45,21 @@ table{
 th, td{
     border: 1px solid black;
     background-color: white;
-}
-th, td{
     width: 200px;
     padding: 2%;
     text-align: center;
 }
+.middle-box, #title-heading, #title-price{
+    border-left: none;
+    border-right: none;
+}
+tr .row-box:first-child, #title-item{
+    border-right: none;
+}
+tr .row-box:last-child, #title-empty{
+    border-left: none;
+}
+
 #total-div{
     position: absolute;
     bottom: 5px;
