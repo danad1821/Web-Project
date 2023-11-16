@@ -1,8 +1,9 @@
 class oItem {
-    constructor(fname, quantity, price) {
+    constructor(fname, quantity, price, image) {
         this.fname = fname;
         this.price = price;
         this.quantity = quantity;
+        this.image=image
     }
     findPrice(quantity) {
         return this.price * quantity;
@@ -188,7 +189,7 @@ fetch('menu.json')
                         <button class="add-btn">+</button>
                     </form>
                 `
-                    let newDish = new oItem(item.itemName, 0, item.price)
+                    let newDish = new oItem(item.itemName, 0, item.price, item.img)
                     menuitems.push(newDish);
                     window.sessionStorage.setItem('menu', JSON.stringify(menuitems))
                     content.appendChild(innerContent);
@@ -220,7 +221,7 @@ fetch('menu.json')
                             <button class="add-btn">+</button>
                         </form>
                         `
-                        let newDish = new oItem(subItem.itemName, 0, subItem.price)
+                        let newDish = new oItem(subItem.itemName, 0, subItem.price, subItem.img)
                         menuitems.push(newDish);
                         window.sessionStorage.setItem('menu', JSON.stringify(menuitems))
                         subsection.appendChild(innerContent)
@@ -257,7 +258,7 @@ fetch('menu.json')
                             }
                         }
                         if (inOrder == false) {
-                            let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt));
+                            let orderedItem = new oItem(menuitems[i].fname, qt, menuitems[i].findPrice(qt), menuitems[i].image);
                             orderedItems.push(orderedItem);
                         }
                         console.log(orderedItems)

@@ -67,8 +67,10 @@ closePopUp.addEventListener("click", () => {
 for (let i = 0; i < ordered.length; i++) {
     let row = document.createElement("tr");
     row.classList.add("tableBody-row")
-    row.innerHTML = `
-    <td class="row-box">${ordered[i].fname}</td>
+    row.innerHTML = 
+    `
+    <td class="row-box img-col"><img class="food-img" src='${ordered[i].image}'></td>
+    <td class="row-box middle-box">${ordered[i].fname}</td>
     <td class="row-box middle-box"><input type="number" name="" id="" min="0" max="10" value="${ordered[i].quantity}"></td>
     <td class="row-box price middle-box">$${ordered[i].price.toFixed(2)}</td>
     <td class="row-box">

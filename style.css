@@ -78,6 +78,7 @@ button {
     width: 100%;
     z-index: 1;
     font-weight: 400;
+    padding: 0.35% 0;
 }
 
 .nav-2 {
@@ -132,7 +133,7 @@ button {
 .account {
     list-style: none;
     position: absolute;
-    top: 82%;
+    top: 52px;
     right: 1.5%;
     background-color: #F8EFE5;
     font-size: 15px;
@@ -354,6 +355,10 @@ button {
         z-index: 1;
         margin: 0.2%;
         border: 1px solid gray;
+    }
+
+    .nav-items:first ul li{
+        margin: 5px 0;
     }
 
     .nav-2 li {
