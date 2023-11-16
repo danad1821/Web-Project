@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaz</title>
+    <link rel="icon" href="Malaz Design/Malaz---icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign-up-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-std" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="accountHover()">
+    <!-- Navigation Bar -->
+    <nav class="nav-bar nav-1" id="nav-bar">
+        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
+                class="logo-img"></a>
+        <a href="index.html" class="nav-options">Home</a>
+        <a href="about.html" class="nav-options">About Us</a>
+        <a href="locations.html" class="nav-options">Locations</a>
+        <a href="menu.html" class="nav-options">Menu</a>
+        <a href="contact.html" class="nav-options">Contact Us</a>
+        <a href="review.html" class="nav-options">Leave a review</a>
+        <svg class="account-icon account-icons" id="account-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 448 512">
+            <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+        </svg>
+        <div class="account" id="account">
+            <ul class="signed-out account-section">
+                <li><a href="sign-in.html">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+            <ul class="account-info account-section">
+                <li>
+                    <div class="account-info_div">
+                        <h4 id="username-text">Username</h4>
+                        <a href="cart.html" class="cart-btn">
+                            <svg class="account-icons" class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li><button id="sign-out-btn">Sign Out</button></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav-2">
+        <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
+                class="logo-img"></a>
+        <button class="drop-nav-bar">
+            <svg id="dropdown-menu" xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #fafafa
+                    }
+                </style>
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </button>
+        <div class="nav-items">
+            <ul>
+                <li><a href="index.html" class="nav-options-nav2">Home</a></li>
+                <li><a href="about.html" class="nav-options-nav2">About Us</a></li>
+                <li><a href="locations.html" class="nav-options-nav2">Locations</a></li>
+                <li><a href="menu.html" class="nav-options-nav2">Menu</a></li>
+                <li><a href="contact.html" class="nav-options-nav2">Contact Us</a></li>
+                <li><a href="review.html" class="nav-options-nav2">Leave a review</a></li>
+            </ul>
+            <ul class="signed-out account-section">
+                <li><a href="sign-in.html">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+            <ul class="account-info account-section">
+                <li>
+                    <div class="account-info_div">
+                        <h4 id="username-text2">Username</h4>
+                        <a href="cart.html" class="cart-btn">
+                            <svg class="account-icons" class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li><button id="sign-out-btn2">Sign Out</button></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Body -->
+    <section class="main">
+        <div class="wrapper">
+        <div class="content">
+            <h1>Sign Up</h1>
+            <form class="forms">
+                <section class="form-section">
+                    <div class="form-section-names">
+                        <!-- First Name  -->
+                        <div class="input-field First-Name">
+                            <label for="frst-name-Input">First Name</label>
+                            <input type="text" placeholder="your name" name="frst-name-Input" class="input"
+                                id="frst-name-Input">
+                            <small>Error Message</small>
+                        </div>
+                        <!-- Last Name  -->
+                        <div class="input-field Last-Name">
+                            <label for="lst-name-Input">Last Name</label>
+                            <input type="text" placeholder="your name" name="lst-name-Input" class="input"
+                                id="lst-name-Input">
+                            <small>Error Message</small>
+                        </div>
+
+                    </div>
+                    <div class="form-section-contact">
+                        <!-- Email/Phone  -->
+                        <div class="input-field contact">
+                            <label for="ContactInput">Email/Phone</label>
+                            <input type="text" placeholder="enter phone or email " name="ContactInput" class="input"
+                                id="ContactInput">
+                            <small>Error Message</small>
+                        </div>
+                        <!-- Birthday -->
+                        <div class="input-field Date">
+                            <label for="dateInput">Birthday</label>
+                            <input type="date" placeholder="dd/mm/yyyy" class="input" id="bday" name="bday">
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                </section>
+                <div class="form-section info">
+                    <!-- Username -->
+                    <div class="input-field Username">
+                        <label for="Username">Username</label>
+                        <input type="text" placeholder="your username" class="input" id="Username" name="Username">
+                        <small>Error Message</small>
+                    </div>
+                    <!-- Password -->
+                    <div class="input-field password">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="your password" class="input" id="password" name="password">
+                        <small>Error Message</small>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="input-field confirm-password">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" placeholder="confirm your password" class="input" id="confirmPassword"
+                            name="confirmPassword">
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <div class="input-field">
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+            
+                </div>
+            </div>
+                <div class="policy">
+                    <div class="check">
+                        <input type="checkbox" id="agree">
+                        <h3>I accept all terms & condition</h3>
+                    </div>
+
+                    <div class="paragraph hidden">
+                        <p>ACCEPTANCE OF TERMS AND CONDITIONS <br><br>
+
+                            Welcome to Malaz! Before you proceed, please carefully read and understand the following
+                            Terms and Conditions. By accessing or using our services, you agree to be bound by these
+                            terms. If you do not agree with any part of these terms, please do not use our services.
+                            <br>
+                            <br>
+
+                            1. Acceptance of Terms:<br>
+                            By accessing or using Malaz's services, you acknowledge that you have read, understood,
+                            and agree to be bound by these Terms and Conditions.<br><br>
+
+                            2. Changes to Terms:<br>
+                            Malaz reserves the right to modify or revise these Terms and Conditions at any time. We
+                            will notify you of any changes by updating the "Last Updated" date at the top of these
+                            Terms. Your continued use of our services after any such changes constitutes your
+                            acceptance of the new Terms.<br><br>
+
+                            3. User Accounts:<br>
+                            If you create an account with us, you are responsible for maintaining the
+                            confidentiality of your account information and password. You agree to accept
+                            responsibility for all activities that occur under your account.<br><br>
+
+                            4. Privacy Policy:<br>
+                            Your use of our services is also governed by our Privacy Policy, which can be found at
+                            [link to your privacy policy]. Please review our Privacy Policy to understand our
+                            practices.<br><br>
+
+                            5. Prohibited Conduct:<br>
+                            You agree not to engage in any activity that may interfere with or disrupt Malaz's
+                            services, violate laws, or infringe on the rights of others.<br><br>
+
+                            6. Intellectual Property:<br>
+                            All content and materials available on Malaz are protected by intellectual property
+                            laws. You agree not to reproduce, distribute, modify, or create derivative works without
+                            our prior written consent.<br><br>
+
+                            7. Termination:<br>
+                            We reserve the right to terminate or suspend your account and access to Malaz's services
+                            at our sole discretion, without notice, for any reason, including if you violate these
+                            Terms and Conditions.<br><br>
+
+                            8. Governing Law:<br>
+                            These Terms and Conditions are governed by and construed in accordance with the laws of
+                            [Your Jurisdiction]. Any dispute arising out of or in connection with these terms shall
+                            be resolved in the courts of [Your Jurisdiction].<br><br>
+
+                            By accepting these Terms and Conditions, you affirm that you are of legal age to enter
+                            into this agreement or have obtained parental or guardian consent.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="input-box button">
+                    <button type="submit" id="btn">Register Now</button>
+                </div>
+
+
+            </form>
+            <div class="form-link">
+                <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+            </div>
+            <div class="line-break">
+                <span class="line "></span>
+                <h3>or</h3>
+                <span class="line "></span>
+                </div>
+                <div class="media">
+                <a href="#" class="fa fa-facebook"></a>
+                
+                <a href="#" class="fa fa-google"></a>
+            </div>
+            </div>
+
+            <!-- <button class="loginBtn loginBtn--facebook">
+                        Login with Facebook
+                      </button>
+                      
+                      <button class="loginBtn loginBtn--google">
+                        
+                        Login with Google
+                      </button> -->
+            <!-- <div class="media-options">
+                        <a href="#" class="field facebook">
+                            <i class='bx bxl-facebook facebook-icon'></i>
+                            <span>Login with Facebook</span>
+                        </a>
+                    </div>
+                    <div class="media-options">
+                        <a href="#" class="field google">
+                            <img src="#" alt="" class="google-img">
+                            <span>Login with Google</span>
+                        </a>
+                    </div> -->
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-p1">
+            <img src="Malaz Design/Footer Logo.png" alt="Logo" class="footer-logo">
+            <div class="footer-div-p1">
+                <p class="contact-footer"><b>Apply At:</b> malazresto@gmail.com</p>
+                <p class="contact-footer"><b>Contact Us:</b> +961 76 000 000</p>
+            </div>
+        </div>
+        <div class="footer-p2">
+            <div class="icons-list">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #ffffff;
+                            }
+                        </style>
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512">
+                        <style>
+                            svg {
+                                fill: #ffffff
+                            }
+                        </style>
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/en/" target="_blank">
+                    <svg class="social-media-icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #ffffff
+                            }
+                        </style>
+                        <path
+                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2023 Malaz Copyright</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="main.js"></script>
+    <script src="sign-up.js"></script>
+</body>
+
+</html>
