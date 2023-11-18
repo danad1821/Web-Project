@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    const width = $(window).width();
+
     //Go to location
     let btnLocation = $("#go-to-location")
 
@@ -96,36 +98,5 @@ $(document).ready(function () {
         noInput.removeClass("active")
         noInput2.removeClass("active")
     })
-    // Hover show contact details
-    if ($(window).width() < 500) {
-        $(".contact-detail").on("mouseenter", function () {
-            $(this).find(".detail-text").css({ "display": "block", "opacity": 1 });
-            $(this).find(".detail-svg").css({ "display": "none", "opacity": 0 });
-            $(".phone-num").css({ 'margin-left': '0.5em', 'margin-right': '0.5em', "min-width": "50px" })
-            $(".address").css({ "min-width": "50px" })
-            if ($(this).hasClass !== "email-detail") {
-                $(".email-detail").css({ "min-width": "50px" })
-            }
-            $(this).css({ "min-width": "200px" });
-        }).on("mouseleave", function () {
-            console.log("hello")
-            $(this).find(".detail-text").css({ "display": "none", "opacity": 0 });
-            $(this).find(".detail-svg").css({ "display": "block", "opacity": 1 });
-            $(".contact-detail").css({ "min-width": "90px" });
-            $(".phone-num").css({ 'margin-left': '1.5em', 'margin-right': '1.5em' })
-        });
-    }
-    if ($(window).width() < 750) {
-        $(".contact-detail").on("mouseenter", function () {
-            $(this).find(".detail-text").css({ "display": "block", "opacity": 1 });
-            $(this).find(".detail-svg").css({ "display": "none", "opacity": 0 });
-        }).on("mouseleave", function () {
-            console.log("hello")
-            $(this).find(".detail-text").css({ "display": "none", "opacity": 0 });
-            $(this).find(".detail-svg").css({ "display": "block", "opacity": 1 });
-            $(".contact-detail").css({ "min-width": "21vw" });
-            $(".phone-num").css({ 'margin-left': '1.5em', 'margin-right': '1.5em' })
-        });
-    }
 })
 
