@@ -29,26 +29,48 @@
   justify-content: flex-start;
   align-items: flex-start;
   height: 58vh;
-  width: 33vw;
+  max-width: 33vw;
   padding: 1%;
   border-radius: 10px;
-}
-#h6-info {
-  color: #fad370;
-  font-weight: 900;
 }
 #h1-info {
   font-size: 3.2rem;
   margin-bottom: 3%;
 }
 #p-info {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.5;
+  width: 100%;
 }
 #p-info,
 #h1-info {
   color: #104d40;
 }
+.contact-sec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20px;
+}
+.sec1 {
+  margin-top: 5%;
+}
+.sec2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.contact-h4 {
+  font-size: 1.2em;
+  font-weight: 650;
+  color: #104d40;
+}
+
+.contact-p {
+  margin-left: 2%;
+  font-size: 1.1em;
+  color: #104d40;
+}
+
 /* Contact form styling */
 
 .contact-form {
@@ -137,10 +159,10 @@
 .toast-container {
   display: none;
   padding: 1%;
-  position: absolute;
-  min-width: 400px;
-  top: 8.1%;
-  right: 21.5%;
+  position: fixed;
+  min-width: 320px;
+  top: 7.2%;
+  left: 40%;
   color: #f6f6f6;
   border-radius: 5px;
   background-color: #ce5b68;
@@ -178,30 +200,32 @@
 .toast-container .toast-text p {
   font-size: 1.07rem;
   margin-left: 2%;
-  margin-right: 18%;
+  margin-right: 3%;
+  min-width: 249px;
 }
-.toast-container .toast-text .material-symbols-outlined {
+.toast-container .toast-text i {
   font-size: 1.75rem;
 }
-.toast-container .toast-text .material-symbols-outlined:last-child:hover {
+.toast-container .toast-text .close1:hover {
   color: #3b3b3b;
   cursor: pointer;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+.close {
+  color: #ffffff;
 }
 .no-input {
   display: none;
-  padding: 1%;
-  position: absolute;
-  min-width: 400px;
-  top: 8.35%;
-  right: 21.5%;
+  padding: 0.8%;
+  position: fixed;
+  min-width: 340px;
+  top: 7.2%;
+  left: 40%;
   color: #f6f6f6;
   border-radius: 5px;
   background-color: #ce5b68;
   animation: show_toast 0.8s ease-in;
+  box-shadow: 5px 1px 5px grey;
 }
 .no-input.active {
   display: inline;
@@ -229,77 +253,20 @@
 }
 
 .no-input .no-input-text p {
-  font-size: 1.07rem;
-  margin-left: 3%;
-  margin-right: 8%;
-  min-width: 300px;
+  font-size: 1rem;
+  margin-left: 1%;
+  margin-right: 2%;
+  min-width: 260px;
 }
-.no-input.no-input-text .material-symbols-outlined {
+.no-input .no-input-text i {
   font-size: 1.75rem;
 }
-.no-input .no-input-text .material-symbols-outlined:last-child:hover {
+.close1:hover {
   color: #3b3b3b;
   cursor: pointer;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-
-/* How to contact us  */
-.how-to-contact-us {
-  margin: 1%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
-  max-width: 1110px;
-}
-.contact-detail {
-  margin: 1%;
-  padding: 1.8%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  min-width: 17vw;
-  height: 7vh;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgb(211, 211, 211);
-  background-color: #fad370;
-}
-.phone-num {
-  margin-left: 2.7em;
-  margin-right: 2.7em;
-}
-.detail-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 4%;
-  margin-bottom: 2%;
-}
-
-.h4-detail {
-  font-size: 1.2em;
-  margin-bottom: 5%;
-  color: #104d40;
-}
-.detail-svg {
-  margin-bottom: 4%;
-  font-size: 23px;
-}
-.p-details {
-  font-size: 0.8em;
-  color: #104d40;
-}
-.email-p1 {
-  margin-bottom: 2.2%;
-}
-.phone-h4 {
-  margin-bottom: 5%;
-}
 /* Visit Us container design */
-
 .visit-us-conatiner {
   display: flex;
   flex-direction: row;
@@ -308,6 +275,7 @@
   min-height: 30vh;
   max-width: 1110px;
   margin-bottom: 4%;
+  margin-top: 12%;
 }
 .visit-our-rest {
   margin: 1%;
@@ -372,6 +340,9 @@
 #go-to-location:hover {
   background-color: #fdc841;
 }
+#go-to-location:active {
+  transform: scale(0.95);
+}
 .hour-sec {
   margin: 0.5%;
   min-width: 200px;
@@ -383,7 +354,7 @@
   margin-bottom: 5%;
 }
 #visit-p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.5;
 }
 #visit-p,
@@ -411,10 +382,6 @@
   align-items: start;
   justify-content: center;
   max-width: 1110px;
-}
-#h6-faq {
-  color: #fad370;
-  font-weight: 900;
 }
 #h1-faq {
   font-size: 3.2rem;
@@ -487,7 +454,7 @@
   max-height: 40vh;
   color: #104d40;
 }
-.ask-a-question input{
+.ask-a-question input {
   padding-left: 5px;
 }
 #ask-h1 {
@@ -537,17 +504,19 @@
 .submitBtn:active {
   transform: scale(0.97);
 }
+
 .toast-container2 {
   display: none;
   padding: 1%;
   position: fixed;
   min-width: 22vw;
-  bottom: 17%;
-  right: 18%;
+  top: 1%;
+  left: 40%;
   color: #f6f6f6;
   border-radius: 5px;
   background-color: #104d40;
   animation: show_toast2 0.8s ease-in-out;
+  box-shadow: 5px 1px 5px grey;
 }
 .toast-container2.active {
   display: inline;
@@ -578,10 +547,10 @@
   margin-left: 2%;
   margin-right: 18%;
 }
-.toast-container2 .toast-text2 .material-symbols-outlined {
+.toast-container2 .toast-text2 i {
   font-size: 1.75rem;
 }
-.toast-container2 .toast-text2 .material-symbols-outlined:last-child:hover {
+.toast-container2 .toast-text2 .close2:hover {
   color: #fad370;
   cursor: pointer;
 }
@@ -590,12 +559,13 @@
   padding: 1%;
   position: fixed;
   min-width: 22vw;
-  bottom: 17%;
-  right: 18%;
+  top: 1%;
+  left: 40%;
   color: #f6f6f6;
   border-radius: 5px;
   background-color: #104d40;
   animation: show_toast2 0.8s ease-in-out;
+  box-shadow: 1px 5px 5px grey;
 }
 .no-input2.active {
   display: inline;
@@ -628,21 +598,21 @@
   margin-right: 5%;
   min-width: 300px;
 }
-.no-input2 .no-input-text2 .material-symbols-outlined {
+.no-input2 .no-input-text2 i {
   font-size: 1.75rem;
 }
-.no-input2 .no-input-text2 .material-symbols-outlined:last-child:hover {
+.no-input2 .no-input-text2 .close2:last-child:hover {
   color: #fad370;
   cursor: pointer;
 }
 /* Animation Keyframe */
 @keyframes show_toast {
   from {
-    top: 20%;
+    top: 0;
     opacity: 0;
   }
   to {
-    top: 8.1%;
+    top: 7.2%;
     opacity: 1;
   }
 }
@@ -659,11 +629,11 @@
 
 @keyframes show_toast2 {
   from {
-    bottom: 5%;
+    top: 0;
     opacity: 0;
   }
   to {
-    bottom: 17%;
+    top: 1%;
     opacity: 1;
   }
 }
@@ -708,7 +678,6 @@
 /* Adding responsivity on 1450px */
 @media (max-width: 1690px) {
   .contact-us-container,
-  .how-to-contact-us,
   .visit-us-conatiner,
   .faq-container {
     min-width: 90vw;
@@ -726,76 +695,28 @@
     min-width: 40vw;
   }
 }
-@media (max-width: 1200px) {
-  .detail-svg {
-    font-size: 20px;
-  }
-  .h4-detail {
-    font-size: 1.1em;
-  }
-  .p-details {
-    font-size: 0.7em;
-  }
-}
-@media (max-width: 775px) {
-  /* Contact us part */
-
-  .contact-info p {
-    font-size: 1.1em;
-  }
-  .contact-form {
-    min-width: 480px;
-  }
-  .contact-form-in {
-    min-width: 480px;
-    min-height: 30px;
-  }
-  .btn-send {
-    max-width: 33vw;
-  }
-  /* Contact Details part */
-  .phone-num {
-    margin-left: 2.6em;
-    margin-right: 2.6em;
-  }
-  .how-to-contact-us {
-    justify-content: space-evenly;
-    min-width: 0;
-  }
-  .detail-svg {
-    min-width: 4vw;
-  }
-  /* Visit us part */
-  .visit-us-conatiner {
-    min-width: 0;
-    flex-wrap: wrap;
-  }
-
-  .ask-a-question {
-    min-width: 33vw;
-  }
-  #ask-h1 {
-    font-size: 2em;
-  }
-}
+/* Adding responsivity on 775px */
 @media (max-width: 775px) {
   /* Contact us part */
   .contact-us-container {
-    margin-top: 5%;
+    margin-top: 10%;
     flex-wrap: wrap;
     min-width: 0;
   }
+  /* Contact Info */
   .contact-info {
     min-width: 70vw;
-    height: 25vh;
+    max-height: 37vh;
   }
+
   #h1-info {
-    font-size: 2em;
+    font-size: 2.7em;
     min-width: 200px;
   }
   #p-info {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
+  /* Contact Form */
   .contact-form {
     min-width: 75vw;
     padding: 3%;
@@ -806,14 +727,18 @@
     min-width: 75vw;
     max-height: 3.5vh;
   }
+  .btn-send {
+    max-width: 33vw;
+  }
   .in4 {
     padding-bottom: 40%;
   }
+  /* Toast Notification for contact form */
   .toast-container {
     min-width: 150px;
-    top: 11%;
-    right: 2%;
-    animation: slide-in-right 0.9s ease-in;
+    top: 2%;
+    left: 29%;
+    animation: show_toast2 0.9s ease-in;
   }
   .toast-container .toast-text p {
     font-size: 0.8em;
@@ -827,9 +752,9 @@
   }
   .no-input {
     min-width: 150px;
-    top: 11%;
-    right: 2%;
-    animation: slide-in-right 0.9s ease-in;
+    top: 2%;
+    left: 30%;
+    animation: show_toast2 0.9s ease-in;
   }
   .no-input .no-input-text p {
     font-size: 0.8em;
@@ -841,27 +766,19 @@
   .no-input .no-input-text .close {
     margin-left: -8%;
   }
-  /* Contact detail part */
-  .contact-detail {
-    min-width: 21vw;
-    justify-content: center;
-  }
-  .phone-num {
-    margin-left: 2em;
-    margin-right: 2em;
-  }
   /* Visit us part */
   .visit-us-conatiner {
     max-width: 90vw;
     min-height: 70vh;
     align-items: center;
+    flex-wrap: wrap;
   }
   .visit-our-rest {
     max-width: 75vw;
     min-height: 28vh;
   }
   #visit-h1 {
-    font-size: 2em;
+    font-size: 2.7em;
     min-width: 300px;
   }
   #visit-p {
@@ -887,13 +804,9 @@
     margin-bottom: 1%;
   }
   #h1-faq {
-    font-size: 2em;
+    font-size: 2.7em;
     min-width: 300px;
     align-self: flex-start;
-  }
-  #h6-faq {
-    align-self: flex-start;
-    margin-bottom: 2%;
   }
   .big-container {
     align-items: center;
@@ -906,17 +819,18 @@
     min-width: 70vw;
   }
   #ask-h1 {
-    font-size: 2em;
-    min-width: 300px;
+    font-size: 2.7em;
+    min-width: 500px;
   }
   .ask-a-question {
     margin-top: 8%;
+    min-width: 33vw;
   }
   .toast-container2 {
     min-width: 150px;
-    bottom: 11%;
-    right: 1%;
-    animation: slide-in-right 0.9s ease-in;
+    top: 1%;
+    left: 30%;
+    animation: show_toast2 0.9s ease-in;
   }
   .toast-container2 .toast-text2 p {
     font-size: 0.8em;
@@ -930,9 +844,9 @@
   }
   .no-input2 {
     min-width: 150px;
-    bottom: 11%;
-    right: 1%;
-    animation: slide-in-right 0.9s ease-in;
+    top: 2%;
+    left: 30%;
+    animation: show_toast2 0.9s ease-in;
   }
   .no-input2 .no-input-text2 p {
     font-size: 0.8em;
@@ -945,63 +859,21 @@
     margin-left: -4%;
   }
 }
-
-@media (max-width: 750px) {
-  .detail-text {
-    opacity: 0;
-    display: none;
-  }
-  .contact-detail .detail-text {
-    animation: scale_and_appear 1.1s cubic-bezier(0.5, 0, 0.5, 1) forwards;
-  }
-
-  .contact-detail .phone-num,
-  .contact-detail .address,
-  .contact-detail .email-detail {
-    transition: all cubic-bezier(0.5, 0, 0.5, 1) 0.8s;
-  }
-
-  .contact-detail {
-    transition: all cubic-bezier(0.5, 0, 0.5, 1) 0.8s;
-  }
-  .contact-detail:hover .detail-text {
-    display: block;
-    opacity: 1;
-    animation: scale_and_appear 1.1s cubic-bezier(0.5, 0, 0.5, 1) forwards;
-  }
-
-  .contact-detail:hover .phone-num {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    min-width: 50px;
-    transition: all cubic-bezier(0.5, 0, 0.5, 1) 0.8s;
-  }
-  @keyframes scale_and_appear {
-    from {
-      opacity: 0;
-      transform: scale(0);
-    }
-  }
-  .contact-detail:hover .address {
-    min-width: 50px;
-    transition: all cubic-bezier(0.5, 0, 0.5, 1) 0.8s;
-  }
-
-  .contact-detail:not(.email-detail):hover .email-detail {
-    min-width: 50px;
-    transition: all cubic-bezier(0.5, 0, 0.5, 1) 0.8s;
-  }
-
-}
 /* Adding responsivity on 500px */
 @media (max-width: 500px) {
   /* Contact us part */
   .contact-us-container {
-    margin-top: 5%;
+    margin-top: 10%;
   }
   .contact-info {
     min-width: 70vw;
-    height: 25vh;
+    height: 34vh;
+  }
+  .contact-h4 {
+    font-size: 1em;
+  }
+  .contact-p {
+    font-size: 0.8em;
   }
   #h1-info {
     font-size: 2em;
@@ -1010,6 +882,7 @@
   #p-info {
     font-size: 0.9em;
   }
+  /* Form styling */
   .contact-form {
     min-width: 75vw;
     padding: 3%;
@@ -1025,7 +898,7 @@
   }
   .toast-container {
     min-width: 150px;
-    top: 11%;
+    top: 2%;
     right: 2%;
     animation: slide-in-right 0.9s ease-in;
   }
@@ -1041,7 +914,7 @@
   }
   .no-input {
     min-width: 150px;
-    top: 11%;
+    top: 2%;
     right: 2%;
     animation: slide-in-right 0.9s ease-in;
   }
@@ -1099,10 +972,6 @@
     font-size: 2em;
     min-width: 300px;
   }
-  #h6-faq {
-    align-self: flex-start;
-    margin-bottom: 2%;
-  }
   .big-container {
     align-items: center;
   }
@@ -1120,9 +989,8 @@
     margin-top: 8%;
   }
   .toast-container2 {
-    min-width: 150px;
-    bottom: 10%;
-    right: 3%;
+    min-width: 350px;
+    left: 18%;
     animation: slide-in-right 0.9s ease-in;
   }
   .toast-container2 .toast-text2 p {
@@ -1132,13 +1000,11 @@
     margin-right: 0;
     margin-left: 0;
   }
-  .toast-container2 .toast-text2 .close {
-    margin-left: -4%;
+  .toast-container2 .toast-text2 .close2 {
+    margin-left: -2%;
   }
   .no-input2 {
-    min-width: 150px;
-    bottom: 10%;
-    right: 3%;
+    min-width: 350px;
     animation: slide-in-right 0.9s ease-in;
   }
   .no-input2 .no-input-text2 p {
@@ -1148,14 +1014,14 @@
     margin-right: 0;
     margin-left: 0;
   }
-  .no-input2 .no-input-text2 .close {
-    margin-left: -4%;
+  .no-input2 .no-input-text2 .close2 {
+    margin-left: -19%;
   }
 }
-
+/* Adding responsivity on height 800px */
 @media (max-height: 800px) {
   .contact-info {
-    min-height: 200px;
+    min-height: 320px;
   }
   .contact-form {
     min-height: 400px;
@@ -1164,14 +1030,11 @@
     margin-top: 2%;
     margin-bottom: 2%;
   }
-  .how-to-contact-us {
-    min-height: 100px;
-  }
-  .contact-detail {
-    min-height: 50px;
-  }
   .visit-us-conatiner {
     min-height: 400px;
+  }
+  .visit-our-rest {
+    min-height: 250px;
   }
   .visit-hours,
   .hour-div {
