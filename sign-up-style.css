@@ -24,12 +24,10 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* Title */
 .content h1 {
   position: relative;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 600;
   color: #333;
 }
@@ -158,9 +156,13 @@ input[type="checkbox"]:checked::before {
 
 
 /*center alignment*/
-.button, .form-link, .line-break, .media{
+.button,
+.form-link,
+.line-break,
+.media {
   text-align: center;
 }
+
 /*button*/
 #btn {
   padding: 1.3%;
@@ -242,12 +244,14 @@ input[type="checkbox"]:checked::before {
 
 /*Media Queries*/
 @media screen and (max-width: 850px) {
-  .gender-details .category{
+  .gender-details .category {
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
   }
-  .gender, .dot{
+
+  .gender,
+  .dot {
     margin-right: 10px;
     margin-top: 4px;
   }

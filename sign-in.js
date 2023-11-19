@@ -1,19 +1,35 @@
-const loginErrorMsg = document.getElementById("login-error-msg");
-const loginErrorHolder = document.getElementById("login-error-msg-holder");
-
 let users = ["dana", "pass"];
+let username = document.getElementById("sign-in-user");
+let pass = document.getElementById("sign-in-pass");
+function setError(element, errorMessage) {
+    let parentElement = element.closest('.input-field');
+    parentElement.classList.add('error');
+    let alertMessage = parentElement.querySelector('small');
+    alertMessage.textContent = errorMessage;
+}
+
+function removeError(element) {
+    let parentElement = element.closest('.input-field');
+    parentElement.classList.remove('error');
+    let alertMessage = parentElement.querySelector('small');
+    alertMessage.textContent = '';
+}
 function signInLoad() {
     let btnSignIn = document.getElementById("sign-in-btn-submit")
     btnSignIn.addEventListener("click", function () {
-        let username = document.getElementById("sign-in-user").value
-        let password = document.getElementById("sign-in-pass").value
-        if (username == users[0] && password == users[1]) {
-            window.sessionStorage.setItem("SignedIn", "true")
+        if (username.value == users[0] && pass.value == users[1]) {
+            removeError(pass);
+            removeError(username);
+            window.sessionStorage.setItem("SignedIn", "true");
             window.history.go(-1);
         }
         else{
-            loginErrorMsg.style.opacity = 1;
-            loginErrorHolder.style.display = 'grid';
+            if(pass.value.length<8 && pass.value != users[1]){
+                setError(pass, "Invalid Password")
+            }
+            if(username.value != users[0]){
+                setError(username, "User not found")
+            }
         }
     })
 }

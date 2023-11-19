@@ -7,9 +7,8 @@
     justify-content: center;
     align-items: center;
     height: 45vh;
-    background-image: url("https://modifyhealth.com/cdn/shop/articles/Foods-That-You-Can-and-Cannot-Eat-On-A-Low-FODMAP-Diet_073befc5-df9b-459d-b2ef-338c76327cbb_1800x.jpg?v=1636409839");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: linear-gradient(to bottom right, #BAC9A3, beige); */
+    background-color: #BAC9A3;
     color: #F8EFE5;
 }
 .menu-title h1{
@@ -262,7 +261,7 @@ input[type=number]::-webkit-inner-spin-button {
 .pop-up-container{
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.705);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     position: fixed;
 
@@ -271,7 +270,6 @@ input[type=number]::-webkit-inner-spin-button {
     width: 300px;
     height: 180px;
     background-color: #F8EFE5; 
-    box-shadow: 5px 4px 3px gray;
     z-index: 5;
     display: none;
     text-align: center;

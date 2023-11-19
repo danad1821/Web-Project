@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-std" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="accountHover()">
@@ -93,24 +94,30 @@
             <h1 class="sign-in-title">
                 Log In:
             </h1>
-            <div id="login-error-msg-holder">
-                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            <label class="sign-in-lbl" for="username">Username</label>
+            <div class="input-field log-in-user">
+                <input class="sign-in-input" type="text" id="sign-in-user" placeholder="Username" required>
+                <small>Error Message</small>
             </div>
-            <label class="sign-in-lbl" for="username">Username:</label>
-            <input class="sign-in-input" type="text" id="sign-in-user" placeholder="Username" required>
-            <label class="sign-in-lbl" for="password">Password:</label>
-            <div class="sign-in-pass">
+            <label class="sign-in-lbl" for="password">Password</label>
+            <div class="input-field">
                 <input class="sign-in-input sign-in-pass" type="password" name="" placeholder="Password"
                     id="sign-in-pass" required>
                 <i class="far fa-eye-slash" id="togglePassword"></i>
+                <small>Error Message</small>
             </div>
             <button class="sign-in-btn-submit" id="sign-in-btn-submit">Log In</button>
             <p class="sign-up-text">Don't have an account? <a href="" class="sign-up-link">Sign Up</a></p>
+            <b class="sign-up-text">or</b>
+            <p class="sign-up-text">continue with</p>
+            <div class="media">
+                <a href="#" class="fa fa-facebook"></a>
+
+                <a href="#" class="fa fa-google"></a>
+            </div>
         </div>
-        <div class="home-sign-in-img">
-            <img src="Malaz Design/Mobile login Customizable Cartoon Illustrations _ Bro Style.jpeg" alt=""
-                class="login-in-img">
-        </div>
+        <img src="https://i.pinimg.com/564x/48/cf/49/48cf499ef917e1767846aad628e633fe.jpg" alt=""
+            class="login-in-img">
         
     </main>
     <!-- Footer -->

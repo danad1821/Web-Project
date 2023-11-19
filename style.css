@@ -238,6 +238,7 @@ button {
     bottom: 0%;
     color: #F8EFE5;
     margin-top: auto;
+    overflow: hidden;
 }
 
 .footer-p1 {

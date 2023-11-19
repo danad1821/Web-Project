@@ -1,9 +1,11 @@
+//Variable Declaration
 let totalP = JSON.parse(window.sessionStorage.getItem('totalPrice'))
 let tableBody = document.getElementById("cart-items-body");
 let ordered = JSON.parse(window.sessionStorage.getItem('order'))
 let menuI = JSON.parse(window.sessionStorage.getItem('menu'))
 let displayOfTotal = document.getElementsByClassName("price-total")[0];
 let tot = 0;
+
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
@@ -169,11 +171,6 @@ window.addEventListener("load", () => {
 let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
 checkoutBtn.addEventListener("click", () => {
     if (window.sessionStorage.getItem("SignedIn") == "true") {
-        // if (ordery.length!=0){
         window.open("checkout.html", "_self");
-        // }
-        // else{
-        //     alert("Empty Cart")
-        // }
     }
 })
