@@ -49,7 +49,7 @@ function enableScroll() {
 }
 let popContainer = document.getElementsByClassName("pop-up-container")[0];
 let popUpMsg = document.getElementsByClassName("pop-up")[0];
-
+//pop up function
 function popUp() {
     disableScroll();
     popContainer.style.display = "flex";
@@ -59,6 +59,7 @@ function popUp() {
     popUpMsg.style.flexDirection = "column";
 }
 
+//closing pop up
 let closePopUp = document.getElementById("close-btn");
 closePopUp.addEventListener("click", () => {
     enableScroll();
@@ -66,6 +67,7 @@ closePopUp.addEventListener("click", () => {
     popUpMsg.style.display = "none";
 })
 
+//dynamically creating the rows in the table of ordered items
 for (let i = 0; i < ordered.length; i++) {
     let row = document.createElement("tr");
     row.classList.add("tableBody-row")
@@ -82,8 +84,11 @@ for (let i = 0; i < ordered.length; i++) {
     tot += parseFloat(ordered[i].price.toFixed(2))
     tableBody.appendChild(row);
 }
+
 window.sessionStorage.setItem('totalPrice', JSON.stringify(tot))
 displayOfTotal.textContent = "$" + tot.toFixed(2);
+
+//quantity adjustment
 let qtNum = document.querySelectorAll("td input");
 let foodName = document.querySelectorAll("td:nth-child(1)")
 for (let j = 0; j < qtNum.length; j++) {
@@ -131,7 +136,7 @@ for (let j = 0; j < qtNum.length; j++) {
     })
 }
 
-
+//removing items
 let removeBtn = document.getElementsByClassName("remove-btn");
 for (let l = 0; l < removeBtn.length; l++) {
     removeBtn[l].addEventListener("click", () => {
@@ -149,6 +154,7 @@ for (let l = 0; l < removeBtn.length; l++) {
         })
     })
 }
+//deteremines the page display depending on whether the cart is empty or not
 window.addEventListener("load", () => {
     let tableBody = document.getElementById("cart-items-body");
     let emptyCart = document.getElementById("empty-cart");
@@ -168,6 +174,7 @@ window.addEventListener("load", () => {
         document.querySelector("body>h1").style.display="block"
     }
 })
+//checkout button
 let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
 checkoutBtn.addEventListener("click", () => {
     if (window.sessionStorage.getItem("SignedIn") == "true") {

@@ -143,6 +143,8 @@ input[type=number]::-webkit-inner-spin-button {
 .close-btn svg:hover{
     fill: #FAD370;
 }
+
+/*media queries*/
 @media screen and (max-width: 570px){
     .food-img{
         width: 120px;

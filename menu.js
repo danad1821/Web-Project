@@ -1,50 +1,58 @@
+/*Class for ordered items*/
 class oItem {
     constructor(fname, quantity, price, image) {
         this.fname = fname;
         this.price = price;
         this.quantity = quantity;
-        this.image=image
+        this.image = image
     }
     findPrice(quantity) {
         return this.price * quantity;
     }
 }
+// Variable declaration
 let total = 0;
 let menuitems = [];
-let ordery=JSON.parse(window.sessionStorage.getItem('order'));
+let ordery = JSON.parse(window.sessionStorage.getItem('order'));
 console.log(ordery)
-let orderedItems=new Array();
-if(ordery!=null){
-    for(let q=0; q<ordery.length; q++){
+let orderedItems = new Array();
+// Checks if there is already thing in their cart
+if (ordery != null) {
+    for (let q = 0; q < ordery.length; q++) {
         orderedItems.push(ordery[q]);
     }
 }
-else{
-    orderedItems=[]
+else {
+    orderedItems = []
 }
+// If the the cafrt is not empty it will show the current total price
 let totalAmount = document.getElementsByClassName("total-price")[0];
-if(JSON.parse(window.sessionStorage.getItem('totalPrice'))!=null){
-    total+=JSON.parse(window.sessionStorage.getItem('totalPrice'));
-    totalAmount.textContent="$"+JSON.parse(window.sessionStorage.getItem('totalPrice')).toFixed(2);
+if (JSON.parse(window.sessionStorage.getItem('totalPrice')) != null) {
+    total += JSON.parse(window.sessionStorage.getItem('totalPrice'));
+    totalAmount.textContent = "$" + JSON.parse(window.sessionStorage.getItem('totalPrice')).toFixed(2);
 }
+//More Variable declaration
 let bottom = document.documentElement.scrollHeight;
 let upDown = document.getElementsByClassName("up-down-btns");
 let upBtn = document.getElementById("up-btn");
 let addItems = document.getElementsByClassName("add-btn");
 let popContainer = document.getElementsByClassName("pop-up-container")[0];
 let popUpMsg = document.getElementsByClassName("pop-up")[0];
-let loginBtn=document.getElementById("login-btn");
+let loginBtn = document.getElementById("login-btn");
 let checkoutBtn = document.getElementsByClassName("checkout-btn")[0];
 
-loginBtn.addEventListener("click", ()=>{
+//login button on pop up
+loginBtn.addEventListener("click", () => {
     window.location.replace("sign-in.html", "_self");
 });
+//keys to be disabled
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = {37: 1, 38: 1, 39: 1, 40: 1, 33: 1, 34: 1, 35: 1, 36: 1};
+var keys = { 37: 1, 38: 1, 39: 1, 40: 1, 33: 1, 34: 1, 35: 1, 36: 1 };
 
+//prevents the default of each key
 function preventDefaultt(e) {
-  e.preventDefault();
+    e.preventDefault();
 }
 function preventDefaultForScrollKeys(e) {
     if (keys[e.keyCode]) {
@@ -80,13 +88,14 @@ function enableScroll() {
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
+//to go to the very top and very bottom of the page
 function goUp() {
     window.scrollTo(0, 0);
 }
 function goDown() {
     window.scrollTo(0, bottom);
 }
-
+//to display the pop-up
 function popUp() {
     disableScroll();
     popContainer.style.display = "flex";
@@ -95,14 +104,16 @@ function popUp() {
     popUpMsg.style.display = "flex";
     popUpMsg.style.flexDirection = "column";
 }
+//to checkout 
 checkoutBtn.addEventListener("click", function () {
     if (window.sessionStorage.getItem("SignedIn") == "true") {
-        window.location.replace("checkout.html");
+        window.open("checkout.html", "_self");
     }
     else {
         popUp()
     }
 })
+//changes which of the up and down buttons are available depending on where the user is on the screen
 window.addEventListener("scroll", function () {
     bottom = document.documentElement.scrollHeight;
     let y = 0;
@@ -134,6 +145,7 @@ window.addEventListener("scroll", function () {
     }
 })
 let closePopUp = document.getElementById("close-btn");
+//closes the pop-up
 closePopUp.addEventListener("click", () => {
     enableScroll();
     popContainer.style.display = "none";
@@ -142,26 +154,27 @@ closePopUp.addEventListener("click", () => {
 upDown[0].addEventListener("click", goUp)
 upDown[1].addEventListener("click", goDown)
 var menulist = document.getElementById("menu");
-$(document).ready(function(){
-    $(".main-section-nav").mouseenter(function(){
+//drop down for main and beverages subsections
+$(document).ready(function () {
+    $(".main-section-nav").mouseenter(function () {
         $(".main-items-list").stop().slideToggle(700);
     });
-    $(".main-section-nav").mouseleave(function(){
+    $(".main-section-nav").mouseleave(function () {
         $(".main-items-list").stop().slideToggle(700);
     });
-    $(".bev-section-nav").mouseenter(function(){
+    $(".bev-section-nav").mouseenter(function () {
         $(".beverages-items-list").stop().slideToggle(700);
     });
-    $(".bev-section-nav").mouseleave(function(){
+    $(".bev-section-nav").mouseleave(function () {
         $(".beverages-items-list").stop().slideToggle(700);
     });
 })
-
-
+//retrieving data from json
 fetch('menu.json')
     .then(response => response.json())
     .then(data => {
         data.menu.forEach(item => {
+            //setting up a section
             let sectionElement = document.createElement("div");
             sectionElement.classList.add("menu-sections");
             let sectionTitle = document.createElement("h2");
@@ -172,7 +185,9 @@ fetch('menu.json')
             let content = document.createElement("div");
             content.classList.add("menu-items");
             item.items.forEach(item => {
+                //setting up the menu items
                 if (item.subName === undefined) {
+                    //if no subsections exist for this section
                     let innerContent = document.createElement("div");
                     innerContent.classList.add("menu-item");
                     innerContent.innerHTML =
@@ -195,6 +210,7 @@ fetch('menu.json')
                     content.appendChild(innerContent);
                 }
                 else {
+                    //if subsections exist
                     let category = document.createElement("div");
                     category.classList.add("menu-items-with-categories");
                     let subtitle = document.createElement("h3");
@@ -233,9 +249,10 @@ fetch('menu.json')
             sectionElement.appendChild(content)
             menulist.appendChild(sectionElement);
         });
+
         bottom = document.documentElement.scrollHeight;
         for (let i = 0; i < addItems.length; i++) {
-
+            //to check which items were added and add to the ordered list accordingly
             addItems[i].addEventListener("click", function () {
                 event.preventDefault();
                 if (window.sessionStorage.getItem("SignedIn") == "true") {
@@ -274,7 +291,4 @@ fetch('menu.json')
             })
         }
     })
-
     .catch(error => console.log('Error:', error));
-
-

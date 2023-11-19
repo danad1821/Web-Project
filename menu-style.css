@@ -78,13 +78,6 @@
 .main-items-links:hover, .bev-items-links:hover{
     color: #FAD370;
 }
-/* .main-section-nav:hover .main-items-list{
-    display: block;
-}
-.bev-section-nav:hover .beverages-items-list{
-    display: block;
-} */
-
 #cart-icon-menu{
     cursor: pointer;
     font-size: 1.8em;
@@ -113,7 +106,6 @@
     width: 100%;
 }
 .subsection-title{
-    /* margin-left: 150px; */
     scroll-margin-top: 87px;
     text-align: center;
     font-size: 1.2rem;
@@ -124,7 +116,6 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* margin: 3%; */
     flex-wrap: wrap;
     width: 85vw;
 }
@@ -153,9 +144,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: absolute;
-    bottom: 3%;
-    right: 3%; */
 }
 .menu-item-details>div{
     display: flex;
@@ -168,9 +156,6 @@
 .menu-item-description{
     height: 100px;
 }
-/* .quantity-title, .add-btn{
-    font-size: 1.1rem;
-} */
 .quantity-title{
     font-weight: 700;
 }
