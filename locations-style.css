@@ -218,8 +218,15 @@
         align-items: left;
         justify-content: left;
     }
-
-
+    .locations-lebanon{
+        width: 70vw;
+        min-height: 65vh;
+    }
+    .locations-lebanon iframe {
+        width: 100%;
+        height: 40vh;
+    }
+    
     .item img {
         width: 500px;
         height: 600px;
