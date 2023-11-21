@@ -15,29 +15,22 @@ let active = 0;
 let lengthItems = items.length - 1;
 
 // Next button click event
-next.on('click', function() {
-    if (active + 1 > lengthItems) {
-        active = 0;
-    } else {
-        active = active + 1;
-    }
+next.on('click', function () {
+    active = active === lengthItems ? 0 : active + 1;
     reloadSlider();
 });
 
 // Previous button click event
-prev.on('click', function() {
-    if (active - 1 < 0) {
-        active = lengthItems;
-    } else {
-        active = active - 1;
-    }
+prev.on('click', function () {
+    active = active === 0 ? lengthItems : active - 1;
     reloadSlider();
 });
 
 // Auto-refresh the slider
-let refreshSlider = setInterval(() => {
-    next.click();
-}, 1500);
+let refreshSlider = setInterval(function () {
+    active = active === lengthItems ? 0 : active + 1;
+    reloadSlider();
+}, 1500); 
 
 // Reload the slider based on the active item
 function reloadSlider() {
@@ -47,20 +40,15 @@ function reloadSlider() {
     let lastActiveDot = $('.slider .dots li.active');
     lastActiveDot.removeClass('active');
     dots.eq(active).addClass('active');
-
-    clearInterval(refreshSlider);
-
-    refreshSlider = setInterval(() => {
-        next.click();
-    }, 1500);
 }
 
 // Click event for each dot in the slider
-dots.each((key, li) => {
-    $(li).on('click', function() {
+dots.each(function (key, li) {
+    $(li).on('click', function () {
         active = key;
         reloadSlider();
     });
+});
 });
 
     // Create a ScrollMagic controller
@@ -125,5 +113,3 @@ let fadeOutBatroun = new ScrollMagic.Scene({
 .addTo(controller);
 
 
-
-});
