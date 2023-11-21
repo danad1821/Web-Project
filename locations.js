@@ -30,7 +30,7 @@ prev.on('click', function () {
 let refreshSlider = setInterval(function () {
     active = active === lengthItems ? 0 : active + 1;
     reloadSlider();
-}, 1500); 
+}, 4000); 
 
 // Reload the slider based on the active item
 function reloadSlider() {

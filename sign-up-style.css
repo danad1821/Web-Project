@@ -185,9 +185,9 @@ input[type="checkbox"]:checked::before {
 .form-link {
   margin-top: 10px;
 }
-
-
-
+.form-link:last-child{
+  margin-top: 0;
+}
 
 /*Media*/
 
@@ -198,13 +198,9 @@ input[type="checkbox"]:checked::before {
   height: 20px;
   text-align: center;
   text-decoration: none;
-  margin: 40px 8px;
+  margin: 20px 8px;
   border-radius: 50%;
 }
-
-/* .fa:hover {
-    
-} */
 
 .fa-facebook {
   background: #3B5998;
@@ -217,7 +213,9 @@ input[type="checkbox"]:checked::before {
   color: white;
 
 }
-
+.login-link{
+  color: #ce5b68;
+}
 
 
 /*Error*/

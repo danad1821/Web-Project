@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.image>img {
+  height: 100%;
+  object-fit: cover;
+}
 
 /* the main container of the review section */
 .review-body {
@@ -22,36 +26,40 @@
   font-size: 4.9rem;
   margin: 50px 0px 5px -5px;
 }
+
 /* subtitle */
-.text{
-    margin: -5px 0px 30px 0px;
-    font-size: 20px;
-    font-family: Roboto;
-    color: #c94353;
+.text {
+  margin: -5px 0px 30px 0px;
+  font-size: 20px;
+  font-family: Roboto;
+  color: #c94353;
 }
 
 /* hide imamge for bigger screen */
-.title-img{
+.title-img {
   display: none;
 }
+
 /* Container of the form */
 .main-container {
   padding: 5%;
-  margin: 10px 0px 20px 0px ;
+  margin: 10px 0px 20px 0px;
   border-radius: 10px;
-   box-shadow: 3px 3px 10px rgb(168, 168, 168); 
-   width: 85%;
- 
+  box-shadow: 3px 3px 10px rgb(168, 168, 168);
+  max-width: 85%;
+
 }
- /* The form */
-.wrapper{
+
+/* The form */
+.wrapper {
   display: flex;
   justify-content: center;
-  align-items:center;
-  
+  align-items: center;
+
 }
+
 /*Spaces between sections in form */
-.contact-info{
+.contact-info {
   margin-top: 20px;
 }
 
@@ -62,15 +70,17 @@
 
 /* Overflow of the container */
 .overflow {
- display: flex;
- flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
 /* names and contact information containers */
-.names, .information{
-    display: flex;
-} 
+.names,
+.information {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 /*Form Section titles */
@@ -78,23 +88,24 @@ h5 {
   font-size: 27px;
   margin: 25px 0px;
   font-family: tw cen mt std;
-  
+
 }
 
 /* inputs */
-input[type="text"], .input {
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid;
+input[type="text"],
+.input {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid;
 }
 
 /*email-phone input */
-#email-phone{
-  width: 24vw;
+#email-phone {
+  width: 20vw;
 }
 
 /*birthday input */
-#bday{
+#bday {
   padding: 9px;
 }
 
@@ -105,16 +116,20 @@ input[type="text"], .input {
 
 
 /* each input container */
-.label{
-    margin: 0px 0px 5px 0px;
-    font-size: 20px;
+.label {
+  margin: 0px 0px 5px 0px;
+  font-size: 20px;
 }
 
 
 /* Spaces Between inputs */
-#last-name, .email, .birthday{
+/* #last-name, .email, .birthday{
     margin-left: 50px;
 
+} */
+#first-name,
+.email-or-phone {
+  margin-right: 50px;
 }
 
 
@@ -141,57 +156,57 @@ input[type="text"], .input {
 
 /* Order types Container*/
 .order-type {
-font-size: 20px;
-display: flex;
-display: flex;
-flex-direction: column;
+  font-size: 20px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
 
 }
 
- /*Radio button */
- .delivery-InHouse {
+/*Radio button */
+.delivery-InHouse {
   display: flex;
- }
+}
 
- /* In house spacing */
+/* In house spacing */
 .in-house {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /*Select Restaurant option */
-.InHouse-Active select{
-padding: 2px;
-font-size: 15px
+.InHouse-Active select {
+  padding: 2px;
+  font-size: 15px
 }
 
 /* hidden section class */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 /* The order feedback container */
 .Experience {
-    font-size: 19px;
-    margin-top: 30px;
-    
+  font-size: 19px;
+  margin-top: 30px;
+
 }
 
 /* Inputs inside that container */
-.Experience input{
-padding: 5px;
-margin-left: 10px;
+.Experience input {
+  padding: 5px;
+  margin-left: 10px;
 }
 
 /* Restaurant selection */
 #Select {
   padding: 5px;
   text-align: left;
-  background-color:#104d40;
+  background-color: #104d40;
   color: white;
 }
 
 /* Yes answer checked */
-.Yes-Active{
+.Yes-Active {
   margin-top: 10px;
 }
 
@@ -202,44 +217,48 @@ margin-left: 10px;
   display: flex;
   flex-direction: column;
   margin: 20px 0px;
-  
- 
-  
+
+
+
 }
-.extra-feedback label{
+
+.extra-feedback label {
   margin: 0px 0px 10px 0px;
 }
 
-.Manager{
+.Manager {
   display: flex;
 }
-.answer-options{
+
+.answer-options {
   display: flex;
 }
 
 
 /* Waiter feedbcak input */
-.Waiter input{
+.Waiter input {
   font-size: 15px;
 }
 
- /* Manager feedbcak input */
-.Manager input{
+/* Manager feedbcak input */
+.Manager input {
   font-size: 15px;
 
 }
 
 /*Manager and Waiter Container */
-.Waiter, .Manager {
+.Waiter,
+.Manager {
   margin: 15px 0px;
-  
+
 }
-/* extra feedback Text area */ 
-.text-area{
+
+/* extra feedback Text area */
+.text-area {
   font-size: 15px;
   padding: 5px;
-    max-width: 50vw;
-    background-color: transparent;
+  max-width: 50vw;
+  background-color: transparent;
 }
 
 
@@ -259,16 +278,16 @@ margin-left: 10px;
 }
 
 /* selected radio buttons indicating delivery or in-house service */
-#DeliveryRadio:checked + label,
-#InHouseRadio:checked + label {
-  background-color:  #104d40;
+#DeliveryRadio:checked+label,
+#InHouseRadio:checked+label {
+  background-color: #104d40;
   color: white;
   border: solid black 1px;
 }
 
 /* selected radio buttons indicating 'Yes' or 'No' */
-#Yes:checked + label,
-#No:checked + label {
+#Yes:checked+label,
+#No:checked+label {
   color: #c94353;
 }
 
@@ -311,9 +330,9 @@ margin-left: 10px;
   font-size: 30px;
 }
 
-.rate input:checked ~ label,
+.rate input:checked~label,
 .rate label:hover,
-.rate label:hover ~ label {
+.rate label:hover~label {
   color: #fad370;
   transition: color 0.3s;
 }
@@ -349,97 +368,65 @@ margin-left: 10px;
 }
 
 /* Styles for the pop-up container */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
+.pop-up-container{
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   display: none;
-  z-index: 999;
-  backdrop-filter: blur(2px);
-}
-
-#popup-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #104d40;
-  padding: 60px;
-  border-radius: 0.5rem;
-  max-width: 300px;
+  z-index: 30;
+}
+.pop-up{
+  width: 320px;
+  height: 200px;
+  background-color: #F8EFE5; 
+  z-index: 5;
   display: none;
-  z-index: 1000;
+  text-align: center;
+  border-radius: 12px;
 }
-
-/* Styles for dismissing the pop-up */
-.dismiss {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  color: black;
+.pop-up p{
+  font-size: 1.2rem;
+}
+.popBtns{
+  margin: 2%;
+  margin-top: 4%;
+}
+.pop-up button:last-child{
+  font-size: 1.1rem;
+  margin: 5px;
   border: none;
-  font-size: 30px;
-  font-weight: 300;
-  width: 30px;
-  height: 30px;
-  border-radius: 7px;
-  transition: .3s ease;
-  margin-top: -8px;
+  /* width: 80px; */
+  padding: 3px 20px;
+  color: white;
+  background-color: #104d40;
+  border-radius: 12px;
+}
+.title-pop{
+  font-size: 1.3rem;
 }
 
-.dismiss:hover {
-  color: #c94353;
+.close-btn{
+  background-color: #F8EFE5;
+  border: none;
+  font-size: 1.4rem;
+  align-self: flex-end;
+  margin: 4%;
+}
+.popBtns button:first{
+  margin-right: 40px;
+}
+.close-btn svg{
+  background-color: #F8EFE5;
+  fill: black;
+}
+.close-btn svg:hover{
+  fill: #FAD370;
 }
 
 /* Styles for pop-up header */
 .header {
   padding-bottom: 20px;
-}
-
-/* Styles for pop-up title */
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 45px;
-  font-family: tw cen mt std;
-}
-
-/* Styles for confirming pop-up */
-.confirm {
-  position: absolute;
-  color: #104d40;
-  background-color: #bac9a3;
-  border: none;
-  padding: 5px 30px;
-  top: 75%;
-  left: 50%;
-  transform: translate(-52%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease;
-  font-weight: bold;
-}
-
-.confirm:hover {
-  background-color: #a6c478;
-}
-
-/* Styles for pop-up message */
-.message {
-  text-align: center;
-  margin-top: 0.5rem;
-  color: white;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 
@@ -453,6 +440,7 @@ margin-left: 10px;
     transform: scale(1.09);
   }
 }
+
 /*Media queries for smaller screens */
 /* Media query for screen sizes between 1224px and 867px */
 @media screen and (max-width: 1224px) and (min-width: 867px) {
@@ -461,18 +449,50 @@ margin-left: 10px;
   }
 }
 
+@media screen and (max-width: 950px) {
+  .review-body {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Title {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .title-text {
+    width: 700px;
+  }
+
+  .image {
+    display: none;
+  }
+}
+
 /* Media query for screen sizes between 867px and 699px */
-@media screen and (max-width: 867px) and (min-width: 699px) {
+@media screen and (max-width: 867px) {
+
   /* Font size adjustments for various elements */
   .title-text h1 {
     font-size: 65px;
   }
+
   .title-text h6 {
     font-size: 19px;
   }
+
   label {
     font-size: 17px;
   }
+
   .general-information h5 {
     font-size: 23px;
   }
@@ -489,13 +509,15 @@ margin-left: 10px;
   .text {
     max-width: 60vw;
   }
+
   .section input {
     width: 200px;
   }
 }
 
 /* Media query for screen sizes between 698px and 360px */
-@media screen and (max-width: 698px) and (min-width: 360px) {
+@media screen and (max-width: 698px) {
+
   /* Hide the 'image' class */
   .image {
     display: none;
@@ -505,6 +527,7 @@ margin-left: 10px;
   label {
     font-size: 17px;
   }
+
   .general-information h5 {
     font-size: 23px;
   }
@@ -521,12 +544,15 @@ margin-left: 10px;
   .title-text {
     max-width: 45vw;
   }
+
   .title-text h1 {
     font-size: 55px;
   }
+
   .title-text h6 {
     font-size: 15px;
   }
+
   .text {
     max-width: 40vw;
   }
@@ -535,55 +561,61 @@ margin-left: 10px;
   .Manager {
     margin-top: 30px;
   }
+
   .answer-options {
     display: flex;
     flex-direction: column;
   }
+
   .options {
     margin: 10px 0px 0px -10px;
   }
+
   .main-container {
     box-shadow: none;
+    width: 50%;
   }
+
   .section input {
     width: 200px;
   }
+
   .section #email-phone {
-    width: 300px;
+    width: 250px;
   }
+
   .title-img {
     display: inline-block;
   }
+
   .title-img img {
     width: 250px;
     height: 100px;
   }
-  .Title {
-    display: flex;
-    align-items: center;
-  }
+
 }
 
-/* Media query for screen sizes between 594px and 360px */
-@media screen and (max-width: 594px) and (min-width: 360px) {
+/* Media query for screen sizes between 594px */
+@media screen and (max-width: 594px) {
+
   /* Adjustments for image size and text width */
   .title-img img {
     width: 200px;
     height: 80px;
   }
-  .Title {
-    display: flex;
-    align-items: center;
-  }
+
   .title-text {
     max-width: 45vw;
   }
+
   .title-text h1 {
     font-size: 40px;
   }
+
   .title-text h6 {
     font-size: 10px;
   }
+
   .text {
     max-width: 30vw;
   }
@@ -591,33 +623,36 @@ margin-left: 10px;
 
 /* Media query for screen sizes below 460px */
 @media screen and (max-width: 460px) {
+
   /* Adjustments for image size and text width */
   .title-img img {
     width: 200px;
     height: 80px;
   }
-  .Title {
-    display: flex;
-    align-items: center;
-  }
+
   .title-text {
     max-width: 55vw;
   }
+
   .title-text h1 {
     font-size: 40px;
   }
+
   .title-text h6 {
     font-size: 10px;
   }
+
   .text {
     max-width: 40vw;
   }
+
+  .Title {
+    max-width: 300px;
+  }
+
+  .overflow,
+  .order,
+  #btn {
+    margin-left: 10px;
+  }
 }
-
-  
-
-  
-
-
-
-  

@@ -1,11 +1,12 @@
 /* Body */
-body>h1{
+body>h1 {
     display: none;
     margin: 1%;
     margin-top: 2%;
     text-align: center;
 }
-.cart-body{
+
+.cart-body {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,33 +14,45 @@ body>h1{
     justify-content: center;
     min-height: 70vh;
 }
+
 /* Items table */
-table{
+table {
     display: none;
     border-collapse: collapse;
     margin: 1%;
     box-shadow: 5px 5px 15px gray;
     margin-bottom: 100px;
 }
-th, td{
+
+th,
+td {
     border: 1px solid black;
     /* background-color: white; */
     width: 200px;
     padding: 2%;
     text-align: center;
 }
-.middle-box, #title-heading, #title-price, #item-name{
+
+.middle-box,
+#title-heading,
+#title-price,
+#item-name {
     border-left: none;
     border-right: none;
 }
-tr .row-box:first-child, #title-item{
+
+tr .row-box:first-child,
+#title-item {
     border-right: none;
 }
-tr .row-box:last-child, #title-empty{
+
+tr .row-box:last-child,
+#title-empty {
     border-left: none;
 }
+
 /* Total amount */
-#total-div{
+#total-div {
     position: absolute;
     bottom: 0px;
     align-self: flex-end;
@@ -47,11 +60,15 @@ tr .row-box:last-child, #title-empty{
     align-items: center;
     display: none;
 }
-#total-div p, #total-div b, #total-div button{
+
+#total-div p,
+#total-div b,
+#total-div button {
     margin: 10px;
     font-size: 1.3rem;
 }
-.checkout-btn{
+
+.checkout-btn {
     padding: 1.5% 2%;
     margin: 1%;
     background-color: white;
@@ -61,43 +78,51 @@ tr .row-box:last-child, #title-empty{
     align-items: center;
     justify-content: center;
 }
-#checkout-icon{
+
+#checkout-icon {
     font-size: 1rem;
     margin-right: 5px;
 }
-#empty-cart{
+
+#empty-cart {
     justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 75vh;
 }
-input[type=number]{
+
+input[type=number] {
     outline: none;
     margin-left: 5px;
     padding-left: 3px;
 }
+
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1;
-    
+
 }
-.food-img{
+
+.food-img {
     width: 200px;
     height: 150px;
 }
-.remove-btn{
+
+.remove-btn {
     padding: 5px 12px;
     background-color: #104d40;
     color: white;
     border: none;
     border-radius: 12px;
 }
-.img-col{
+
+.img-col {
     width: 300px;
     border-right: none;
 }
+
 /*Pop Up*/
-.pop-up-container{
+.pop-up-container {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -105,23 +130,27 @@ input[type=number]::-webkit-inner-spin-button {
     position: fixed;
     z-index: 30;
 }
-.pop-up{
-    width: 300px;
-    height: 180px;
-    background-color: #F8EFE5; 
+
+.pop-up {
+    width: 320px;
+    height: 200px;
+    background-color: #F8EFE5;
     z-index: 5;
     display: none;
     text-align: center;
     border-radius: 12px;
 }
-.pop-up p{
+
+.pop-up p {
     font-size: 1.2rem;
 }
-.popBtns{
+
+.popBtns {
     margin: 2%;
     margin-top: 4%;
 }
-.popBtns button{
+
+.popBtns button {
     font-size: 1.1rem;
     margin: 5px;
     border: none;
@@ -132,38 +161,44 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 12px;
 }
 
-.close-btn{
+.close-btn {
     background-color: #F8EFE5;
     border: none;
     font-size: 1.4rem;
     align-self: flex-end;
     margin: 4%;
 }
-.popBtns button:first{
+
+.popBtns button:first {
     margin-right: 40px;
 }
-.close-btn svg{
+
+.close-btn svg {
     background-color: #F8EFE5;
     fill: black;
 }
-.close-btn svg:hover{
+
+.close-btn svg:hover {
     fill: #FAD370;
 }
 
 /*media queries*/
-@media screen and (max-width: 570px){
-    .food-img{
+@media screen and (max-width: 570px) {
+    .food-img {
         width: 110px;
         height: 90px;
         margin: 5px;
     }
-    .row-box{
+
+    .row-box {
         padding: 1%;
     }
-    table{
+
+    table {
         font-size: 0.8rem;
     }
-    .remove-btn{
+
+    .remove-btn {
         padding: 3px 8px;
         background-color: #104d40;
         color: white;
