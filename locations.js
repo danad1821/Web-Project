@@ -1,68 +1,76 @@
-let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+
+$(document).ready(function() {
+
+
+
+
+// Declarations
+let list = $('.slider .list');
+let items = $('.slider .list .item');
+let dots = $('.slider .dots li');
+let prev = $('#prev');
+let next = $('#next');
 
 let active = 0;
 let lengthItems = items.length - 1;
 
-next.onclick = function () {
+// Next button click event
+next.on('click', function() {
     if (active + 1 > lengthItems) {
         active = 0;
     } else {
         active = active + 1;
     }
     reloadSlider();
-};
+});
 
-prev.onclick = function () {
+// Previous button click event
+prev.on('click', function() {
     if (active - 1 < 0) {
         active = lengthItems;
     } else {
         active = active - 1;
     }
     reloadSlider();
-};
+});
 
+// Auto-refresh the slider
 let refreshSlider = setInterval(() => {
     next.click();
-}, 3000);
+}, 1500);
 
+// Reload the slider based on the active item
 function reloadSlider() {
-    let checkLeft = items[active].offsetLeft;
-    list.style.left = -checkLeft + 'px';
+    let checkLeft = items.eq(active).position().left;
+    list.css('left', -checkLeft + 'px');
 
-    let lastActiveDot = document.querySelector('.slider .dots li.active');
-    lastActiveDot.classList.remove('active');
-    dots[active].classList.add('active');
+    let lastActiveDot = $('.slider .dots li.active');
+    lastActiveDot.removeClass('active');
+    dots.eq(active).addClass('active');
 
     clearInterval(refreshSlider);
 
     refreshSlider = setInterval(() => {
         next.click();
-    }, 3000);
+    }, 1500);
 }
 
-dots.forEach((li, key) => {
-    li.addEventListener('click', function () {
+// Click event for each dot in the slider
+dots.each((key, li) => {
+    $(li).on('click', function() {
         active = key;
         reloadSlider();
     });
 });
 
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    
+    // Create a ScrollMagic controller
     let controller = new ScrollMagic.Controller();
 
-    
-    let fadeInDuration = 0.5;
-    let fadeOutDuration = 1.2; 
+    // Duration and trigger settings for fade-in and fade-out animations
+    let fadeInDuration = 1;
+    let fadeOutDuration = 1.5;
 
-    
+    // Fade-in animation for Beirut location
     let fadeInBeirut = new ScrollMagic.Scene({
         triggerElement: '.locations-lebanon.Beirut',
         duration: fadeInDuration * window.innerHeight,
@@ -71,48 +79,51 @@ document.addEventListener("DOMContentLoaded", function () {
     .setTween(TweenMax.fromTo('.locations-lebanon.Beirut', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
     .addTo(controller);
 
-    
+    // Fade-out animation for Beirut location
     let fadeOutBeirut = new ScrollMagic.Scene({
         triggerElement: '.locations-lebanon.Beirut',
-        duration: fadeOutDuration * window.innerHeight, // Longer duration for fade-out
+        duration: fadeOutDuration * window.innerHeight,
         triggerHook: 'onLeave'
     })
     .setTween(TweenMax.fromTo('.locations-lebanon.Beirut', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
     .addTo(controller);
 
-    
-    let fadeInTripoli = new ScrollMagic.Scene({
-        triggerElement: '.locations-lebanon.Byblos',
-        duration: fadeInDuration * window.innerHeight,
-        triggerHook: 'onEnter'
-    })
-    .setTween(TweenMax.fromTo('.locations-lebanon.Byblos', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
-    .addTo(controller);
+   // Fade-in animation for Byblos location
+   let fadeInByblos = new ScrollMagic.Scene({
+    triggerElement: '.locations-lebanon.Byblos',
+    duration: fadeInDuration * window.innerHeight,
+    triggerHook: 'onEnter'
+})
+.setTween(TweenMax.fromTo('.locations-lebanon.Byblos', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
+.addTo(controller);
 
-    
-    let fadeOutTripoli = new ScrollMagic.Scene({
+
+    // Fade-out animation for Byblos location
+    let fadeOutByblos = new ScrollMagic.Scene({
         triggerElement: '.locations-lebanon.Byblos',
-        duration: fadeOutDuration * window.innerHeight, // Longer duration for fade-out
+        duration: fadeOutDuration * window.innerHeight,
         triggerHook: 'onLeave'
     })
     .setTween(TweenMax.fromTo('.locations-lebanon.Byblos', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
     .addTo(controller);
 
-   
-    let fadeInTyre = new ScrollMagic.Scene({
+    // Fade-in animation for Batroun location
+    let fadeInBatroun = new ScrollMagic.Scene({
         triggerElement: '.locations-lebanon.Batroun',
         duration: fadeInDuration * window.innerHeight,
         triggerHook: 'onEnter'
     })
     .setTween(TweenMax.fromTo('.locations-lebanon.Batroun', fadeInDuration, { opacity: 0 }, { opacity: 1 }))
     .addTo(controller);
+// Fade-out animation for Batroun location
+let fadeOutBatroun = new ScrollMagic.Scene({
+    triggerElement: '.locations-lebanon.Batroun',
+    duration: fadeOutDuration * window.innerHeight,
+    triggerHook: 'onLeave'
+})
+.setTween(TweenMax.fromTo('.locations-lebanon.Batroun', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
+.addTo(controller);
 
-    
-    let fadeOutTyre = new ScrollMagic.Scene({
-        triggerElement: '.locations-lebanon.Batroun',
-        duration: fadeOutDuration * window.innerHeight, // Longer duration for fade-out
-        triggerHook: 'onLeave'
-    })
-    .setTween(TweenMax.fromTo('.locations-lebanon.Batroun', fadeOutDuration, { opacity: 1 }, { opacity: 0 }))
-    .addTo(controller);
+
+
 });

@@ -1,43 +1,42 @@
+/* Global reset for margin and padding */
 * {
     margin: 0;
     padding: 0;
 }
 
-
+/* Styling for the welcome section */
 .beginning {
-    margin: 5% 0%;
+    margin: 7% 0% 12% 0%;
     display: flex;
-    justify-content: center;
-    
 
 }
 
-
-
+/* Styling for the information section */
 .info {
     margin-left: 10%;
     display: flex;
-    transform: translateY(50%);
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    height: 40vh;
     max-width: 25vw;
-    
 }
 
+/* Title styling */
 .title {
     margin-bottom: 5px;
     font-size: 65px;
-    font-family: tw cen mt std;
+    font-family: 'tw cen mt std';
 }
 
+/* Styling for paragraphs in the info section */
 .info p {
     font-size: 18px;
 }
 
+/* Styling for buttons in the info section */
 .info button {
     margin-top: 5%;
+    margin-left: -5px;
     padding: 2%;
     width: 200px;
     min-height: 40px;
@@ -47,27 +46,27 @@
     font-size: 1.1em;
 }
 
+/* Styling for links inside buttons */
 .info button a {
     text-decoration: none;
     color: #f6f6f6;
-    
 }
 
+/* Hover effect for buttons */
 .info button:hover {
     background-color: #cd4252;
-
 }
 
-
+/* Styling for the slider container */
 .slider {
-    width: 60vw;
-    height: 50vw;
+    width: 50vw;
+    height: 35vw;
     position: relative;
     overflow: hidden;
     margin: 0% 10%;
-
 }
 
+/* Styling for the list of slider items */
 .list {
     position: absolute;
     top: 0;
@@ -75,90 +74,28 @@
     height: 100%;
     display: flex;
     width: max-content;
-
-
 }
 
+/* Styling for images inside the slider */
 .list img {
-    width: 60vw;
-    height: auto;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
 
 }
 
-/* .buttons {
-    position: absolute;
-    top: 38%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-.buttons button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    color: #fff;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-
-}
-
-
-
-.buttons button:hover{
-    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.13);
-    background-color: #a8a8a8a9;
-    
-}
-
-
-.arrow {
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-
-  .arrow.right:hover,
-  .arrow.left:hover{
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-   */
-  
-
-
+/* Styling for the dots container */
 .dots {
     position: absolute;
     bottom: 10px;
     color: #fff;
-    top: 63%;
-    left: 0;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 20px 0px;
     display: flex;
     justify-content: center;
-
 }
 
+/* Styling for individual dots */
 .dots li {
     list-style: none;
     width: 10px;
@@ -167,40 +104,39 @@
     margin: 20px;
     border-radius: 20px;
     transition: 1s;
-
-
 }
 
-
+/* Styling for the active dot */
 .dots li.active {
     width: 30px;
-
-
 }
 
+/* Cursor style for dot navigation */
 .slider .dots li {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-
+/* Hover effect for dots */
 .slider .dots li:hover {
     pointer-events: auto;
 }
-.locations-lebanon h5{
-    font-family: tw cen mt std ;
+
+/* Styling for location information */
+.locations-lebanon h5 {
+    font-family: 'tw cen mt std';
     font-size: 40px;
     margin-bottom: 10px;
     color: #104d40;
 }
 
+/* Styling for paragraphs in location information */
 .locations-lebanon p {
     font-size: 16px;
     margin: 10px 0px;
     text-align: center;
-
 }
 
-
+/* Styling for the locations container */
 .locations-container {
     display: flex;
     flex-direction: column;
@@ -210,25 +146,25 @@
     align-items: center;
 }
 
-#title{
+/* Styling for the main title */
+#title {
     font-size: 65px;
-    font-family: tw cen mt std;
+    font-family: 'tw cen mt std';
     margin: 20px 0px;
 }
 
+/* Styling for individual location cards */
 .locations-lebanon {
     padding: 50px;
-    border: solid 2px rgba(202, 202, 202, 0.205);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.1);
+    box-shadow: 3px 3px 10px rgb(198, 198, 198);
     text-align: center;
     width: 80vw;
     height: 80vh;
     margin-bottom: 50px;
 }
 
-
-
+/* Styling for the map iframe */
 .locations-lebanon iframe {
     width: 100%;
     height: 55vh;
@@ -236,6 +172,7 @@
     margin-bottom: 10px;
 }
 
+/* Styling for buttons inside location cards */
 .locations-lebanon button {
     margin: 5px 0px;
     padding: 1.5%;
@@ -245,32 +182,34 @@
     font-size: 1.1em;
 }
 
+/* Styling for the "Go to Contact Us" section */
 .go-to-contactus {
     font-weight: bolder;
     padding: 18px;
-   
 }
 
+/* Styling for links inside the "Go to Contact Us" section */
 .go-to-contactus a {
-   text-decoration: none;
-   color: #104d40;
-   
+    text-decoration: none;
+    color: #104d40;
 }
+
+/* Hover effect for the "Go to Contact Us" section */
 .go-to-contactus:hover {
     background-color: #fdc841;
 }
 
-
+/* Styling for images inside individual location cards */
 .item img {
     width: 700px;
     height: 600px;
-    
 }
 
+/* Media query  */
 @media screen and (max-width: 900px) {
-   .beginning{
-    margin-bottom: 100px;
-   }
+    .beginning {
+        margin-bottom: 100px;
+    }
     .info {
         margin-top: -100px;
         margin-left: 5%;
@@ -278,128 +217,198 @@
         text-align: left;
         align-items: left;
         justify-content: left;
-        
-    } 
-    
-.item img {
-    width: 500px;
-    height: 600px;
-    
-}
-}
-@media screen and (max-width: 768px) {
-    .beginning{
-        margin-top: -50px;
-        display: flex;
-        /* flex-direction: column; */
-    }
-    .info {
-        margin-left: 5%;
-        max-width: 55%;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
-        
     }
 
-    .title {
+
+    .item img {
+        width: 500px;
+        height: 600px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .slider{
+        display: none;
+    }
+    .info {
+        margin-top: 40px;
+        max-width: 800px;
+    }
+    .info h2{
+        margin-left: -10px;
+        font-size:  90px;
+    }
+   
+    .info p{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .info button{
+        margin-top: 2%;
+        margin-left: -10px;
+        padding: 2%;
+        width: 200px;
+        min-height: 20px;
+        font-size: 1rem;  
+    }
+
+    .locations-container #title{
+        font-size: 60px;
+    }
+    .locations-container{
+        margin-top: -30px;
+    }
+
+}
+@media screen and (max-width: 788px) {
+    .slider{
+        display: none;
+    }
+    .info {
+        margin-top: 40px;
+        max-width: 700px;
+    }
+    .info h2{
+        margin-left: -10px;
+        font-size:  90px;
+    }
+   
+    .info p{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .info button{
+        margin-top: 2%;
+        margin-left: -10px;
+        padding: 2%;
+        width: 200px;
+        min-height: 20px;
+        font-size: 1rem;  
+    }
+
+    .locations-container #title{
+        font-size: 60px;
+    }
+    .locations-container{
+        margin-top: -30px;
+    }
+
+}
+@media screen and (max-width: 734px) {
+    .slider{
+        display: none;
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 40px;
+        max-width: 700px;
+    }
+    .info h2{
+        margin-left: -10px;
+        font-size:  70px;
+    }
+   
+    .info p{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .info button{
+        margin-top: 2%;
+        margin-left: -10px;
+        padding: 2%;
+        width: 200px;
+        min-height: 20px;
+        font-size: 1rem;  
+    }
+
+    .locations-container #title{
+        font-size: 60px;
+    }
+    .locations-container{
+        margin-top: -30px;
+    }
+
+}
+@media screen and (max-width: 569px) {
+    .slider{
+        display: none;
+    }
+    .info {
+        margin-top: 40px;
+        max-width: 700px;
+    }
+    .info h2{
+        margin-left: -10px;
+        font-size:  60px;
+    }
+   
+    .info p{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .info button{
+        margin-top: 2%;
+        margin-left: -10px;
+        padding: 2%;
+        width: 200px;
+        min-height: 20px;
+        font-size: 1rem;  
+    }
+
+    .locations-container #title{
+        font-size: 60px;
+    }
+    .locations-container{
+        margin-top: -30px;
+    }
+    .information h5{
         font-size: 30px;
     }
 
-    .info button {
-        width: 50%;
-        font-size: 12px;
-        
+}
+@media screen and (max-width: 486px) {
+    .slider{
+        display: none;
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin: 0px 20px;
+        max-width: 700px;
+        text-align: center;
+    }
+    .info h2{
+        margin-left: -10px;
+        font-size:  50px;
+    }
+   
+    .info p{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .info button{
+        margin-top: 2%;
+        margin-left: -10px;
+        padding: 2%;
+        width: 200px;
+        min-height: 20px;
+        font-size: 1rem;  
     }
 
-    .info p {
-        width: 80%;
-        font-size: 15px;
-
+    .locations-container #title{
+        font-size: 40px;
     }
-    .slider {
-        margin-left: 20px;
-        margin-top: 100px;
+    .locations-container{
+        margin-top: -30px;
     }
-    .dots{
-       visibility: hidden;
+    .information h5{
+        font-size: 30px;
     }
 
-.item img {
-    width: 250px;
-    height: 250px;
-    
-}
-#title{
-    font-size: 40px;
-}
 
-.locations-lebanon h5{
-    font-size: 25px;
-}
-.locations-lebanon p{
-    font-size: 15px;
-}
-.locations-lebanon{
-    width: fit-content;
-    height: fit-content;
-}
-.locations-lebanon button{
-   font-size: 12px;
-}
-
-.buttons {
-    position: absolute;
-    top: 38%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-.buttons button {
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-    background-color: transparent;
-
-
-}
-
-
-
-.buttons button:hover{
-    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.13);
-    background-color: #a8a8a8a9;
-    
-}
-
-
-.arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    margin-top: 30px;
-    padding: 3px;
-  }
-
-  .arrow.right:hover,
-  .arrow.left:hover{
-    border-width: 0 2px 2px 0;
-    
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-  
-  
 }

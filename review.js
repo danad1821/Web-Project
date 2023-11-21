@@ -1,277 +1,284 @@
+$(document).ready(function() {
 /*declaration*/
-let form=document.forms ['feedback-form'];
-let deliveryRadio = document.querySelector("#DeliveryRadio");
-let inHouseRadio = document.querySelector("#InHouseRadio");
-let deliveryInfo = document.querySelector(".Delivery-Active");
-let inHouseInfo = document.querySelector(".InHouse-Active");
-let yesAnswer = document.querySelector("#Yes");
-let yesQuest = document.querySelector(".Yes-Active")
-let noAnswer=document.querySelector("#No");
-let frstname=document.querySelector("#firstname");
-let lstname=document.querySelector("#lastname");
-let contactinfo=document.querySelector("#email-phone");
-let bdayInput = document.querySelector("#bday")
-let orderType =document.querySelector (".service-type")
+let form = $('form[name="feedback-form"]');
+    let deliveryRadio = $("#DeliveryRadio");
+    let inHouseRadio = $("#InHouseRadio");
+    let deliveryInfo = $(".Delivery-Active");
+    let inHouseInfo = $(".InHouse-Active");
+    let yesAnswer = $("#Yes");
+    let yesQuest = $(".Yes-Active");
+    let noAnswer = $("#No");
+    let frstname = $("#firstname");
+    let lstname = $("#lastname");
+    let contactinfo = $("#email-phone");
+    let bdayInput = $("#bday");
+    let orderType = $(".service-type");
 
 /*prevent form from submitting by default*/
-form.addEventListener('submit', function(event){
+form.submit(function(event) {
     event.preventDefault();
 });
 
 /* Shows delivery or house accroding to selection */
-deliveryRadio.addEventListener("change", function () {
-    if (deliveryRadio.checked) {
-      
-        deliveryInfo.classList.remove("hidden");
-        inHouseInfo.classList.add("hidden");
 
-    } else {
-       
-        deliveryInfo.classList.add("hidden");
-    }
-});
+// Delivery Clicked 
+deliveryRadio.change(function() {
+            if (deliveryRadio.prop('checked')) {
+                deliveryInfo.removeClass("hidden");
+                inHouseInfo.addClass("hidden");
+            } else {
+                deliveryInfo.addClass("hidden");
+            }
+        });
 
-inHouseRadio.addEventListener("change", function () {
-    if (inHouseRadio.checked) {
-     
-        inHouseInfo.classList.remove("hidden");
-        deliveryInfo.classList.add("hidden");
-    } 
-});
+// In house Clicked 
+inHouseRadio.change(function() {
+            if (inHouseRadio.prop('checked')) {
+                inHouseInfo.removeClass("hidden");
+                deliveryInfo.addClass("hidden");
+            }
+        });
 
 /*shows question according to choice of yes or no */
-yesAnswer.addEventListener ("change", function () {
-    if (yesAnswer.checked){
-        yesQuest.classList.remove("hidden")
-    } 
 
-})
+// Yes
+yesAnswer.change(function() {
+            if (yesAnswer.prop('checked')) {
+                yesQuest.removeClass("hidden");
+            }
+        });
 
-noAnswer.addEventListener("change", function(){
-    if(noAnswer.checked){
-        yesQuest.classList.add("hidden")
-    }
+//  No 
 
-})
+noAnswer.change(function() {
+            if (noAnswer.prop('checked')) {
+                yesQuest.addClass("hidden");
+            }
+        });
 
 
-/* Reset the ratings when another radio button (order type) is checked*/
+/* Reset the ratings when another radio button (order type) is checked */
 
 // Delivery Checked
-deliveryRadio.addEventListener('click', function() {
-document.getElementById('waitername').value= null;
-yesAnswer.checked = false;
-if (yesAnswer.checked == false) {
-    yesQuest.classList.add("hidden")
-}
-noAnswer.checked = false;
-document.getElementById('improve2').value= null;
-document.getElementById("Select").selectedIndex = "";
-
-
-
-    document.getElementById('star5-service').checked = false;
-    document.getElementById('star4-service').checked = false;
-    document.getElementById('star3-service').checked = false;
-    document.getElementById('star2-service').checked = false;
-    document.getElementById('star1-service').checked = false;
-
-    document.getElementById('star5-foodquality2').checked = false;
-    document.getElementById('star4-foodquality2').checked = false;
-    document.getElementById('star3-foodquality2').checked = false;
-    document.getElementById('star2-foodquality2').checked = false;
-    document.getElementById('star1-foodquality2').checked = false;
-
-    document.getElementById('star5-cleanliness2').checked = false;
-    document.getElementById('star4-cleanliness2').checked = false;
-    document.getElementById('star3-cleanliness2').checked = false;
-    document.getElementById('star2-cleanliness2').checked = false;
-    document.getElementById('star1-cleanliness2').checked = false;
-
-    document.getElementById('star5-atmosphere').checked = false;
-    document.getElementById('star4-atmosphere').checked = false;
-    document.getElementById('star3-atmosphere').checked = false;
-    document.getElementById('star2-atmosphere').checked = false;
-    document.getElementById('star1-atmosphere').checked = false;
-
-});
-
+deliveryRadio.click(function() {
+        $('#waitername').val(null);
+        yesAnswer.prop('checked', false);
+        if (!yesAnswer.prop('checked')) {
+            yesQuest.addClass("hidden");
+        }
+        noAnswer.prop('checked', false);
+        $('#improve2').val(null);
+        $('#Select').prop('selectedIndex', '');
+    
+        // Resetting the ratings
+        $('[id^="star5-deliverytime"]').prop('checked', false);
+        $('[id^="star4-deliverytime"]').prop('checked', false);
+        $('[id^="star3-deliverytime"]').prop('checked', false);
+        $('[id^="star2-deliverytime"]').prop('checked', false);
+        $('[id^="star1-deliverytime"]').prop('checked', false);
+    
+        $('[id^="star5-foodquality"]').prop('checked', false);
+        $('[id^="star4--foodquality]').prop('checked', false);
+        $('[id^="star3-foodquality"]').prop('checked', false);
+        $('[id^="star2-foodquality"]').prop('checked', false);
+        $('[id^="star1-foodquality"]').prop('checked', false);
+    
+    
+        $('[id^="star5-cleanliness"]').prop('checked', false);
+        $('[id^="star4-cleanliness"]').prop('checked', false);
+        $('[id^="star3-cleanliness"]').prop('checked', false);
+        $('[id^="star2-cleanliness"]').prop('checked', false);
+        $('[id^="star1-cleanliness"]').prop('checked', false);
+    
+        $('[id^="star5-packaging"]').prop('checked', false);
+        $('[id^="star4-packaging"]').prop('checked', false);
+        $('[id^="star3-packaging"]').prop('checked', false);
+        $('[id^="star2-packaging"]').prop('checked', false);
+        $('[id^="star1-packaging"]').prop('checked', false);
+    
+        $('[id^="star5-customerservice"]').prop('checked', false);
+        $('[id^="star4-customerservice"]').prop('checked', false);
+        $('[id^="star3-customerservice"]').prop('checked', false);
+        $('[id^="star2-customerservice"]').prop('checked', false);
+        $('[id^="star1-customerservice"]').prop('checked', false);
+    
+    
+    });
+    
 // In House Checked
-inHouseRadio.addEventListener('click', function() {
-    document.getElementById('nameofserver').value= null;
-    document.getElementById('improve').value= null;
+inHouseRadio.click(function() {
+        $('#nameofserver').val(null);
+        $('#improve').val(null);
+    
+        // Resetting the ratings
+        $('[id^="star5-service"]').prop('checked', false);
+        $('[id^="star4-service"]').prop('checked', false);
+        $('[id^="star3-service"]').prop('checked', false);
+        $('[id^="star2-service"]').prop('checked', false);
+        $('[id^="star1-service"]').prop('checked', false);
+    
+        $('[id^="star5-foodquality2"]').prop('checked', false);
+        $('[id^="star4--foodquality2]').prop('checked', false);
+        $('[id^="star3-foodquality2"]').prop('checked', false);
+        $('[id^="star2-foodquality2"]').prop('checked', false);
+        $('[id^="star1-foodquality2"]').prop('checked', false);
+    
+    
+        $('[id^="star5-cleanliness2"]').prop('checked', false);
+        $('[id^="star4-cleanliness2"]').prop('checked', false);
+        $('[id^="star3-cleanliness2"]').prop('checked', false);
+        $('[id^="star2-cleanliness2"]').prop('checked', false);
+        $('[id^="star1-cleanliness2"]').prop('checked', false);
+    
+        $('[id^="star5-atmosphere"]').prop('checked', false);
+        $('[id^="star4-atmosphere"]').prop('checked', false);
+        $('[id^="star3-atmosphere"]').prop('checked', false);
+        $('[id^="star2-atmosphere"]').prop('checked', false);
+        $('[id^="star1-atmosphere"]').prop('checked', false);
+    
+    
+    });
     
 
-    document.getElementById('star5-deliverytime').checked = false;
-    document.getElementById('star4-deliverytime').checked = false;
-    document.getElementById('star3-deliverytime').checked = false;
-    document.getElementById('star2-deliverytime').checked = false;
-    document.getElementById('star1-deliverytime').checked = false;
+/* Form Validation */
 
-    document.getElementById('star5-foodquality').checked = false;
-    document.getElementById('star4-foodquality').checked = false;
-    document.getElementById('star3-foodquality').checked = false;
-    document.getElementById('star2-foodquality').checked = false;
-    document.getElementById('star1-foodquality').checked = false;
-
-    document.getElementById('star5-cleanliness').checked = false;
-    document.getElementById('star4-cleanliness').checked = false;
-    document.getElementById('star3-cleanliness').checked = false;
-    document.getElementById('star2-cleanliness').checked = false;
-    document.getElementById('star1-cleanliness').checked = false;
-
-    document.getElementById('star5-packaging').checked = false;
-    document.getElementById('star4-packaging').checked = false;
-    document.getElementById('star3-packaging').checked = false;
-    document.getElementById('star2-packaging').checked = false;
-    document.getElementById('star1-packaging').checked = false;
-
-    document.getElementById('star5-customerservice').checked = false;
-    document.getElementById('star4-customerservice').checked = false;
-    document.getElementById('star3-customerservice').checked = false;
-    document.getElementById('star2-customerservice').checked = false;
-    document.getElementById('star1-customerservice').checked = false;
-});
-
+// reseting form fuction after pop-up
 function resetForm() {
-    document.body.classList.remove('popup-open');
+    $('body').removeClass('popup-open');
     location.reload();
 }
 
+// Showing pop-up when form is validated
 function showPopup() {
-    document.body.classList.add('popup-open');
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('popup-container').style.display = 'block';
+    $('body').addClass('popup-open');
+    $('#overlay, #popup-container').css('display', 'block');
 }
 
-form.addEventListener('submit', (event) => {
+$('form').submit(function(event) {
     event.preventDefault();
-
     validateForm(showPopup);
 });
 
+
+// dismissing pop-up
 function dismissPopup() {
-    document.body.classList.remove('popup-open');
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('popup-container').style.display = 'none';
-}
+        $('body').removeClass('popup-open');
+        $('#overlay, #popup-container').hide();
+    }
 
-let dismissElements = document.querySelectorAll('.dismiss');
+    // Adding click event to dismiss elements
+    $('.dismiss').click(dismissPopup);
 
-dismissElements.forEach(element => {
-    element.addEventListener('click', dismissPopup);
-});
+    // Confirming submission of form
+    function confirmPopup() {
+        $('#overlay, #popup-container').hide();
+        resetForm();
+    }
 
-function confirmPopup() {
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('popup-container').style.display = 'none';
-    resetForm();
-}
-
-
-let confirmElements = document.querySelectorAll('.confirm');
-
-confirmElements.forEach(element => {
-    element.addEventListener('click', confirmPopup);
-});
+    // Adding click event to confirm elements
+    $('.confirm').click(confirmPopup);
 
 
 
+    $(document).on('click', '.confirm', confirmPopup);
 
+    // Function to set an error message for a form element
 function setError(element, errorMessage) {
     let parentElement = element.closest('.required-feedback');
-    parentElement.classList.add('error');
-    let alertMessage = parentElement.querySelector('small');
-    alertMessage.textContent = errorMessage;
+    parentElement.addClass('error');
+    parentElement.find('small').text(errorMessage);
 }
 
+// Function to remove error messages for a form element
 function removeError(element) {
     let parentElement = element.closest('.required-feedback');
-    parentElement.classList.remove('error');
-    let alertMessage = parentElement.querySelector('small');
-    alertMessage.textContent = ''; 
+    parentElement.removeClass('error');
+    parentElement.find('small').text('');
 }
 
+// Function to validate the first name using a regular expression
 function validateFirstName(frstname) {
     return /^[a-zA-Z]{1,10}$/i.test(frstname);
 }
 
+// Function to validate the last name using a regular expression
 function validateLastName(lstname) {
     return /^[a-zA-Z]{1,10}$/i.test(lstname);
 }
-function validateEmailOrPhoneNumber(inputValue) {
-    const isEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(inputValue);
-    const isPhoneNumber = /^[0-9]+$/.test(inputValue.trim());
 
+// Function to validate email or phone number using regular expressions
+function validateEmailOrPhoneNumber(inputValue) {
+    const isEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@((([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})|(\d{10,}))$/i.test(inputValue);
+    const isPhoneNumber = /^\d{10}$/i.test(inputValue.trim());
     return isEmail || isPhoneNumber;
 }
 
-
+// Function to validate the entire form
 function validateForm(callback) {
     let isValid = true;
 
-    if (frstname.value.trim() == '') {
+    // Validation checks for first name
+    let frstname = $('#firstname');
+    if (frstname.val().trim() === '') {
         setError(frstname, 'Name cannot be empty');
         isValid = false;
-    }
-
-    else if (!validateFirstName(frstname.value.trim())) {
+    } else if (!validateFirstName(frstname.val().trim())) {
         setError(frstname, 'Enter a valid first name (1 to 10 letters)');
         isValid = false;
-    }
-    else {
+    } else {
         removeError(frstname);
     }
 
-    if (lstname.value.trim() == '') {
-        setError(lstname, 'Name cannot be empty');
+    // Validation checks for last name
+    let lstname = $('#lastname');
+    if (lstname.val().trim() === '') {
+        setError(lstname, 'Last Name cannot be empty');
         isValid = false;
-    } 
-    else if (!validateLastName(lstname.value.trim())) {
-        setError(lstname, 'Enter a valid first name (1 to 10 letters)');
+    } else if (!validateLastName(lstname.val().trim())) {
+        setError(lstname, 'Enter a valid last name (1 to 10 letters)');
         isValid = false;
-    }
-    else {
+    } else {
         removeError(lstname);
     }
 
-    if (contactinfo.value.trim() == '') {
+    // Validation checks for email/phone
+    let contactinfo = $('#email-phone');
+    if (contactinfo.val().trim() === '') {
         setError(contactinfo, 'Please enter either a mobile number or an email');
         isValid = false;
-    } else if (!validateEmailOrPhoneNumber(contactinfo.value.trim())) {
+    } else if (!validateEmailOrPhoneNumber(contactinfo.val().trim())) {
         setError(contactinfo, 'Enter a valid mobile number or email');
         isValid = false;
     } else {
         removeError(contactinfo);
     }
 
-
-    if (!bdayInput.value) {
+    // Validation checks for birthday
+    let bdayInput = $('#bday');
+    if (!bdayInput.val().trim()) {
         setError(bdayInput, 'Date cannot be empty');
         isValid = false;
-    }
-    else {
+    } else {
         removeError(bdayInput);
     }
 
-    let orderTypeElements = document.querySelectorAll('input[name="type-of-order"]');
-
-
-    if (!Array.from(orderTypeElements).some(elem => elem.checked)) {
-        setError(orderTypeElements[0], 'Please select an order type');
+    // Validation checks for delivery/in-house options
+    let orderTypeElements = $('input[name="type-of-order"]');
+    if (!orderTypeElements.is(':checked')) {
+        setError(orderTypeElements.first(), 'Please select an order type');
         isValid = false;
-    }
-    else {
-        orderTypeElements.forEach(removeError);
+    } else {
+        orderTypeElements.each(function() {
+            removeError($(this));
+        });
     }
 
-    
+    // Execute the callback function if the form is valid
     if (isValid && callback) {
         callback();
     }
-
-   
-            
-    }
+}
+})
+  
     
        
