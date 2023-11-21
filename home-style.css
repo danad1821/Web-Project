@@ -1,5 +1,5 @@
 /*Home Page*/
-.home-body{
+.home-body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,8 @@
   flex-wrap: wrap;
   color: black;
 }
-.home-wel{
+
+.home-wel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,25 +17,29 @@
   position: relative;
   background-color: #bac9a393;
 }
-.bg-image{
+
+.bg-image {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 120vh;
 }
-.main-logo{
+
+.main-logo {
   position: relative;
   width: 75vw;
 }
-.signing-options{
+
+.signing-options {
   position: absolute;
   bottom: 11%;
   margin: 1%;
   width: 100%;
   text-align: center;
 }
-.signing-options button{
+
+.signing-options button {
   background-color: #F8EFE5;
   border: 3px solid #104d40;
   width: 100px;
@@ -42,22 +47,46 @@
   font-size: 1.2rem;
   margin: 0.5%;
 }
-.sign-links{
+
+.sign-links {
   text-decoration: none;
   color: #104d40;
   padding: 1%;
   margin: 1% 0.5%;
   font-weight: 500;
 }
-.signing-options button:hover .sign-links{
+
+.signing-options button:hover .sign-links {
   /* background-color: #C8EFE5; */
   color: #F8EFE5;
   transition: all 0.5s ease;
 }
-.signing-options button:hover{
+
+.signing-options button:hover {
   /* background-color: #C8EFE5; */
   border: 3px solid #CE5B68;
   background-color: #CE5B68;
   color: #F8EFE5;
   transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 950px) {
+  #main-logo {
+    width: 55vw;
+    margin: 0 10vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-2>.logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .signing-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

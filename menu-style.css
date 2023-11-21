@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     height: 45vh;
-    /* background-image: linear-gradient(to bottom right, #BAC9A3, beige); */
     background-color: #BAC9A3;
     color: #F8EFE5;
 }
@@ -264,13 +263,14 @@ input[type=number]::-webkit-inner-spin-button {
     margin-bottom: 2%;
 }
 .close-btn{
-    background-color: none;
+    background-color: #F8EFE5;
     border: none;
     font-size: 1.4rem;
     align-self: flex-end;
     margin: 2%;
 }
 .close-btn svg{
+    background-color: #F8EFE5;
     fill: black;
 }
 .close-btn svg:hover{

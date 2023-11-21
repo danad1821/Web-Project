@@ -17,6 +17,9 @@ function removeError(element) {
 function signInLoad() {
     let btnSignIn = document.getElementById("sign-in-btn-submit")
     btnSignIn.addEventListener("click", function () {
+        if(username.value == users[0]){
+            removeError(username);
+        }
         if (username.value == users[0] && pass.value == users[1]) {
             removeError(pass);
             removeError(username);

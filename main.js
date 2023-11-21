@@ -1,4 +1,5 @@
 let user = ["dana", "pass"]
+//opens the account dropdown
 function displayAccountInfo() {
     let account = document.getElementsByClassName("account");
     account.className = "open-account";
@@ -6,11 +7,13 @@ function displayAccountInfo() {
     account[0].style.flexDirection = "column"
     document.getElementById("nav-bar").style.width="100%"
 }
+//closes the account drop-down
 function closeAccountInfo() {
     let account = document.getElementsByClassName("account");
     account.className = "close-account";
     account[0].style.display = "none"
 }
+//account dropdown for big screens
 function accountHover() {
     let accountBtn = document.getElementById("account-icon")
     accountBtn.addEventListener("mouseover", displayAccountInfo)
@@ -26,6 +29,7 @@ function accountHover() {
         document.getElementById("username-text").innerText = user[0];
     }
 }
+//dropdown for small screens
 let pressedDrop=false;
 let dropDown=document.getElementsByClassName("drop-nav-bar");
 dropDown[0].addEventListener("click", ()=>{
@@ -47,6 +51,7 @@ dropDown[0].addEventListener("click", ()=>{
         pressedDrop=false;
     }
 })
+//sign out for nav on big screens
 let btnSignOut=document.getElementById("sign-out-btn")
 btnSignOut.addEventListener("click", function(){
     window.sessionStorage.setItem("SignedIn", "false");
@@ -58,6 +63,7 @@ btnSignOut.addEventListener("click", function(){
     document.getElementsByClassName("account-info")[0].style.display = "none";
     
 })
+//sign out for nav on small screens
 let btnSignOut2=document.getElementById("sign-out-btn2")
 btnSignOut2.addEventListener("click", function(){
     window.sessionStorage.setItem("SignedIn", "false");
@@ -69,5 +75,6 @@ btnSignOut2.addEventListener("click", function(){
     document.getElementsByClassName("signed-out")[1].style.display = "block";
     document.getElementsByClassName("account-info")[1].style.display = "none";
 })
+//used for smooth transitions between pages
 const swup = new Swup();
 

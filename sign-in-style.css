@@ -32,7 +32,7 @@
 }
 
 .sign-in-input {
-    margin: 1.5%;
+    margin: 1%;
     font-size: 1.2rem;
     height: 3.5vh;
     width: 320px;
@@ -115,13 +115,13 @@ div i {
 }
 
 /*Error*/
+
 .input-field small {
     display: flex;
     margin-top: 5px;
     margin: 1.5%;
     color: #ee0d0d;
     visibility: hidden;
-
 }
 
 .error small {
@@ -131,7 +131,7 @@ div i {
     padding: 10px;
     margin-top: 10px;
     font-size: 15px;
-    width: 300px;
+    width: 310px;
 }
 
 .error small {
