@@ -8,13 +8,13 @@
 }
 /* Logo and img design */
 .logo-container {
-  margin: 0.5%;
-  margin-top: 6%;
+  margin: 5% 0;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  min-height: 20vh;
   min-width: 100vw;
 }
 #img-container {
@@ -33,7 +33,7 @@
 }
 /* our story design */
 .our-story-container {
-  margin: 4% 0;
+  margin: 2% 0;
   margin-bottom: 1%;
   max-height: 55vh;
   min-width: 100vw;
@@ -166,7 +166,7 @@
   margin-right: 3%;
 }
 .desc-content {
-  opacity: 1;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,6 +252,7 @@
 }
 .in-text {
   color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.4);
   font-size: 1.3em;
   padding: 8px 12px;
   position: absolute;
