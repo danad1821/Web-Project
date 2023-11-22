@@ -33,7 +33,8 @@
 }
 /* our story design */
 .our-story-container {
-  margin: 5% 0;
+  margin: 4% 0;
+  margin-bottom: 1%;
   max-height: 55vh;
   min-width: 100vw;
   display: flex;
@@ -119,8 +120,7 @@
 }
 /* Events design */
 .event-container {
-  margin: 4% 1%;
-  margin-top: 0;
+  margin: 1% 0;
   min-height: 105vh;
   min-width: 100vw;
   display: flex;
@@ -139,7 +139,7 @@
   align-items: center;
   justify-content: center;
   max-width: 100vw;
-  margin: 0 4%;
+  margin: 0 2%;
   margin-bottom: 1.1%;
 }
 .press-for-info {
@@ -198,7 +198,6 @@
 }
 #our-socials {
   text-align: center;
-  margin-bottom: 1.1%;
 }
 #our-socials-btn {
   min-width: 300px;
@@ -222,6 +221,7 @@
 /* Our Food design */
 .our-food-container {
   margin: 4% 0;
+  margin-top: 1%;
   min-height: 55vh;
   min-width: 100vw;
   display: flex;
