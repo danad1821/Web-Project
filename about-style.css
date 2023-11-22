@@ -486,6 +486,9 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .slider{
+    display: none;
+  }
   #our-food-img-cont {
     min-width: 80vw;
     max-height: 35vh;
