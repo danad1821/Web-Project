@@ -388,19 +388,17 @@ input[type="text"],
 .pop-up p{
   font-size: 1.2rem;
 }
-.popBtns{
-  margin: 2%;
-  margin-top: 4%;
+.pop-btn{
+  font-size: 1.2rem;
+    margin: 1%;
+    padding: 1% 2.5%;
+    align-self: center;
+    border-radius: 12px;
+    background-color: #FAD370;
+    border: none;
 }
-.pop-up button:last-child{
-  font-size: 1.1rem;
-  margin: 5px;
-  border: none;
-  /* width: 80px; */
-  padding: 3px 20px;
-  color: white;
-  background-color: #104d40;
-  border-radius: 12px;
+.pop-btn:hover{
+  background-color: #debb61;
 }
 .title-pop{
   font-size: 1.3rem;

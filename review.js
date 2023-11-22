@@ -72,12 +72,6 @@ $(document).ready(function () {
     let bdayInput = $("#bday");
     let orderType = $(".service-type");
 
-    /*prevent form from submitting by default*/
-    form.submit(function (event) {
-        event.preventDefault();
-        popUp();
-    });
-
     /* Shows delivery or house accroding to selection */
 
     // Delivery Clicked 
@@ -207,15 +201,13 @@ $(document).ready(function () {
         location.reload();
     }
 
-    // Showing pop-up when form is validated
-    function showPopup() {
-        $('body').addClass('popup-open');
-        $('#overlay, #popup-container').css('display', 'block');
-    }
 
     $('form').submit(function (event) {
         event.preventDefault();
-        validateForm(showPopup);
+        let validation=validateForm();
+        if(validation==true){
+            popUp()
+        }
     });
 
 
@@ -230,7 +222,6 @@ $(document).ready(function () {
 
     // Confirming submission of form
     function confirmPopup() {
-        $('#overlay, #popup-container').hide();
         resetForm();
     }
 
@@ -273,7 +264,7 @@ $(document).ready(function () {
     }
 
     // Function to validate the entire form
-    function validateForm(callback) {
+    function validateForm() {
         let isValid = true;
 
         // Validation checks for first name
@@ -332,10 +323,8 @@ $(document).ready(function () {
             });
         }
 
-        // Execute the callback function if the form is valid
-        if (isValid && callback) {
-            callback();
-        }
+        return isValid
+        
     }
 })
 
