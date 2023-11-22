@@ -87,76 +87,122 @@
         </div>
     </nav>
     <!-- Body -->
-    <main class="about-body transition-fade">
+       <main class="about-body transition-fade">
         <!-- Logo and Image part of about us -->
         <div class="logo-container">
-            <img id="logo-about-us" , src="Malaz Design/Malaz---icon cropped.png" alt="Logo">
+            <div id="img-container">
+                <img id="logo-about-us" , src="Malaz Design/Malaz---icon cropped.png" alt="Logo">
+            </div>
             <h1 id="h1-logo-text">Home Away From Home</h1>
         </div>
         <!-- Our Story Container -->
-        <div class="our-story-container">
-            <div class="content-img">
-                <div class="our-story-img">
-                    <img class="story-img img1" src="https://blogassets.7shifts.com/2019/07/working-in-a-restaurant.png"
-                        alt="">
-                    <img class="story-img img2" src="https://blogassets.7shifts.com/2019/07/working-in-a-restaurant.png"
-                        alt="">
+        <div class="our-story-container fade-in">
+            <!-- Image slider -->
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img id="img1" src="https://m.media-amazon.com/images/I/617KRwMMNRL._AC_UF894,1000_QL80_.jpg">
+                    </div>
+                    <div class="item">
+                        <img id="img2"
+                            src="https://media.cnn.com/api/v1/images/stellar/prod/220427155301-06-julia-child.jpg?c=original&q=h_618,c_fill">
+                    </div>
+                    <div class="item">
+                        <img id="img3"
+                            src="https://www.delmarvanow.com/gcdn/-mm-/5fecee677dd4f621fdc80929d18d2c9d11a273b3/c=0-249-4896-3015/local/-/media/2018/06/28/Wilmington/Salisbury/636657952456232963-DSCF2092.jpg?width=700&height=396&fit=crop&format=pjpg&auto=webp">
+                    </div>
                 </div>
-                <div class="our-story-content">
-                    <h1 id="h1-story">Our Story</h1>
-                    <p class="our-story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt
-                        earum,
-                        amet officiis iste aliquid suscipit aspernatur nam cupiditate quos, enim natus placeat deserunt,
-                        qui
-                        tempore officia atque autem accusantium.
-                        Earum, temporibus? Autem quae quibusdam eligendi.</p>
-                </div>
+                <!-- dots -->
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-            <div id="pattern">
-                <img id="story-side-pattern" src="Malaz Design/Malaz---Brand-Pattern cropped.png" alt="">
+            <div class="our-story-content">
+                <h1 id="h1-story">Our Story</h1>
+                <p class="our-story-p">Our restaurant founded by Layla in 1980, who learned to cook from her
+                    grandmother.
+                    Layla's passion for food is conveyed in every dish, made with fresh, high-quality ingredients.
+                    The restaurant offers a warm and welcoming atmosphere where guests can enjoy delicious food and
+                    good company.<br>
+                    We invite you to join us for a taste of Lebanon!</p>
             </div>
         </div>
         <!-- Events Container -->
         <div class="event-container">
-            <div class="event-content">
-                <h1 id="h1-event"> Events</h1>
-            </div>
+            <h1 id="h1-event" class="fade-in">Events</h1>
             <div class="event-img-container">
-                <img class="event-img im1"
-                    src="https://media.gettyimages.com/id/81724393/photo/group-of-people-with-birthday-cake-at-a-party-outdoors-smiling.jpg?s=612x612&w=gi&k=20&c=YunJYJyyDxoi0DUp4OjUDWLbzp4tailwgxuxkbFoMnI="
-                    alt="Birthday Party">
-                <img class="event-img im2"
-                    src="https://as1.ftcdn.net/v2/jpg/03/77/32/66/1000_F_377326656_GKrlSgBmBBBZnC1JhKX935MEzSHP46wB.jpg"
-                    alt="Family Gatherings">
-                <img class="event-img im3"
-                    src="https://students.ouhsc.edu/Portals/1352a/EasyDNNnews/37089/Trivia-8.31.23.jpg"
-                    alt="Trivia Nights">
+                <div class="event-cont bd fade-in">
+                    <img class="event-img im1"
+                        src="https://i.pinimg.com/564x/ed/d9/27/edd927f8337b1cecc1cfbc64e8c32024.jpg"
+                        alt="Birthday Party">
+                    <div class="desc-content">
+                        <!-- <p class="press-for-info">Press For Info</p> -->
+                        <h3 class="desc-h3">Birthday Parties</h3>
+                        <p class="desc bd-desc">Our restaurant's lovely atmosphere makes it the ideal place to
+                            celebrate birthdays. We can customize our main dining area to fit the theme and preferences
+                            of your party, or you can reserve a special party area.</p>
+                    </div>
+                </div>
+                <div class="event-cont fg fade-in">
+                    <img class="event-img im2"
+                        src="https://i.pinimg.com/564x/ff/cd/98/ffcd98def707ee9458e81e08b383789d.jpg"
+                        alt="Family Gatherings">
+                    <div class="desc-content fg-content">
+                        <h3 class="desc-h3 fg-h3">Family Gatherings</h3>
+                        <p class="desc fg-desc">Looking for a spot to bring the whole family together? At Malaz, we've
+                            got the perfect place for your family gatherings. Our cozy space
+                            is made for good times and great meals, where everyone can relax and enjoy.</p>
+                    </div>
+                </div>
+                <div class="event-cont omn fade-in">
+                    <img class="event-img im3"
+                        src="https://i.pinimg.com/564x/02/82/4c/02824c10412d84ef3f4b6f519d706721.jpg"
+                        alt="Open Mic Nights">
+                    <div class="desc-content">
+                        <h3 class="desc-h3">Open Mic Nights</h3>
+                        <p class="desc omn-desc">Ready to show off your talent? Join us in
+                            our Open Mic Nights! It's your time to shine - whether you're a musician, poet, comedian, or
+                            have any other talent, our stage is all yours.</p>
+                    </div>
+                </div>
             </div>
-            <div id="our-socials">
-                <button id="our-socials-btn">Visit Our Socials</button>
+            <div id="our-socials" class="fade-in">
+                <button id="our-socials-btn" href="https://www.instagram.com/" target="_blank">Visit Our
+                    Socials</button>
             </div>
         </div>
         <!-- Our Food container -->
-        <div class="our-food-container">
-            <div class="our-food-content">
-                <h1 id="h1-our-food">Our Food</h1>
+        <div class="our-food-container fade-in">
+            <h1 id="h1-our-food">Our Food</h1>
+            <div id="our-food-img-cont">
+                <img id="our-food-img"
+                    src="https://embed.widencdn.net/img/beef/sr17je3ewf/1120x560px/thai-burger-horizontal.tif?keep=c&u=7fueml">
+                <div class="in-text">
+                    <p>Offers on a Variety of International and Traditional Food</p>
+                </div>
             </div>
-            <div class="our-food-img-container">
-                <img class="our-food-img"
-                    src="https://img.freepik.com/premium-photo/food-background-pasta-chicken-pumpkin-salad-meat-mushrooms-vegetables-black-stone-background-top-view-free-space-text_187166-31381.jpg"
-                    alt="Tasty Food image">
-                <a href="menu.html"><button class="visit-menu-btn">Visit Our Menu</button></a>
-            </div>
+            <br>
+            <a href="menu.html"><button id="visit-menu-btn">Visit Our Menu</button></a>
         </div>
+
         <!-- Quality Assurance container -->
-        <div class="quality-assurance-container">
-            <h2>Quality Assurance:</h2>
+        <div class="quality-assurance-container fade-in">
+            <div id="quality-img-container">
+                <img src="Malaz Design/premium-certified-quality-stamp_78370-1800-removebg-preview.png" alt=""
+                    class="cert-img">
+            </div>
             <div class="quality-certification">
-                <img src="https://www.zaatarwzeit.net/Content/images/logoIso.png" alt="" class="cert-img">
+                <h1>Quality Assurance:</h1>
+
                 <p class="cert-text">Our restaurants adhere to strict international standards of hygiene and food
                     service. Furthermore, We abide by ISO 22 000 and local rules and legal requirements related to Food
                     Safety.</p>
             </div>
+        </div>
+        <div id="footer-pattern">
+            <img src="Malaz Design/Malaz---Brand-Pattern-2.png" alt="pattern2" id="footer-pattern-img">
         </div>
     </main>
     <!-- Footer -->
@@ -218,7 +264,9 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="about.js"></script>
 </body>
 
 </html>
