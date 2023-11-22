@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="accountHover()">
     <!-- Navigation Bar -->
     <nav class="nav-bar nav-1" id="nav-bar">
         <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
@@ -92,14 +92,17 @@
     <!-- Body -->
     <main class="sign-in-body transition-fade">
         <div class="home-sign-in">
+            <!-- Sign In Title -->
             <h1 class="sign-in-title">
                 Log In:
             </h1>
+            <!-- Username -->
             <label class="sign-in-lbl" for="username">Username</label>
             <div class="input-field log-in-user">
                 <input class="sign-in-input" type="text" id="sign-in-user" placeholder="Username" required>
                 <small>Error Message</small>
             </div>
+            <!-- Password -->
             <label class="sign-in-lbl" for="password">Password</label>
             <div class="input-field">
                 <input class="sign-in-input sign-in-pass" type="password" name="" placeholder="Password"
@@ -107,18 +110,19 @@
                 <i class="far fa-eye-slash" id="togglePassword"></i>
                 <small>Error Message</small>
             </div>
+            <!-- Submit Button -->
             <button class="sign-in-btn-submit" id="sign-in-btn-submit">Log In</button>
+            <!-- No Account Button -->
             <p class="sign-up-text">Don't have an account? <a href="sign-up.html" class="sign-up-link">Sign Up</a></p>
             <b class="sign-up-text">or</b>
             <p class="sign-up-text">continue with</p>
+            <!-- Media -->
             <div class="media">
-                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.facebook.com/login.php/" target="_blank" class="fa fa-facebook"></a>
 
-                <a href="#" class="fa fa-google"></a>
+                <a href="https://accounts.google.com/"  target="_blank"class="fa fa-google"></a>
             </div>
         </div>
-        <img src="https://i.pinimg.com/564x/48/cf/49/48cf499ef917e1767846aad628e633fe.jpg" alt=""
-            class="login-in-img">
         
     </main>
     <!-- Footer -->
@@ -179,6 +183,7 @@
             <p class="copyright">&copy; 2023 Malaz Copyright</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swup@4"></script>
     <script src="main.js"></script>
     <script src="sign-in.js"></script>

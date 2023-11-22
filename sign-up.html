@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="accountHover()">
     <!-- Navigation Bar -->
     <nav class="nav-bar nav-1" id="nav-bar">
         <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
@@ -57,7 +57,8 @@
         <a href="index.html" class="nav-options logo"><img src="Malaz Design/Nav  Bar Logo - Not Bold.png" alt="Logo"
                 class="logo-img"></a>
         <button class="drop-nav-bar">
-            <svg id="dropdown-menu" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+            <svg id="dropdown-menu" xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 448 512">
                 <style>
                     svg {
                         fill: #fafafa
@@ -106,14 +107,20 @@
                         <div class="form-section-names">
                             <!-- First Name  -->
                             <div class="input-field First-Name">
+                                <div>
                                 <label for="frst-name-Input">First Name</label>
+                                <span class="required">*</span>
+                            </div>
                                 <input type="text" placeholder="your name" name="frst-name-Input" class="input"
                                     id="frst-name-Input">
                                 <small>Error Message</small>
                             </div>
                             <!-- Last Name  -->
                             <div class="input-field Last-Name">
+                                <div>
                                 <label for="lst-name-Input">Last Name</label>
+                                <span class="required">*</span>
+                            </div>
                                 <input type="text" placeholder="your name" name="lst-name-Input" class="input"
                                     id="lst-name-Input">
                                 <small>Error Message</small>
@@ -123,14 +130,20 @@
                         <div class="form-section-contact">
                             <!-- Email/Phone  -->
                             <div class="input-field contact">
+                                <div>
                                 <label for="ContactInput">Email/Phone</label>
+                                <span class="required">*</span>
+                            </div>
                                 <input type="text" placeholder="enter phone or email " name="ContactInput" class="input"
                                     id="ContactInput">
                                 <small>Error Message</small>
                             </div>
                             <!-- Birthday -->
                             <div class="input-field Date">
+                                <div>
                                 <label for="dateInput">Birthday</label>
+                                <span class="required">*</span>
+                            </div>
                                 <input type="date" placeholder="dd/mm/yyyy" class="input" id="bday" name="bday">
                                 <small>Error Message</small>
                             </div>
@@ -140,31 +153,44 @@
                     <div class="form-section info">
                         <!-- Username -->
                         <div class="input-field Username">
+                            <div>
                             <label for="Username">Username</label>
+                            <span class="required">*</span>
+                        </div>
                             <input type="text" placeholder="your username" class="input" id="Username" name="Username">
                             <small>Error Message</small>
                         </div>
                         <!-- Password -->
                         <div class="input-field password">
+                            <div>
                             <label for="password">Password</label>
+                            <span class="required">*</span>
+                        </div>
                             <input type="password" placeholder="your password" class="input" id="password"
                                 name="password">
                             <small>Error Message</small>
                         </div>
                         <!-- Confirm Password -->
                         <div class="input-field confirm-password">
+                            <div>
                             <label for="confirmPassword">Confirm Password</label>
+                            <span class="required">*</span>
+                            </div>
                             <input type="password" placeholder="confirm your password" class="input"
                                 id="confirmPassword" name="confirmPassword">
                             <small>Error Message</small>
                         </div>
                     </div>
+                    <!-- Gender Options -->
                     <div class="input-field">
                         <div class="gender-details">
                             <input type="radio" name="gender" value="1" id="dot-1">
                             <input type="radio" name="gender" value="2" id="dot-2">
                             <input type="radio" name="gender" value="3" id="dot-3">
+                            <div>
                             <span class="gender-title">Gender</span>
+                            <span class="required">*</span>
+                        </div>
                             <div class="category">
                                 <label for="dot-1">
                                     <span class="dot one"></span>
@@ -182,6 +208,7 @@
                             <small>Error Message</small>
                         </div>
                     </div>
+                    <!-- Agree to terms and condtions -->
                     <div class="policy">
                         <div class="check">
                             <input type="checkbox" id="agree">
@@ -241,29 +268,32 @@
                             </p>
                         </div>
                     </div>
+                    <!-- Submit Button -->
                     <div class="input-box button">
                         <button type="submit" id="btn">Register Now</button>
                     </div>
 
 
                 </form>
+                <!-- Already Have an Account -->
                 <div class="form-link">
                     <span>Already have an account? <a href="sign-in.html" class="link login-link">Login</a></span>
                 </div>
                 <div class="line-break">
                     <span class="line "></span>
-                    <b>or</b>
+                    <h3>or</h3>
+                    <span class="line "></span>
                 </div>
-                <div class="form-link">
-                    <span>continue with</span>
-                </div>
+                <!-- Media -->
                 <div class="media">
-                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/login.php/" target="_blank" class="fa fa-facebook"></a>
 
-                    <a href="#" class="fa fa-google"></a>
+                    <a href="https://accounts.google.com/"  target="_blank" class="fa fa-google"></a>
                 </div>
             </div>
 
+            
+        </div>
         </div>
     </section>
 
@@ -325,6 +355,7 @@
             <p class="copyright">&copy; 2023 Malaz Copyright</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swup@4"></script>
     <script src="main.js"></script>
     <script src="sign-up.js"></script>

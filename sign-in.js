@@ -1,58 +1,58 @@
-let users = ["dana", "pass"];
-let username = document.getElementById("sign-in-user");
-let pass = document.getElementById("sign-in-pass");
-function setError(element, errorMessage) {
-    let parentElement = element.closest('.input-field');
-    parentElement.classList.add('error');
-    let alertMessage = parentElement.querySelector('small');
-    alertMessage.textContent = errorMessage;
-}
+$(document).ready(function () {
 
-function removeError(element) {
-    let parentElement = element.closest('.input-field');
-    parentElement.classList.remove('error');
-    let alertMessage = parentElement.querySelector('small');
-    alertMessage.textContent = '';
-}
-function signInLoad() {
-    let btnSignIn = document.getElementById("sign-in-btn-submit")
-    btnSignIn.addEventListener("click", function () {
-        if(username.value == users[0]){
+    /*Declarations */
+    let users = ["dana", "pass"];
+    let username = $("#sign-in-user");
+    let pass = $("#sign-in-pass");
+
+    /*Function to Add Error Message*/
+    function setError(element, errorMessage) {
+        let parentElement = element.closest('.input-field');
+        parentElement.addClass('error');
+        let alertMessage = parentElement.find('small');
+        alertMessage.text(errorMessage);
+    }
+
+    /*Function to Remove Error Message*/
+    function removeError(element) {
+        let parentElement = element.closest('.input-field');
+        parentElement.removeClass('error');
+        let alertMessage = parentElement.find('small');
+        alertMessage.text('');
+    }
+
+    /*Click event handler for the Sign In button*/
+    $("#sign-in-btn-submit").click(function () {
+        // Check if the entered username matches the predefined username
+        if (username.val() == users[0]) {
             removeError(username);
         }
-        if (username.value == users[0] && pass.value == users[1]) {
+        /*Check if both username and password match the predefined credentials*/
+        if (username.val() == users[0] && pass.val() == users[1]) {
             removeError(pass);
             removeError(username);
             window.sessionStorage.setItem("SignedIn", "true");
             window.history.go(-1);
-        }
-        else{
-            if(pass.value.length<8 && pass.value != users[1]){
-                setError(pass, "Invalid Password")
+        } else {
+            // Check if the password length is less than 8 characters and not equal to the predefined password
+            if (pass.val().length < 8 && pass.val() != users[1]) {
+                setError(pass, "Invalid Password");
             }
-            if(username.value != users[0]){
-                setError(username, "User not found")
+            // Check if the entered username does not match the predefined username
+            if (username.val() != users[0]) {
+                setError(username, "User not found");
             }
         }
-    })
-}
-window.addEventListener("load", signInLoad);
-// Toggle password visibility code
+    });
 
-const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#sign-in-pass');
+    $("#togglePassword").click(function () {
+        // Toggle the eye icon class to switch between open and closed eye icons
+        $(this).toggleClass('far fa-eye far fa-eye-slash');
+        // Get the current type of the password input field
+        let type = $("#sign-in-pass").attr('type');
 
-togglePassword.addEventListener("click", function() {
-    // toggle the icon
-    if (this.className=='far fa-eye-slash'){
-        this.className='far fa-eye';
-    }
-    else{
-        this.className='far fa-eye-slash';
-    }
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
+        // Get the current type of the password input field
+        type = (type === 'password') ? 'text' : 'password';
+        $("#sign-in-pass").attr('type', type);
+    });
 });
-
-//go back to last page when back button is clicked

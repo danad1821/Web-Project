@@ -25,41 +25,31 @@
             <h3 id="back-to-cart">Back to Cart</h2>
         </a>
         <form class="checkout-content">
-            <div class="checkout-section general-info">
-                <h2 class="section-title">Order Information</h2>
-                <div>
-                    <div class="total-div">
-                        <h3 class="total-title">Total:</h3>
-                        <p class="total-price">$0.00</p>
-                    </div>
-                    <button id="finalizeBtn">Place Order</button>
-                </div>
-            </div>
+    
             <div class="main-content">
                 <div class="checkout-section sub-section">
-                    <h2 class="section-title">Location</h2>
+                    <h2 class="section-title">Checkout</h2>
                     <div class="location-delivery">
+                        <h4>Details</h4>
                         <div class="location-element">
+                           
                             <label for="">Full Name:</label>
-                            <input type="text" name="fullname" id="" class="required" placeholder="John Doe"
-                                required="required">
+                            <input type="text" name="fullname" id=""  placeholder="John Doe" class="required"
+                                >
                         </div>
                         <div class="location-element">
                             <label for="">Phone Number:</label>
-                            <input type="tel" name="" id="" class="required" placeholder="eg. +961 76 000 000"
-                                required="required">
+                            <input type="tel" name="" id=""  placeholder="eg. +961 76 000 000" class="required"
+                                >
                         </div>
                         <div class="location-element address">
                             <label for="">Address:</label>
-                            <input type="text" name="" id="" class="required" placeholder="Street address"
-                                required="required">
-                            <input type="text" name="" id="" class="required"
-                                placeholder="Apt, suite, unit, building, floor, etc" required="required">
+                            <input type="text" name="" id=""  placeholder="Street address, building, floor, etc" class="required"> 
                         </div>
                         <div class="location-element">
-                            <label for="">City:</label>
-                            <select name="" id="" required="required">
-                                <option value="0" disabled selected>Select a City</option>
+                            <label for="" >City:</label>
+                            <select name="" id=""  >
+                                <option value="0" disabled selected >Select a City</option>
                                 <option value="1">Beirut</option>
                                 <option value="2">Tripoli</option>
                                 <option value="3">Tyre</option>
@@ -68,49 +58,90 @@
                     </div>
                 </div>
                 <div class="checkout-section sub-section">
-                    <h2 class="section-title">Payment</h2>
+                    
                     <div class="payment-info">
+                        <h4 >Payment</h4>
                         <div class="payment-element">
-                            <label for="" class="payment-lbl">Payment Method:</label>
-                            <select name="" id="" required="required">
-                                <option value="" disabled selected>Select a Payment Method</option>
-                                <option value="">Master Card</option>
-                                <option value="">Visa Card</option>
-                                <option value="">American Express Card</option>
+                            <label for="" class="payment-lbl" id="payment-method">Payment Method:</label>
+                            <select name="" id="" >
+                                <option value="">Select Payment Method</option>
+                                <option value="Master Card">Master Card</option>
+                                <option value="Visa Card">Visa Card</option>
+                                <option value="American Express Card">American Express Card</option>
+                                <option value="Cash on Delivery"> Cash on Delivery</option>
                             </select>
+                            <p>*note that when Cash on Delivery is selected you are not required to fill  out card details</p>
                         </div>
-                        <div class="payment-name">
+                        <!-- <div class="payment-name">
                             <div class="payment-element">
                                 <label for="" class="payment-lbl">First Name:</label>
-                                <input type="text" required="required" name="" id="" placeholder="John"
+                                <input type="text"  name="" id="" placeholder="John"
                                     class="required name-inputs">
                             </div>
                             <div class="payment-element">
                                 <label for="" class="payment-lbl">Last Name:</label>
-                                <input type="text" required="required" name="" id="" placeholder="Doe"
+                                <input type="text"  name="" id="" placeholder="Doe"
                                     class="required name-inputs">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="payment-element">
                             <label for="" class="payment-lbl">Card Number:</label>
-                            <input type="text" name="" required="required" id="" placeholder="0000 0000 0000 0000"
-                                class="required">
+                            <input type="text" name=""  id="" placeholder="0000 0000 0000 0000"
+                            class="card-related-inputs">
                         </div>
                         <div class="final-payment-elements">
                             <div class="payment-element">
                                 <label for="" class="payment-lbl">Expiration Date:</label>
-                                <input type="text" required="required" name="" id="expiration" placeholder="mm/yy"
-                                    class="required">
+                                <input type="text"  name="" id="expiration" placeholder="dd/mm/yyyy"
+                                class="card-related-inputs">
                             </div>
                             <div class="payment-element">
                                 <label for="" class="payment-lbl">CVV:</label>
-                                <input type="text" required="required" name="" id="" placeholder="***" class="required">
+                                <input type="text"  name="" id="" placeholder="***" class="card-related-inputs">
                             </div>
+                            
                         </div>
+                        <div class="total-div">
+                            <h3 class="total-title">Total:</h3>
+                            <p class="total-price">$0.00</p>
+                        </div>
+                        
                     </div>
+                    
                 </div>
+                <button id="order" type="submit"> Order Now</button>
+                
+               
             </div>
+            
         </form>
+    </section>
+    <!-- Pop-up when form is valid and submitted -->
+    <!-- overlay to make background dark -->
+    <div id="overlay" class="hidden"></div>
+    <!-- pop-up -->
+    <div id="popup-container" class="hidden">
+        <div class="card">
+            <!-- cancel review form submission -->
+            <button type="button" class="dismiss">×</button>
+    <div class="pop-up-container">
+        <div class="pop-up">
+            <button class="close-btn" id="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </button>
+            <div class="header">
+                <!-- Pop-up message-->
+                <span class="title">Thank You!</span>
+                <p class="message">Thank you for your feedback. We hope to have provided you a wonderful
+                    experience and will improve iin the future.</p>
+                <span class="title-pop">Thank You!</span>
+                <p class="message-pop">Thank you for your feedback. We hope to have provided you a wonderful
+                    experience and will improve in the future.</p>
+            </div>
+            
+        </div>
+    </div>
+
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swup@4"></script>
