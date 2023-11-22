@@ -200,20 +200,19 @@
   text-align: center;
 }
 #our-socials-btn {
+  margin-top: 1%;
   min-width: 300px;
   height: 50px;
-  border-color: #ce5b68;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 8px;
+  border: none;
+  border-radius: 30px;
   font-size: 1.3em;
-  background-color: rgb(255, 255, 230);
-  color: #ce5b68;
+  background-color: #fad370;
+  color: white;
   cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
 }
 #our-socials-btn:hover {
-  color: white;
-  background-color: #ce5b68;
+  background-color: #fdc841;
 }
 #our-socials-btn:active {
   transform: scale(0.97);
@@ -266,18 +265,16 @@
   margin-top: 5%;
   min-width: 300px;
   height: 50px;
-  border-color: #ce5b68;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 8px;
+  border: none;
+  border-radius: 30px;
   font-size: 1.3em;
-  background-color: rgb(255, 255, 230);
-  color: #ce5b68;
+  background-color: #fad370;
+  color: white;
   cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
 }
 #visit-menu-btn:hover {
-  color: white;
-  background-color: #ce5b68;
+  background-color: #fdc841;
   animation: linear 0.9s ease;
 }
 /* Quality Assurance design */
@@ -508,7 +505,7 @@
   .our-story-p {
     font-size: 1rem;
   }
-  .dots{
+  .dots {
     opacity: 0;
   }
   /* event part */
@@ -612,11 +609,11 @@
     width: 100%;
     height: 55vh;
   }
-  #h1-event{
+  #h1-event {
     font-size: 2.2rem;
   }
   /* Our FOod Part: */
-  #h1-our-food{
+  #h1-our-food {
     font-size: 2.2rem;
   }
   #our-food-img-cont {
