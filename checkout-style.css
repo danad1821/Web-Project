@@ -44,7 +44,6 @@ main{
 
 .checkout-section{
     margin: 0px 25px ;
-   
 }
 
 
@@ -137,16 +136,19 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 79.5vw;
+    width: 80vw;
     padding: 2%;
     border-radius: 6px;
-    
 }
 
 
 .sub-section {
     width: 40%;
-    min-height: 40vh;
+    min-height: 50vh;
+}
+.sub-section input, .sub-section label, .sub-section select, .sub-section p, .sub-section h4, .sub-section h2, .sub-section .total-div{
+    max-width: 300px;
+    margin-left: 20px;
 }
 
 .section-title {
@@ -247,57 +249,7 @@ color: #ce5b68;
 .total-div{
     margin-top: -45px;
 }
-/* Styles for the pop-up container */
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    z-index: 999;
-    backdrop-filter: blur(2px);
-  }
-  
-  #popup-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #104d40;
-    padding: 60px;
-    border-radius: 0.5rem;
-    max-width: 300px;
-    display: none;
-    z-index: 1000;
-  }
-  
-  /* Styles for dismissing the pop-up */
-  .dismiss {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    color: black;
-    border: none;
-    font-size: 30px;
-    font-weight: 300;
-    width: 30px;
-    height: 30px;
-    border-radius: 7px;
-    transition: .3s ease;
-    margin-top: -8px;
-  }
-  
-  .dismiss:hover {
-    color: #c94353;
-  }
-  .pop-up p{
-    font-size: 1.2rem;
-  }
+
 
   .section-title{
     color: #104d40;
@@ -318,10 +270,59 @@ color: #ce5b68;
     margin-left: 10px;
     font-size: 20px;
 }
+/* Pop Up */
+.pop-up-container {
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: fixed;
+}
 
+.pop-up {
+    width: 300px;
+    height: 180px;
+    background-color: #F8EFE5;
+    z-index: 5;
+    display: none;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.pop-up h2 {
+    margin-bottom: 2%;
+}
+
+.close-btn {
+    background-color: #F8EFE5;
+    border: none;
+    font-size: 1.4rem;
+    align-self: flex-end;
+    margin: 2%;
+}
+
+.close-btn svg {
+    background-color: #F8EFE5;
+    fill: black;
+}
+
+.close-btn svg:hover {
+    fill: #FAD370;
+}
 
 @media screen and (max-width: 1250px) {
     .checkout-section {
         min-width: 70vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .sub-section input, .sub-section{
+        width: 180px;
+    }
+    .payment-info{
+        margin-top: 8px;
+    }
+    .total-div{
+        margin-top: 10px;
     }
 }
