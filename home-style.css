@@ -18,6 +18,10 @@
   background-color: #bac9a393;
 }
 
+
+#small img{
+  display: none;
+}
 .bg-image {
   position: absolute;
   left: 0;
@@ -29,6 +33,9 @@
 .main-logo {
   position: relative;
   width: 75vw;
+}
+.text-logo{
+  display: none;
 }
 
 .signing-options {
@@ -70,23 +77,62 @@
   transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 950px) {
-  #main-logo {
-    width: 55vw;
-    margin: 0 10vw;
-  }
-}
 
-@media screen and (max-width: 900px) {
-  .nav-2>.logo {
+@media screen and (max-width: 773px){
+  #small{
+    display: block;
+  }
+  #big{
     display: none;
   }
-}
-@media screen and (max-width: 500px) {
-  .signing-options {
+  .signing-options{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+ 
   }
+  #main-logo{
+display: none;
+  }
+  .text-logo{
+    display: block;
+  
+  }
+  .logo-2 img{
+    width: 300px;
+    padding: 10px 0px;
+
+  }
+  .home-wel{
+    background-color: transparent;
+    height: 80vh;
+    margin: -20%;
+  }
+  .logo-2{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .signing-options button {
+    background-color: #CE5B68;
+    border: 3px solid #CE5B68;
+  }
+  .sign-links {
+    color: beige;
+  }
+  .signing-options button:hover .sign-links {
+    color: #104d40;
+    transition: all 0.5s ease;
+  }
+  
+  .signing-options button:hover {
+    /* background-color: #C8EFE5; */
+    border: 3px solid #fad370 ;
+    background-color: #fad370;
+    color: #F8EFE5;
+    transition: all 0.5s ease;
+  }
+  
+
 }
