@@ -586,7 +586,7 @@
     width: 60%;
   }
   #h1-logo-text {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
   }
   /* Our story part */
   #h1-story {
@@ -611,7 +611,13 @@
     width: 100%;
     height: 55vh;
   }
+  #h1-event{
+    font-size: 2.2rem;
+  }
   /* Our FOod Part: */
+  #h1-our-food{
+    font-size: 2.2rem;
+  }
   #our-food-img-cont {
     min-width: 80vw;
     max-height: 26vh;
